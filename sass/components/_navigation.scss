@@ -12,8 +12,9 @@
 #navigation {
 	float: right;
 	margin-top: 1.7em;
+	padding: 0;
 	text-transform: uppercase;
-	font-size: 90%;
+	font-size: 105%;
 	ul {
 		li {
 			border-right: 2px solid #98B0CA;
@@ -21,6 +22,7 @@
 		}
 		li.last {
 			border: 0 none;
+			padding-right: 0;
 		}
 	}
 }
@@ -49,34 +51,6 @@
 			li.last {
 				border: 0 none;
 			}
-		}
-	}
-}
-
-.browse-collections {
-	float: right;
-	ul {
-		margin: 0;
-		padding: 0;
-		li {
-			float: left;	
-			list-style: none;
-			margin-right: 1em;
-			a {
-				border: 2px solid $light_grey;
-				display: inline-block;
-				height: 150px;
-				width: 150px;
-			}
-		}
-		li.topic a {
-			background: url("../images/umkc/topic.jpg") no-repeat;
-		}
-		li.type a {
-			background: url("../images/umkc/type.jpg") no-repeat;			
-		}
-		li.collection a {
-			background: url("../images/umkc/collection.jpg") no-repeat;			
 		}
 	}
 }

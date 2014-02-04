@@ -18,15 +18,74 @@ h2, h3 {
 	clear: both;
 }
 
-.view-front-page {
-	.welcome-message {
-		float: left;
-		width: 33%;
-		h2 {
-			margin: 0;
+
+// Blocks //
+
+.browse-collections {
+	float: left;
+	height: 0; 
+	border-bottom: 245px solid rgb(255, 255, 255);
+	border-bottom: 245px solid rgba(255, 255, 255, .7);
+	border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 1.5em;
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			float: left;	
+			list-style: none;
+			margin-right: 1em;
+			a {
+				border: 2px solid $light_grey;
+				display: inline-block;
+				height: 150px;
+				width: 150px;
+			}
 		}
-		p {
-			margin: 0;
+		li.topic a {
+			background: url("../images/umkc/topic.jpg") no-repeat;
+		}
+		li.type a {
+			background: url("../images/umkc/type.jpg") no-repeat;			
+		}
+		li.collection a {
+			background: url("../images/umkc/collection.jpg") no-repeat;			
+		}
+	}
+}
+
+// Views //
+
+.slideshow {
+	float: left;
+	margin: 2em 0;
+}
+
+.welcome-message {
+	float: left;
+	width: 28%;
+	margin-right: 5%;
+	border-bottom: 5px solid $blue_color;
+	h2 {
+		margin: 0;
+	}
+	p {
+		margin: 0;
+		line-height: 1.75em;
+	}
+	.more-link {
+		text-align: left;
+		margin-top: 1.5em;
+		font-family: 'Ropa Sans';
+		font-style: italic;
+		a {
+			text-decoration: none;
+			color: $blue_color;
+		}
+		a:hover, a:visited {
+			color: $grey_color;
 		}
 	}
 }

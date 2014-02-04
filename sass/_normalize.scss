@@ -136,7 +136,7 @@ audio:not([controls]) {
  */
 html {
   font-family: 'Open Sans'; /* 1 */
-  font-size: 100% * ($base-font-size / 16px); /* 3 */
+  font-size: 85% * ($base-font-size / 16px); /* 3 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
