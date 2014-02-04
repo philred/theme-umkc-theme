@@ -20,6 +20,11 @@
 // Optionally, add your own components here.
 @import "print";
 
+/* Custom theme and Islandora rules */
+@import "components/islandora";
+@import "components/page";
+@import "components/navigation";
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */

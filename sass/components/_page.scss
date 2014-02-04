@@ -1,4 +1,32 @@
-///////////////////////////
-// Pages and Views Styling
-///////////////////////////
+/////////////////////////////////
+// Pages Blocks and Views Styling
+/////////////////////////////////
 
+h2, h3 {
+	font-family: 'Ropa Sans';
+	font-style: italic;
+	font-weight: normal;
+	color: $blue_color;
+}
+
+#header {
+	background: url('../images/umkc/header-top.png') repeat-x top left #fff;
+	padding: 1em;
+}
+
+#content {
+	clear: both;
+}
+
+.view-front-page {
+	.welcome-message {
+		float: left;
+		width: 33%;
+		h2 {
+			margin: 0;
+		}
+		p {
+			margin: 0;
+		}
+	}
+}

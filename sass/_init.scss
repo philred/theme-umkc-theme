@@ -52,10 +52,10 @@ $legacy-support-for-ie8: true;
 $base-font-size:   16px; // The font size set on the root html element.
 $base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
 
-$h1-font-size: 2    * $base-font-size;
+$h1-font-size: 2.5  * $base-font-size;
 $h2-font-size: 1.5  * $base-font-size;
-$h3-font-size: 1.17 * $base-font-size;
-$h4-font-size: 1    * $base-font-size;
+$h3-font-size: 1.25 * $base-font-size;
+$h4-font-size: 1.0  * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
@@ -94,6 +94,11 @@ $font-monospace:   $courier;
 // Colors, etc.
 //
 
+$blue_color: #266295;
+$yellow_color: #F1D000;
+$grey_color: #414042;
+$light_grey: #58595B;
+
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
@@ -103,7 +108,6 @@ $nav-height: 3em;
 // Tab styling.
 $tabs-container-bg: #fff;
 $tabs-border: #bbb;
-
 
 // =============================================================================
 // Partials to be shared with all .scss files.

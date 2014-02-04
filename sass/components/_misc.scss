@@ -97,6 +97,8 @@
 /* The name of the website. */
 .header__site-name {
   margin: 0;
+  font-family: 'Ropa Sans';
+  font-weight: normal;
   @include adjust-font-size-to( $h1-font-size );
 }
 
@@ -104,7 +106,7 @@
 .header__site-link {
   &:link,
   &:visited {
-    color: #000;
+    color: #414042;
     text-decoration: none;
   }
 
@@ -117,6 +119,7 @@
 /* The slogan (or tagline) of a website. */
 .header__site-slogan {
   margin: 0;
+  font-family: 'Libre Baskerville';
 }
 
 /* The secondary menu (login, etc.) */
@@ -156,7 +159,7 @@
     li {
       /* A simple method to get navigation links to appear in one line. */
       float: left;
-      padding: 0 10px 0 0;
+      padding: 0 1em;
       list-style-type: none;
       list-style-image: none;
     }

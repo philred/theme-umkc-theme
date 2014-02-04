@@ -17,10 +17,15 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // Place your code here.
-
-  }
-};
-
+    // Adds placeholder text in the islandora solr simple search form
+	$('#block-islandora-solr-simple input.form-text', context).val(Drupal.t('Enter keywords'));
+	  $('#block-islandora-solr-simple input.form-text', context).focus(function() {
+	      if ($(this).val() == Drupal.t('Enter keywords')) $(this).val('');
+	  });
+	  $('#block-islandora-solr-simple input.form-text', context).blur(function() {
+	      if ($(this).val() == '') $(this).val(Drupal.t('Enter keywords'));
+	  });
+	  }
+	};
 
 })(jQuery, Drupal, this, this.document);
