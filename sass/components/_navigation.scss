@@ -32,7 +32,6 @@
 	padding: 1em 3em;
 	.footer-menu {
 		margin: 0;
-		font-size: 95%;
 		ul {
 			padding: 0;
 			margin: 0;
@@ -49,6 +48,10 @@
 				}
 			}
 			li.last {
+				border: 0 none;
+				float: right;
+			}
+			li:nth-child(3) {
 				border: 0 none;
 			}
 		}

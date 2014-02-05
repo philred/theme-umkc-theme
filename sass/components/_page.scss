@@ -2,16 +2,28 @@
 // Pages Blocks and Views Styling
 /////////////////////////////////
 
+h1 {	
+	font-family: 'Ropa Sans';
+	font-weight: normal;
+	font-size: 220%;
+	color: $blue_color;
+}
+
 h2, h3 {
 	font-family: 'Ropa Sans';
 	font-style: italic;
 	font-weight: normal;
+	font-size: 160%;
 	color: $blue_color;
 }
 
 #header {
 	background: url('../images/umkc/header-top.png') repeat-x top left #fff;
 	padding: 1em;
+}
+
+#page {
+	position: relative;
 }
 
 #content {
@@ -25,11 +37,13 @@ h2, h3 {
 	float: left;
 	height: 0; 
 	border-bottom: 245px solid rgb(255, 255, 255);
-	border-bottom: 245px solid rgba(255, 255, 255, .7);
+	border-bottom: 245px solid rgba(255, 255, 255, .5);
 	border-right: 80px solid transparent;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 1.5em;
+    font-family: 'Ropa Sans';
+    font-style: italic;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -38,10 +52,21 @@ h2, h3 {
 			list-style: none;
 			margin-right: 1em;
 			a {
-				border: 2px solid $light_grey;
+			    font-size: 140%;
+				border: 3px solid $light_grey;
 				display: inline-block;
 				height: 150px;
 				width: 150px;
+				line-height: 14.4em;
+				text-decoration: none;
+				text-indent: 5px;
+				color: #E4E5E5;
+				text-shadow: 1px 1px 5px #000;
+				transition: all 0.2s ease 0s;
+			}
+			a:hover {
+				opacity: 0.8;
+				border-color: $blue_color;
 			}
 		}
 		li.topic a {
@@ -88,4 +113,15 @@ h2, h3 {
 			color: $grey_color;
 		}
 	}
+}
+
+// Pages //
+
+div.swish {
+	background: url("../images/umkc/swish.png") no-repeat;
+	width: 1147px;
+	height: 893px;
+	position: absolute;
+	top: -15px;
+	left: -78px;
 }
