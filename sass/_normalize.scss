@@ -83,18 +83,49 @@ audio:not([controls]) {
  * Since we're using Sass, you'll need to declare your font faces here, then you
  * can add them to the font variables in the _base.scss partial.
  */
-/*
+
 @font-face {
-  font-family: 'Example';
-  src: url('../fonts/example.eot');
-  src: url('../fonts/example.eot?iefix') format('eot'),
-    url('../fonts/example.woff') format('woff'),
-    url('../fonts/example.ttf') format('truetype'),
-    url('../fonts/example.svg#webfontOkOndcij') format('svg');
-  font-weight: normal;
+  font-family: 'Libre Baskerville';
   font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(http://themes.googleusercontent.com/static/fonts/librebaskerville/v2/pR0sBQVcY0JZc_ciXjFsK5gtRqbDAavNCEBluaoIIJc.woff) format('woff');
 }
-*/
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'), url(http://themes.googleusercontent.com/static/fonts/librebaskerville/v2/kH7K4InNTm7mmOXXjrA5v5HBV7zGPK_SGwFjOykAVjn3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/xjAJXh38I15wypJXxuGMBrrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ropa Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ropa Sans'), local('RopaSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/ropasans/v3/QnguTd82yEUxQZygH2gm8LO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ropa Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ropa Sans Italic'), local('RopaSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/ropasans/v3/Wprc8_GrCVbQmKc-0NykFLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
 
 /**
  * 1. Set default font family to sans-serif.
@@ -104,8 +135,8 @@ audio:not([controls]) {
  *    `em` units.
  */
 html {
-  font-family: $base-font-family; /* 1 */
-  font-size: 100% * ($base-font-size / 16px); /* 3 */
+  font-family: 'Open Sans'; /* 1 */
+  font-size: 85% * ($base-font-size / 16px); /* 3 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
@@ -126,6 +157,8 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #EFEFE8;
+  color: $grey_color;
 }
 
 /**
@@ -134,14 +167,15 @@ body {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
-a:link {
-}
-a:visited {
+a:link, a:visited {
+  color: $grey_color;
 }
 a:hover,
 a:focus {
+  color: $blue_color;
 }
 a:active {
+  color: $blue_color;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */

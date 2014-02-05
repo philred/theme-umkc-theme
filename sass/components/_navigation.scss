@@ -1,0 +1,59 @@
+////////////////////////
+// Navigation Styling
+////////////////////////
+
+#main-menu, .footer-menu {
+	font-family: 'Ropa Sans';
+	a {
+		text-decoration: none;
+	}
+}
+
+#navigation {
+	float: right;
+	margin-top: 1.7em;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 105%;
+	ul {
+		li {
+			border-right: 2px solid #98B0CA;
+			line-height: 0.8em;
+		}
+		li.last {
+			border: 0 none;
+			padding-right: 0;
+		}
+	}
+}
+
+#footer {
+	background: $blue_color;
+	padding: 1em 3em;
+	.footer-menu {
+		margin: 0;
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				list-style: none;
+				display: inline;
+				border-right: 2px solid #E4E5E5;
+				padding: 0 0.6em;
+				a, a:visited {
+					color: #E4E5E5;
+				}
+				a:hover, a:active {
+					color: $yellow_color;
+				}
+			}
+			li.last {
+				border: 0 none;
+				float: right;
+			}
+			li:nth-child(3) {
+				border: 0 none;
+			}
+		}
+	}
+}

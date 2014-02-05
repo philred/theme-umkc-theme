@@ -1,0 +1,40 @@
+////////////////////////
+// Islandora Styling
+////////////////////////
+
+// Simple Search //
+
+#block-islandora-solr-simple {
+	float: right;
+	width: 35%;
+	margin: 0.5em 0;
+	input.form-text {
+		border: 1px solid $light_grey;
+		border-radius: 7px;
+		color: $light_grey;
+		height: 2.5em;
+		width: 100%;
+		padding-left: 0.5em;
+		font-size: 90%;
+		opacity: 0.8;
+	}
+	input.form-submit {
+		background: url("../images/umkc/search-icon.png") no-repeat;
+		border: 0 none;
+		text-indent: -9999px;
+		height: 24px;
+		width: 24px;
+		float: right;
+		position: relative;
+		top: -28px;
+		right: 5px;
+	}
+	a.adv_search {
+		display: block;
+		text-align: right;
+		font-size: 80%;
+		text-decoration: none;
+		position: relative;
+		left: 1em;
+	}
+}
