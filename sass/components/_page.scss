@@ -24,20 +24,26 @@ h2, h3 {
 
 #page {
 	position: relative;
+	z-index: 5;
 }
 
 #content {
+	margin: 0 auto;
 	clear: both;
 }
 
+#footer {
+	position: relative;
+	z-index: 10;
+}
 
 // Blocks //
 
 .browse-collections {
 	float: left;
 	height: 0; 
-	border-bottom: 245px solid rgb(255, 255, 255);
-	border-bottom: 245px solid rgba(255, 255, 255, .5);
+	border-bottom: 263px solid rgb(255, 255, 255);
+	border-bottom: 263px solid rgba(255, 255, 255, .5);
 	border-right: 80px solid transparent;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
@@ -93,6 +99,7 @@ h2, h3 {
 	width: 28%;
 	margin-right: 5%;
 	border-bottom: 5px solid $blue_color;
+	padding-bottom: 1em;
 	h2 {
 		margin: 0;
 	}
@@ -120,7 +127,7 @@ h2, h3 {
 div.swish {
 	background: url("../images/umkc/swish.png") no-repeat;
 	width: 1147px;
-	height: 893px;
+	height: 1023px;
 	position: absolute;
 	top: -15px;
 	left: -78px;

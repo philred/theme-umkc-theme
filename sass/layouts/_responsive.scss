@@ -34,7 +34,7 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -59,7 +59,7 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 480px) {
   #main {
     /* Move all the children of #main down to make room. */
-    padding: $nav-height 0;
+    padding: $nav-height 1em 6em;
     position: relative;
   }
   #navigation {
