@@ -1866,12 +1866,17 @@ tr.selected td {
   left: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000344}}
-.islandora-solr-search-result {
-  border-bottom: 2px dotted #266295;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000343}}
+.islandora-solr-search-results {
+  float: left;
+  padding-top: 1.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000346}}
-.islandora-solr-search-result .islandora-solr-search-result-inner {
+.islandora-solr-search-results .islandora-solr-search-result {
+  border-bottom: 2px dotted #266295;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000348}}
+.islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
   height: 0;
   border-bottom: 263px solid white;
   border-bottom: 263px solid rgba(255, 255, 255, 0.5);
@@ -1881,23 +1886,82 @@ tr.selected td {
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000353}}
-.islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000355}}
+.islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields {
   border: 0 none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000355}}
-.islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt, .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000357}}
+.islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt, .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd {
   border: 0 none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000367}}
 #block-islandora-solr-basic-facets ul {
   list-style: none;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000371}}
 #block-islandora-solr-basic-facets .plusminus {
   display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000376}}
+#block-islandora-solr-sort, #block-islandora-solr-current-query {
+  margin-bottom: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000378}}
+#block-islandora-solr-sort h2, #block-islandora-solr-current-query h2 {
+  color: #767777;
+  float: left;
+  font-size: 135%;
+  line-height: 1.1em;
+  margin-right: 0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000385}}
+#block-islandora-solr-sort ul, #block-islandora-solr-current-query ul {
+  list-style: none;
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000389}}
+#block-islandora-solr-sort ul li, #block-islandora-solr-current-query ul li {
+  display: inline;
+  padding: 0 0.25em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000392}}
+#block-islandora-solr-sort ul li a, #block-islandora-solr-current-query ul li a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\0000395}}
+#block-islandora-solr-sort ul li a.active, #block-islandora-solr-current-query ul li a.active {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\00003104}}
+#block-islandora-solr-current-query h3 {
+  color: #767777;
+  float: left;
+  font-size: 135%;
+  line-height: 1.1em;
+  margin-right: 0.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\00003113}}
+#islandora-solr-top {
+  min-height: 25px;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\00003116}}
+#islandora-solr-top #islandora-solr-result-count:after {
+  content: "Pages";
+  margin-left: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_islandora\.scss}line{font-family:\00003123}}
+.islandora-solr-content ul.pager {
+  position: relative;
+  top: -25px;
+  margin: 0;
+  padding: 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc_theme\/sass\/components\/_page\.scss}line{font-family:\000035}}

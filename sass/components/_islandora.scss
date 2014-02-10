@@ -40,20 +40,23 @@
 }
 
 // Search Results and Facets //
-
-.islandora-solr-search-result {	
-	border-bottom: 2px dotted $blue_color;
-	.islandora-solr-search-result-inner {
-		height: 0; 
-		border-bottom: 263px solid rgb(255, 255, 255);
-		border-bottom: 263px solid rgba(255, 255, 255, .5);
-		border-right: 80px solid transparent;
-	    -webkit-background-clip: padding-box; /* for Safari */
-	    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-		dl.solr-fields {
-			border: 0 none;
-			dt, dd {
+.islandora-solr-search-results {
+	float: left;
+	padding-top: 1.5em;
+	.islandora-solr-search-result {	
+		border-bottom: 2px dotted $blue_color;
+		.islandora-solr-search-result-inner {
+			height: 0; 
+			border-bottom: 263px solid rgb(255, 255, 255);
+			border-bottom: 263px solid rgba(255, 255, 255, .5);
+			border-right: 80px solid transparent;
+		    -webkit-background-clip: padding-box; /* for Safari */
+		    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+			dl.solr-fields {
 				border: 0 none;
+				dt, dd {
+					border: 0 none;
+				}
 			}
 		}
 	}
@@ -68,4 +71,59 @@
 	.plusminus {
 		display: none;
 	}
+}
+
+#block-islandora-solr-sort {
+	margin-bottom: 0.5em;
+	h2 {
+		color: $light_grey;
+		float: left;
+		font-size: 135%;
+		line-height: 1.1em;
+		margin-right: 0.25em;
+	}
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			display: inline;
+			padding: 0 0.25em;
+			a {
+				text-decoration: none;
+			}
+			a.active {
+				text-decoration: underline;	
+			}
+		}
+	}
+}
+
+#block-islandora-solr-current-query {
+	@extend #block-islandora-solr-sort;
+	h3 {
+		color: $light_grey;
+		float: left;
+		font-size: 135%;
+		line-height: 1.1em;
+		margin-right: 0.25em;		
+	}
+}
+
+#islandora-solr-top {
+  min-height: 25px;
+  float: left;
+  #islandora-solr-result-count:after {
+  	content: "Pages";
+  	margin-left: 0.5em;
+  }
+}
+
+.islandora-solr-content {
+	ul.pager {
+		position: relative;
+		top: -25px;
+		margin: 0;
+		padding: 0;
+	}	
 }
