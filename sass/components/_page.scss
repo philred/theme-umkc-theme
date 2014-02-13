@@ -134,12 +134,13 @@ h2, h3 {
 // Pages //
 
 div.swish {
-	background: url("../images/umkc/swish.png") no-repeat;
+	background: url("../images/umkc/swish.png") repeat-y;
 	width: 1147px;
-	height: 1023px;
+	height: 100%;
 	position: absolute;
 	top: -15px;
 	left: -78px;
+	opacity: 0.7;
 }
 
 
@@ -147,4 +148,16 @@ div.swish {
 
 .region-sidebar-second {
 	padding-top: 25px;
+ }
+
+
+ // Not Front //
+
+ .not-front {
+ 	#name-and-slogan {
+ 		margin-left: 0.5em;
+ 	}
+ 	#block-islandora-solr-simple {
+ 		margin-right: 0.5em;
+ 	}
  }

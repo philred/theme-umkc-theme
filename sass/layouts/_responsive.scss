@@ -73,9 +73,9 @@ $zen-auto-include-item-base: false;
   }
 }
 
-} // End of @if $zen-reverse-all-floats == true
+} /* End of @if $zen-reverse-all-floats == true*/
 
-@media all and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
   .browse-collections {
     border-right: 0 none !important;
     width: 100%;
@@ -86,8 +86,6 @@ $zen-auto-include-item-base: false;
   width: 87% !important;
   }
 }
-
-
 
 
 /**
