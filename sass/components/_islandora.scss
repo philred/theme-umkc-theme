@@ -7,7 +7,7 @@
 #block-islandora-solr-simple {
 	float: right;
 	width: 35%;
-	margin: 0.5em 0;
+	margin: 1em 2em 3em;
 	input.form-text {
 		border: 1px solid $light_grey;
 		border-radius: 7px;
@@ -37,4 +37,126 @@
 		position: relative;
 		left: 1em;
 	}
+}
+
+// Search Results and Facets //
+.islandora-solr-search-results {
+	float: left;
+	margin-top: 2.5em;
+	.islandora-solr-search-result {	
+		border-bottom: 2px dotted $blue_color;
+		margin-bottom: 2.5em;
+		.islandora-solr-search-result-inner {
+			height: 0; 
+			border-bottom: 180px solid rgb(255, 255, 255);
+			border-bottom: 180px solid rgba(255, 255, 255, .6);
+			border-right: 80px solid transparent;
+		    -webkit-background-clip: padding-box; /* for Safari */
+		    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+		    dl.solr-thumb {
+		    	margin: 15px;
+		    	img {
+		    		border: 2px solid $blue_color;
+		    	}
+		    }
+			dl.solr-fields {
+				border: 0 none;
+				width: 78%;
+				margin-top: 10px;
+				dt {
+					float: left;
+				}
+				dt, dd {
+					border: 0 none;
+					padding: 3px 0 0;
+					font-size: 95%;
+				}
+				dt.dc-title {
+					display: none;
+				}
+				dd.dc-title {
+					font-family: "Libre Baskerville";
+					font-size: 115%;
+					padding-bottom: 0.5em;
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#block-islandora-solr-basic-facets {
+	.islandora-solr-facet-wrapper {
+		h3 {
+			margin: 0 0 0.5em;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+		.plusminus {
+			display: none;
+		}
+	}
+}
+
+
+
+#block-islandora-solr-sort {
+	margin: 0;
+	position: relative;
+	top: 10px;
+	h2 {
+		color: $light_grey;
+		float: left;
+		font-size: 135%;
+		line-height: 1.1em;
+		margin-right: 0.25em;
+	}
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+
+		li {
+			display: inline;
+			padding: 0 0.25em;
+			a {
+				text-decoration: none;
+			}
+			a.active {
+				text-decoration: underline;	
+			}
+		}
+	}
+}
+
+#block-islandora-solr-current-query {
+	@extend #block-islandora-solr-sort;
+	h3 {
+		color: $light_grey;
+		float: left;
+		font-size: 135%;
+		line-height: 1.1em;
+		margin-right: 0.25em;		
+	}
+}
+
+#islandora-solr-top {
+  float: left;
+  position: relative;
+  top: 25px;
+  #islandora-solr-result-count:after {
+  	content: "Pages";
+  	margin-left: 0.5em;
+  }
+}
+
+.islandora-solr-content {
+	ul.pager {
+		margin: 0;
+		padding: 0;
+	}	
 }

@@ -92,14 +92,16 @@
 /* Wrapper for website name and slogan. */
 .header__name-and-slogan {
   float: left;
+  margin-left: 2.5em;
 }
 
 /* The name of the website. */
 .header__site-name {
-  margin: 0 0 5px;
+  margin: 0;
   font-family: 'Ropa Sans';
   font-weight: normal;
   @include adjust-font-size-to( $h1-font-size );
+  line-height: 1.3em;
 }
 
 /* The link around the name of the website. */

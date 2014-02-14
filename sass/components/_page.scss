@@ -13,7 +13,7 @@ h2, h3 {
 	font-family: 'Ropa Sans';
 	font-style: italic;
 	font-weight: normal;
-	font-size: 160%;
+	font-size: 175%;
 	color: $blue_color;
 }
 
@@ -24,33 +24,42 @@ h2, h3 {
 
 #page {
 	position: relative;
+	z-index: 5;
 }
 
 #content {
+	margin: 1em auto 0;
 	clear: both;
 }
 
+#footer {
+	position: relative;
+	z-index: 10;
+}
 
 // Blocks //
 
 .browse-collections {
 	float: left;
 	height: 0; 
-	border-bottom: 245px solid rgb(255, 255, 255);
-	border-bottom: 245px solid rgba(255, 255, 255, .5);
+	border-bottom: 280px solid rgb(255, 255, 255);
+	border-bottom: 280px solid rgba(255, 255, 255, .5);
 	border-right: 80px solid transparent;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 1.5em;
     font-family: 'Ropa Sans';
     font-style: italic;
+    h2 {
+    	margin-bottom: 0.7em;
+    }
 	ul {
 		margin: 0;
 		padding: 0;
 		li {
 			float: left;	
 			list-style: none;
-			margin-right: 1em;
+			margin-right: 1.5em;
 			a {
 			    font-size: 140%;
 				border: 3px solid $light_grey;
@@ -81,20 +90,27 @@ h2, h3 {
 	}
 }
 
-// Views //
+// Galleria Slideshow Styling //
 
 .slideshow {
-	float: left;
-	margin: 2em 0;
+	margin-bottom: 2.5em;
+	.galleria-container {
+		background: $light_grey;
+		max-width: 100%;
+	}
 }
+
+
+// Views //
 
 .welcome-message {
 	float: left;
-	width: 28%;
-	margin-right: 5%;
+	width: 32%;
+	margin: 0 3% 0 1.5em;
 	border-bottom: 5px solid $blue_color;
+	padding-bottom: 1em;
 	h2 {
-		margin: 0;
+		margin: 0 0 0.5em;
 	}
 	p {
 		margin: 0;
@@ -118,10 +134,30 @@ h2, h3 {
 // Pages //
 
 div.swish {
-	background: url("../images/umkc/swish.png") no-repeat;
+	background: url("../images/umkc/swish.png") repeat-y;
 	width: 1147px;
-	height: 893px;
+	height: 100%;
 	position: absolute;
 	top: -15px;
 	left: -78px;
+	opacity: 0.7;
 }
+
+
+// Sidebars //
+
+.region-sidebar-second {
+	padding-top: 25px;
+ }
+
+
+ // Not Front //
+
+ .not-front {
+ 	#name-and-slogan {
+ 		margin-left: 0.5em;
+ 	}
+ 	#block-islandora-solr-simple {
+ 		margin-right: 0.5em;
+ 	}
+ }
