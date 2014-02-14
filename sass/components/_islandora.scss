@@ -61,7 +61,7 @@
 		    }
 			dl.solr-fields {
 				border: 0 none;
-				width: 78%;
+				width: 77%;
 				margin-top: 10px;
 				dt {
 					float: left;
@@ -81,6 +81,9 @@
 					a {
 						text-decoration: none;
 					}
+				}
+				.dc-description {
+					float: left;
 				}
 			}
 		}
@@ -159,4 +162,24 @@
 		margin: 0;
 		padding: 0;
 	}	
+}
+
+
+// Object Pages //
+
+body.no-sidebars {
+	.islandora-basic-image-content {
+	  float: left;
+	  width: auto;
+	  img {
+	  	width: 100%;
+	  }
+	}
+	.islandora-audio-content, .islandora-pdf-content, .islandora-video-content {
+		@extend .islandora-basic-image-content;	
+	}
+}
+
+#clip, .islandora-pdf-link {
+	margin-left: 0.5em;
 }
