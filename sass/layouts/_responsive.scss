@@ -85,13 +85,21 @@ $zen-auto-include-item-base: false;
   margin: 2.5em 2.3em 1.3em !important;
   width: 87% !important;
   }
+  .not-front #block-islandora-solr-simple {
+    margin: 2.5em 0 1.3em !important;  
+    width: 100% !important;
+  }
+  #content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
 /**
  * Use 3 grid columns for smaller screens.
  */
-@media all and (min-width: 480px) and (max-width: 959px) {
+@media all and (min-width: 482px) and (max-width: 959px) {
 
   $zen-column-count: 3;
 
@@ -181,6 +189,17 @@ $zen-auto-include-item-base: false;
             color: $grey_color !important;
             text-indent: none !important;
           }
+    }
+  }
+  .islandora-solr-search-results {
+    .islandora-solr-search-result {
+      .islandora-solr-search-result-inner {
+        border-right: 0 none !important;
+        font-size: 90%;
+        dt {
+          padding-right: 2px;
+        }
+      }
     }
   }
 }
