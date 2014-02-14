@@ -98,6 +98,19 @@ h2, h3 {
 		background: $light_grey;
 		max-width: 100%;
 	}
+
+	.galleria-info {
+		left: 10px;
+		bottom: 60px;
+		top: inherit;
+		.galleria-info-text {
+			display: block;
+			opacity: 0.8;
+		}
+		.galleria-info-link {
+			display: none;
+		}
+	}
 }
 
 
