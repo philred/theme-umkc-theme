@@ -183,3 +183,34 @@ body.no-sidebars {
 #clip, .islandora-pdf-link {
 	margin-left: 0.5em;
 }
+
+
+// Browse Views and Pages //
+
+body.page-browse {
+	h2 {
+	}
+}
+.view-collections {
+	height: 0; 
+	border-bottom: 280px solid rgb(255, 255, 255);
+	border-bottom: 280px solid rgba(255, 255, 255, .5);
+	border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 1.5em;
+    font-family: 'Ropa Sans';
+}
+.types {
+	@extend .view-collections;
+}
+.topics {
+	@extend .view-collections;
+}
+
+ul.pager {
+	display: none;
+}
+.more-link {
+	float: right;	
+}
