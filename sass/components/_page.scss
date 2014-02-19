@@ -98,6 +98,9 @@ h2, h3 {
 		background: $light_grey;
 		max-width: 100%;
 	}
+	.galleria-thumbnails-container {
+		
+	}
 
 	.galleria-info {
 		left: 10px;
@@ -128,19 +131,6 @@ h2, h3 {
 	p {
 		margin: 0;
 		line-height: 1.75em;
-	}
-	.more-link {
-		text-align: left;
-		margin-top: 1.5em;
-		font-family: 'Ropa Sans';
-		font-style: italic;
-		a {
-			text-decoration: none;
-			color: $blue_color;
-		}
-		a:hover, a:visited {
-			color: $grey_color;
-		}
 	}
 }
 

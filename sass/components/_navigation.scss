@@ -57,3 +57,17 @@
 		}
 	}
 }
+
+.more-link {
+	text-align: left;
+	margin-top: 1.5em;
+	font-family: 'Ropa Sans';
+	font-style: italic;
+	a:link, a:visited {
+		text-decoration: none;
+		color: $blue_color;
+	}
+	a:hover, a:active {
+		color: $grey_color;
+	}
+}
