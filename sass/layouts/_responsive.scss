@@ -261,6 +261,7 @@ $zen-auto-include-item-base: false;
     /* Span 1 column, starting in 1st column from left. */
     .region-sidebar-first {
       @include zen-grid-item(1, 1);
+      margin-top: 1.8em;
     }
   }
 
