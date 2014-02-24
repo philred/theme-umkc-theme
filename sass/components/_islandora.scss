@@ -42,7 +42,7 @@
 // Advanced Search //
 
 #block-islandora-solr-advanced {
-	margin: 0;
+	margin: 1.5em 0 0;
 	div {
 		display: inline;
 	}
@@ -67,6 +67,7 @@
 }
 
 // Search Results and Facets //
+
 .islandora-solr-search-results {
 	float: left;
 	margin-top: 2.5em;
@@ -137,13 +138,12 @@
 
 #block-islandora-solr-sort {
 	margin: 0;
-	position: relative;
-	top: 10px;
+	height: 2em;
 	h2 {
 		color: $light_grey;
 		float: left;
 		font-size: 135%;
-		line-height: 1.1em;
+		line-height: 1.3em;
 		margin-right: 0.25em;
 	}
 	ul {
@@ -185,12 +185,60 @@
 }
 
 .islandora-solr-content {
+	float: left;
+	clear: left;
 	ul.pager {
 		margin: 0;
 		padding: 0;
 	}	
+	.no-results {
+		margin: 2em 0;
+		font-size: 110%;
+	}
 }
 
+// Islandora Displays //
+
+#block-islandora-solr-display-switch {
+  float: right;
+  left: -20px;
+  position: relative;
+  top: -46px;
+  ul {
+  	li {
+  		float: left;
+  		list-style: none;
+  		a {
+  			padding: 0 2px;
+			display: inline-block;
+			height: 22px;
+			outline: medium none;
+			text-indent: -9999px;
+			width: 22px;
+  		}
+  		a.display-default {
+  			background: url("../images/umkc/display-grid-list.png") no-repeat top left;
+  		}
+  		a.display-grid {
+  			background: url("../images/umkc/display-grid.png") no-repeat top left;
+  		}
+  	}	
+  }
+}
+
+.islandora-solr-grid {
+	width: 100%;
+	dl.solr-grid-field {
+		margin: 1.5em 4% 1.5em 0;
+	}
+	dd.solr-grid-caption {
+		font-family: "Libre Baskerville";
+		margin-top: 5px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
 
 // Object Pages //
 
@@ -217,6 +265,12 @@ body.no-sidebars {
 body.page-browse {
 	h2 {
 	}
+	ul.pager {
+		display: none;
+	}
+	.more-link {
+		float: right;	
+	}
 }
 .view-collections {
 	height: 0; 
@@ -227,6 +281,20 @@ body.page-browse {
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 1.5em;
     font-family: 'Ropa Sans';
+    font-size: 110%;
+    table {
+    	width: 100%;	
+	    td {
+	    	margin: 1em 0.5%;
+	    	display: inline-block;
+	    	.views-field-field-thumbnail img {
+	    		border: 3px solid $light_grey;
+	    	}
+	    }
+	    a {
+	    	text-decoration: none;
+	    }
+    }
 }
 .types {
 	@extend .view-collections;
@@ -235,9 +303,4 @@ body.page-browse {
 	@extend .view-collections;
 }
 
-ul.pager {
-	display: none;
-}
-.more-link {
-	float: right;	
-}
+

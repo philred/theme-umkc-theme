@@ -135,7 +135,7 @@ function umkc_theme_preprocess_block(&$variables, $hook) {
 
 function umkc_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $link = array(
-    '#markup' => l(t("Advanced Search"), "adv-search", array('attributes' => array('class' => array('adv_search')))),
+    '#markup' => l(t("Advanced Search"), "islandora-search", array('attributes' => array('class' => array('adv_search')))),
   );
   $form['simple']['advanced_link'] = $link;
 }
