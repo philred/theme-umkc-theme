@@ -577,3 +577,8 @@ table {
   @include leader(1);
   @include trailer(1);
 }
+
+[tabindex="-1"] {
+  outline: 0;
+}
+

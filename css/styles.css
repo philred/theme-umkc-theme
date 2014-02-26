@@ -629,6 +629,11 @@ table {
   margin-bottom: 1.5em;
 }
 
+/* line 581, ../sass/_normalize.scss */
+[tabindex="-1"] {
+  outline: 0;
+}
+
 /* Layout rules */
 /**
  * @file
@@ -888,14 +893,48 @@ table {
   .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dt {
     padding-right: 2px;
   }
+
+  /* Browse pages */
+  /* line 209, ../sass/layouts/_responsive.scss */
+  .view-collections, .types, .topics {
+    height: 0;
+    border-bottom: 415px solid white;
+    border-bottom: 415px solid rgba(255, 255, 255, 0.5);
+    border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+  }
+  /* line 219, ../sass/layouts/_responsive.scss */
+  .view-collections table, .types table, .topics table {
+    width: 130%;
+  }
+  /* line 221, ../sass/layouts/_responsive.scss */
+  .view-collections table td, .types table td, .topics table td {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 29%;
+  }
+  /* line 226, ../sass/layouts/_responsive.scss */
+  .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
+    border: 3px solid #767777;
+  }
+  /* line 231, ../sass/layouts/_responsive.scss */
+  .view-collections table a, .types table a, .topics table a {
+    text-decoration: none;
+  }
 }
 @media all and (min-width: 768px) and (max-width: 934px) {
   /* Custom */
-  /* line 213, ../sass/layouts/_responsive.scss */
+  /* line 247, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 100px;
   }
-  /* line 215, ../sass/layouts/_responsive.scss */
+  /* line 249, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 100px !important;
     height: 100px !important;
@@ -904,19 +943,53 @@ table {
     color: #414042 !important;
     text-indent: none !important;
   }
+
+  /* Browse pages */
+  /* line 261, ../sass/layouts/_responsive.scss */
+  .view-collections, .types, .topics {
+    height: 0;
+    border-bottom: 415px solid white;
+    border-bottom: 415px solid rgba(255, 255, 255, 0.5);
+    border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+  }
+  /* line 271, ../sass/layouts/_responsive.scss */
+  .view-collections table, .types table, .topics table {
+    width: 100%;
+  }
+  /* line 273, ../sass/layouts/_responsive.scss */
+  .view-collections table td, .types table td, .topics table td {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 29%;
+  }
+  /* line 278, ../sass/layouts/_responsive.scss */
+  .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
+    border: 3px solid #767777;
+  }
+  /* line 283, ../sass/layouts/_responsive.scss */
+  .view-collections table a, .types table a, .topics table a {
+    text-decoration: none;
+  }
 }
 @media all and (min-width: 935px) and (max-width: 1080px) {
   /* Custom */
-  /* line 230, ../sass/layouts/_responsive.scss */
+  /* line 298, ../sass/layouts/_responsive.scss */
   .browse-collections {
     border-bottom: 280px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 70px solid transparent !important;
   }
-  /* line 233, ../sass/layouts/_responsive.scss */
+  /* line 301, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 125px;
   }
-  /* line 235, ../sass/layouts/_responsive.scss */
+  /* line 303, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 125px !important;
     height: 125px !important;
@@ -926,6 +999,39 @@ table {
     text-indent: none !important;
   }
 }
+@media all and (min-width: 935px) {
+  /* Browse pages */
+  /* line 318, ../sass/layouts/_responsive.scss */
+  .view-collections, .types, .topics {
+    height: 0;
+    border-bottom: 240px solid white;
+    border-bottom: 240px solid rgba(255, 255, 255, 0.5);
+    border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+  }
+  /* line 328, ../sass/layouts/_responsive.scss */
+  .view-collections table, .types table, .topics table {
+    width: 100%;
+  }
+  /* line 331, ../sass/layouts/_responsive.scss */
+  .view-collections table td .views-field-field-thumbnail, .types table td .views-field-field-thumbnail, .topics table td .views-field-field-thumbnail {
+    margin: 10px 5px 0 0;
+  }
+  /* line 333, ../sass/layouts/_responsive.scss */
+  .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
+    border: 3px solid #767777;
+  }
+  /* line 338, ../sass/layouts/_responsive.scss */
+  .view-collections table a, .types table a, .topics table a {
+    text-decoration: none;
+  }
+}
 /**
  * Use 5 grid columns for larger screens.
  */
@@ -933,19 +1039,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 258, ../sass/layouts/_responsive.scss */
+  /* line 361, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 260, ../sass/layouts/_responsive.scss */
+  /* line 363, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 265, ../sass/layouts/_responsive.scss */
+  /* line 368, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -957,19 +1063,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 274, ../sass/layouts/_responsive.scss */
+  /* line 377, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 276, ../sass/layouts/_responsive.scss */
+  /* line 379, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 281, ../sass/layouts/_responsive.scss */
+  /* line 384, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -980,27 +1086,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 289, ../sass/layouts/_responsive.scss */
+  /* line 392, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 291, ../sass/layouts/_responsive.scss */
+  /* line 394, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 296, ../sass/layouts/_responsive.scss */
+  /* line 399, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 301, ../sass/layouts/_responsive.scss */
+  /* line 404, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -2210,42 +2316,6 @@ body.no-sidebars .islandora-basic-image-content img, body.no-sidebars .islandora
 /* line 268, ../sass/components/_islandora.scss */
 body.page-browse ul.pager {
   display: none;
-}
-/* line 271, ../sass/components/_islandora.scss */
-body.page-browse .more-link {
-  float: right;
-}
-
-/* line 275, ../sass/components/_islandora.scss */
-.view-collections, .types, .topics {
-  height: 0;
-  border-bottom: 280px solid white;
-  border-bottom: 280px solid rgba(255, 255, 255, 0.5);
-  border-right: 80px solid transparent;
-  -webkit-background-clip: padding-box;
-  /* for Safari */
-  background-clip: padding-box;
-  /* for IE9+, Firefox 4+, Opera, Chrome */
-  padding-left: 1.5em;
-  font-family: 'Ropa Sans';
-  font-size: 110%;
-}
-/* line 285, ../sass/components/_islandora.scss */
-.view-collections table, .types table, .topics table {
-  width: 100%;
-}
-/* line 287, ../sass/components/_islandora.scss */
-.view-collections table td, .types table td, .topics table td {
-  margin: 1em 0.5%;
-  display: inline-block;
-}
-/* line 290, ../sass/components/_islandora.scss */
-.view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
-  border: 3px solid #767777;
-}
-/* line 294, ../sass/components/_islandora.scss */
-.view-collections table a, .types table a, .topics table a {
-  text-decoration: none;
 }
 
 /* line 5, ../sass/components/_page.scss */
