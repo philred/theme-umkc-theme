@@ -69,8 +69,6 @@
 // Search Results and Facets //
 
 .islandora-solr-search-results {
-	float: left;
-	margin-top: 2.5em;
 	.islandora-solr-search-result {	
 		border-bottom: 2px dotted $blue_color;
 		margin-bottom: 2.5em;
@@ -106,6 +104,7 @@
 					font-family: "Libre Baskerville";
 					font-size: 115%;
 					padding-bottom: 0.5em;
+					display: block;
 					a {
 						text-decoration: none;
 					}

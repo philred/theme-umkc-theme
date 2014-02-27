@@ -71,3 +71,17 @@
 		color: $grey_color;
 	}
 }
+
+// Sidebar Navs //
+
+.region-sidebar-first {
+	.block-menu {
+		ul {
+			padding: 0;
+			li {
+				list-style: none;
+				padding: 2px 0;
+			}
+		}
+	}
+}
