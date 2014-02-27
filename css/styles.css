@@ -716,32 +716,66 @@ table {
 @media all and (min-width: 320px) and (max-width: 480px) {
   /* line 79, ../sass/layouts/_responsive.scss */
   .browse-collections {
+    margin-top: 1.5em;
     border-right: 0 none !important;
-    width: 100%;
+    width: 95%;
+  }
+  /* line 83, ../sass/layouts/_responsive.scss */
+  .browse-collections ul li {
+    max-height: 100px;
+    margin-right: 1em !important;
+  }
+  /* line 86, ../sass/layouts/_responsive.scss */
+  .browse-collections ul li a {
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 13em !important;
+    text-shadow: none !important;
+    color: #414042 !important;
+    text-indent: none !important;
+  }
+  /* line 95, ../sass/layouts/_responsive.scss */
+  .browse-collections li.collection {
+    margin-right: 0 !important;
   }
 
-  /* line 83, ../sass/layouts/_responsive.scss */
+  /* line 99, ../sass/layouts/_responsive.scss */
+  .welcome-message {
+    width: 91% !important;
+  }
+
+  /* line 102, ../sass/layouts/_responsive.scss */
   #block-islandora-solr-simple {
     float: left !important;
     margin: 2.5em 2.3em 1.3em !important;
     width: 87% !important;
   }
 
-  /* line 88, ../sass/layouts/_responsive.scss */
+  /* line 107, ../sass/layouts/_responsive.scss */
   .not-front #block-islandora-solr-simple {
     margin: 2.5em 0 1.3em !important;
     width: 100% !important;
   }
 
-  /* line 92, ../sass/layouts/_responsive.scss */
+  /* line 111, ../sass/layouts/_responsive.scss */
   #content {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 96, ../sass/layouts/_responsive.scss */
+  /* line 115, ../sass/layouts/_responsive.scss */
   .region-sidebar-first {
     clear: both;
+  }
+
+  /* line 118, ../sass/layouts/_responsive.scss */
+  #footer {
+    padding: 1em 1em !important;
+  }
+  /* line 120, ../sass/layouts/_responsive.scss */
+  #footer .footer-menu li.last {
+    float: left !important;
+    margin-top: 5px;
   }
 }
 /**
@@ -751,19 +785,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 112, ../sass/layouts/_responsive.scss */
+  /* line 138, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 114, ../sass/layouts/_responsive.scss */
+  /* line 140, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 119, ../sass/layouts/_responsive.scss */
+  /* line 145, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -774,19 +808,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 127, ../sass/layouts/_responsive.scss */
+  /* line 153, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 129, ../sass/layouts/_responsive.scss */
+  /* line 155, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 160, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -797,27 +831,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 142, ../sass/layouts/_responsive.scss */
+  /* line 168, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 144, ../sass/layouts/_responsive.scss */
+  /* line 170, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 149, ../sass/layouts/_responsive.scss */
+  /* line 175, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 154, ../sass/layouts/_responsive.scss */
+  /* line 180, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -831,7 +865,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 160, ../sass/layouts/_responsive.scss */
+  /* line 186, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -841,7 +875,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 190, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -849,14 +883,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 169, ../sass/layouts/_responsive.scss */
+  /* line 195, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 173, ../sass/layouts/_responsive.scss */
+  /* line 199, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -864,17 +898,21 @@ table {
     margin-right: -100%;
   }
 }
-@media all and (min-width: 480px) and (max-width: 767px) {
-  /* line 181, ../sass/layouts/_responsive.scss */
+@media all and (min-width: 480px) and (max-width: 800px) {
+  /* line 207, ../sass/layouts/_responsive.scss */
   .welcome-message {
     width: 95% !important;
   }
 
-  /* line 185, ../sass/layouts/_responsive.scss */
+  /* line 210, ../sass/layouts/_responsive.scss */
+  .browse-collections {
+    margin-top: 1.5em;
+  }
+  /* line 212, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 100px;
   }
-  /* line 187, ../sass/layouts/_responsive.scss */
+  /* line 214, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 100px !important;
     height: 100px !important;
@@ -884,18 +922,18 @@ table {
     text-indent: none !important;
   }
 
-  /* line 199, ../sass/layouts/_responsive.scss */
+  /* line 226, ../sass/layouts/_responsive.scss */
   .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
     border-right: 0 none !important;
     font-size: 90%;
   }
-  /* line 202, ../sass/layouts/_responsive.scss */
+  /* line 229, ../sass/layouts/_responsive.scss */
   .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dt {
     padding-right: 2px;
   }
 
   /* Browse pages */
-  /* line 209, ../sass/layouts/_responsive.scss */
+  /* line 236, ../sass/layouts/_responsive.scss */
   .view-collections, .types, .topics {
     height: 0;
     border-bottom: 415px solid white;
@@ -909,32 +947,27 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 219, ../sass/layouts/_responsive.scss */
-  .view-collections table, .types table, .topics table {
-    width: 130%;
-  }
-  /* line 221, ../sass/layouts/_responsive.scss */
+  /* line 247, ../sass/layouts/_responsive.scss */
   .view-collections table td, .types table td, .topics table td {
     display: inline-block;
-    margin: 10px 5px 0 0;
-    width: 29%;
+    margin: 10px 3% 0 0;
   }
-  /* line 226, ../sass/layouts/_responsive.scss */
+  /* line 251, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 231, ../sass/layouts/_responsive.scss */
+  /* line 256, ../sass/layouts/_responsive.scss */
   .view-collections table a, .types table a, .topics table a {
     text-decoration: none;
   }
 }
-@media all and (min-width: 768px) and (max-width: 934px) {
+@media all and (min-width: 801px) and (max-width: 934px) {
   /* Custom */
-  /* line 247, ../sass/layouts/_responsive.scss */
+  /* line 272, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 100px;
   }
-  /* line 249, ../sass/layouts/_responsive.scss */
+  /* line 274, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 100px !important;
     height: 100px !important;
@@ -945,7 +978,7 @@ table {
   }
 
   /* Browse pages */
-  /* line 261, ../sass/layouts/_responsive.scss */
+  /* line 286, ../sass/layouts/_responsive.scss */
   .view-collections, .types, .topics {
     height: 0;
     border-bottom: 415px solid white;
@@ -959,37 +992,32 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 271, ../sass/layouts/_responsive.scss */
-  .view-collections table, .types table, .topics table {
-    width: 100%;
-  }
-  /* line 273, ../sass/layouts/_responsive.scss */
+  /* line 297, ../sass/layouts/_responsive.scss */
   .view-collections table td, .types table td, .topics table td {
     display: inline-block;
-    margin: 10px 5px 0 0;
-    width: 29%;
+    margin: 10px 2% 0 0;
   }
-  /* line 278, ../sass/layouts/_responsive.scss */
+  /* line 301, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 283, ../sass/layouts/_responsive.scss */
+  /* line 306, ../sass/layouts/_responsive.scss */
   .view-collections table a, .types table a, .topics table a {
     text-decoration: none;
   }
 }
 @media all and (min-width: 935px) and (max-width: 1080px) {
   /* Custom */
-  /* line 298, ../sass/layouts/_responsive.scss */
+  /* line 321, ../sass/layouts/_responsive.scss */
   .browse-collections {
     border-bottom: 280px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 70px solid transparent !important;
   }
-  /* line 301, ../sass/layouts/_responsive.scss */
+  /* line 324, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 125px;
   }
-  /* line 303, ../sass/layouts/_responsive.scss */
+  /* line 326, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 125px !important;
     height: 125px !important;
@@ -999,9 +1027,22 @@ table {
     text-indent: none !important;
   }
 }
+@media all and (min-width: 700px) and (max-width: 959px) {
+  /* line 340, ../sass/layouts/_responsive.scss */
+  .region-sidebar-first {
+    width: 23.33% !important;
+    margin-right: -3.33% !important;
+  }
+
+  /* line 344, ../sass/layouts/_responsive.scss */
+  .sidebar-first #content {
+    width: 76.66% !important;
+    margin-left: 23.33% !important;
+  }
+}
 @media all and (min-width: 935px) {
   /* Browse pages */
-  /* line 318, ../sass/layouts/_responsive.scss */
+  /* line 352, ../sass/layouts/_responsive.scss */
   .view-collections, .types, .topics {
     height: 0;
     border-bottom: 240px solid white;
@@ -1015,19 +1056,19 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 328, ../sass/layouts/_responsive.scss */
+  /* line 362, ../sass/layouts/_responsive.scss */
   .view-collections table, .types table, .topics table {
     width: 100%;
   }
-  /* line 331, ../sass/layouts/_responsive.scss */
+  /* line 365, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail, .types table td .views-field-field-thumbnail, .topics table td .views-field-field-thumbnail {
     margin: 10px 5px 0 0;
   }
-  /* line 333, ../sass/layouts/_responsive.scss */
+  /* line 367, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .types table td .views-field-field-thumbnail img, .topics table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 338, ../sass/layouts/_responsive.scss */
+  /* line 372, ../sass/layouts/_responsive.scss */
   .view-collections table a, .types table a, .topics table a {
     text-decoration: none;
   }
@@ -1039,43 +1080,42 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 361, ../sass/layouts/_responsive.scss */
+  /* line 395, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 363, ../sass/layouts/_responsive.scss */
+  /* line 397, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 368, ../sass/layouts/_responsive.scss */
+  /* line 402, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
-    margin-top: 1.8em;
   }
 
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 377, ../sass/layouts/_responsive.scss */
+  /* line 410, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 379, ../sass/layouts/_responsive.scss */
+  /* line 412, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 384, ../sass/layouts/_responsive.scss */
+  /* line 417, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1086,27 +1126,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 392, ../sass/layouts/_responsive.scss */
+  /* line 425, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 394, ../sass/layouts/_responsive.scss */
+  /* line 427, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 399, ../sass/layouts/_responsive.scss */
+  /* line 432, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 404, ../sass/layouts/_responsive.scss */
+  /* line 437, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -2103,17 +2143,12 @@ tr.selected td {
   margin-left: 0.7em;
 }
 
-/* line 71, ../sass/components/_islandora.scss */
-.islandora-solr-search-results {
-  float: left;
-  margin-top: 2.5em;
-}
-/* line 74, ../sass/components/_islandora.scss */
+/* line 72, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result {
   border-bottom: 2px dotted #266295;
   margin-bottom: 2.5em;
 }
-/* line 77, ../sass/components/_islandora.scss */
+/* line 75, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
   height: 0;
   border-bottom: 180px solid white;
@@ -2124,69 +2159,70 @@ tr.selected td {
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
 }
-/* line 84, ../sass/components/_islandora.scss */
+/* line 82, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-thumb {
   margin: 15px;
 }
-/* line 86, ../sass/components/_islandora.scss */
+/* line 84, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-thumb img {
   border: 2px solid #266295;
 }
-/* line 90, ../sass/components/_islandora.scss */
+/* line 88, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields {
   border: 0 none;
   width: 77%;
   margin-top: 10px;
 }
-/* line 94, ../sass/components/_islandora.scss */
+/* line 92, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt {
   float: left;
 }
-/* line 97, ../sass/components/_islandora.scss */
+/* line 95, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt, .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd {
   border: 0 none;
   padding: 3px 0 0;
   font-size: 95%;
 }
-/* line 102, ../sass/components/_islandora.scss */
+/* line 100, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt.dc-title {
   display: none;
 }
-/* line 105, ../sass/components/_islandora.scss */
+/* line 103, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title {
   font-family: "Libre Baskerville";
   font-size: 115%;
   padding-bottom: 0.5em;
+  display: block;
 }
-/* line 109, ../sass/components/_islandora.scss */
+/* line 108, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title a {
   text-decoration: none;
 }
-/* line 113, ../sass/components/_islandora.scss */
+/* line 112, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields .dc-description {
   float: left;
 }
 
-/* line 124, ../sass/components/_islandora.scss */
+/* line 123, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper h3 {
   margin: 0 0 0.5em;
 }
-/* line 127, ../sass/components/_islandora.scss */
+/* line 126, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper ul {
   list-style: none;
   padding: 0;
 }
-/* line 131, ../sass/components/_islandora.scss */
+/* line 130, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .plusminus {
   display: none;
 }
 
-/* line 139, ../sass/components/_islandora.scss */
+/* line 138, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort, #block-islandora-solr-current-query {
   margin: 0;
   height: 2em;
 }
-/* line 142, ../sass/components/_islandora.scss */
+/* line 141, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort h2, #block-islandora-solr-current-query h2 {
   color: #767777;
   float: left;
@@ -2194,26 +2230,26 @@ tr.selected td {
   line-height: 1.3em;
   margin-right: 0.25em;
 }
-/* line 149, ../sass/components/_islandora.scss */
+/* line 148, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul, #block-islandora-solr-current-query ul {
   list-style: none;
   margin-bottom: 0;
 }
-/* line 153, ../sass/components/_islandora.scss */
+/* line 152, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li, #block-islandora-solr-current-query ul li {
   display: inline;
   padding: 0 0.25em;
 }
-/* line 156, ../sass/components/_islandora.scss */
+/* line 155, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li a, #block-islandora-solr-current-query ul li a {
   text-decoration: none;
 }
-/* line 159, ../sass/components/_islandora.scss */
+/* line 158, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li a.active, #block-islandora-solr-current-query ul li a.active {
   text-decoration: underline;
 }
 
-/* line 168, ../sass/components/_islandora.scss */
+/* line 167, ../sass/components/_islandora.scss */
 #block-islandora-solr-current-query h3 {
   color: #767777;
   float: left;
@@ -2222,47 +2258,47 @@ tr.selected td {
   margin-right: 0.25em;
 }
 
-/* line 177, ../sass/components/_islandora.scss */
+/* line 176, ../sass/components/_islandora.scss */
 #islandora-solr-top {
   float: left;
   position: relative;
   top: 25px;
 }
-/* line 181, ../sass/components/_islandora.scss */
+/* line 180, ../sass/components/_islandora.scss */
 #islandora-solr-top #islandora-solr-result-count:after {
   content: "Pages";
   margin-left: 0.5em;
 }
 
-/* line 187, ../sass/components/_islandora.scss */
+/* line 186, ../sass/components/_islandora.scss */
 .islandora-solr-content {
   float: left;
   clear: left;
 }
-/* line 190, ../sass/components/_islandora.scss */
+/* line 189, ../sass/components/_islandora.scss */
 .islandora-solr-content ul.pager {
   margin: 0;
   padding: 0;
 }
-/* line 194, ../sass/components/_islandora.scss */
+/* line 193, ../sass/components/_islandora.scss */
 .islandora-solr-content .no-results {
   margin: 2em 0;
   font-size: 110%;
 }
 
-/* line 202, ../sass/components/_islandora.scss */
+/* line 201, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch {
   float: right;
   left: -20px;
   position: relative;
   top: -46px;
 }
-/* line 208, ../sass/components/_islandora.scss */
+/* line 207, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li {
   float: left;
   list-style: none;
 }
-/* line 211, ../sass/components/_islandora.scss */
+/* line 210, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a {
   padding: 0 2px;
   display: inline-block;
@@ -2271,49 +2307,49 @@ tr.selected td {
   text-indent: -9999px;
   width: 22px;
 }
-/* line 219, ../sass/components/_islandora.scss */
+/* line 218, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a.display-default {
   background: url("../images/umkc/display-grid-list.png") no-repeat top left;
 }
-/* line 222, ../sass/components/_islandora.scss */
+/* line 221, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a.display-grid {
   background: url("../images/umkc/display-grid.png") no-repeat top left;
 }
 
-/* line 229, ../sass/components/_islandora.scss */
+/* line 228, ../sass/components/_islandora.scss */
 .islandora-solr-grid {
   width: 100%;
 }
-/* line 231, ../sass/components/_islandora.scss */
+/* line 230, ../sass/components/_islandora.scss */
 .islandora-solr-grid dl.solr-grid-field {
   margin: 1.5em 4% 1.5em 0;
 }
-/* line 234, ../sass/components/_islandora.scss */
+/* line 233, ../sass/components/_islandora.scss */
 .islandora-solr-grid dd.solr-grid-caption {
   font-family: "Libre Baskerville";
   margin-top: 5px;
 }
-/* line 237, ../sass/components/_islandora.scss */
+/* line 236, ../sass/components/_islandora.scss */
 .islandora-solr-grid dd.solr-grid-caption a {
   text-decoration: none;
 }
 
-/* line 246, ../sass/components/_islandora.scss */
+/* line 245, ../sass/components/_islandora.scss */
 body.no-sidebars .islandora-basic-image-content, body.no-sidebars .islandora-audio-content, body.no-sidebars .islandora-pdf-content, body.no-sidebars .islandora-video-content {
   float: left;
   width: auto;
 }
-/* line 249, ../sass/components/_islandora.scss */
+/* line 248, ../sass/components/_islandora.scss */
 body.no-sidebars .islandora-basic-image-content img, body.no-sidebars .islandora-audio-content img, body.no-sidebars .islandora-pdf-content img, body.no-sidebars .islandora-video-content img {
   width: 100%;
 }
 
-/* line 258, ../sass/components/_islandora.scss */
+/* line 257, ../sass/components/_islandora.scss */
 #clip, .islandora-pdf-link {
   margin-left: 0.5em;
 }
 
-/* line 268, ../sass/components/_islandora.scss */
+/* line 267, ../sass/components/_islandora.scss */
 body.page-browse ul.pager {
   display: none;
 }
@@ -2398,55 +2434,54 @@ h2, h3 {
   width: 150px;
   line-height: 14.4em;
   text-decoration: none;
-  text-indent: 5px;
   color: #E4E5E5;
   text-shadow: 1px 1px 5px #000;
   transition: all 0.2s ease 0s;
 }
-/* line 76, ../sass/components/_page.scss */
+/* line 75, ../sass/components/_page.scss */
 .browse-collections ul li a:hover {
   opacity: 0.8;
   border-color: #266295;
 }
-/* line 81, ../sass/components/_page.scss */
+/* line 80, ../sass/components/_page.scss */
 .browse-collections ul li.topic a {
   background: url("../images/umkc/topic.jpg") no-repeat;
 }
-/* line 84, ../sass/components/_page.scss */
+/* line 83, ../sass/components/_page.scss */
 .browse-collections ul li.type a {
   background: url("../images/umkc/type.jpg") no-repeat;
 }
-/* line 87, ../sass/components/_page.scss */
+/* line 86, ../sass/components/_page.scss */
 .browse-collections ul li.collection a {
   background: url("../images/umkc/collection.jpg") no-repeat;
 }
 
-/* line 95, ../sass/components/_page.scss */
+/* line 94, ../sass/components/_page.scss */
 .slideshow {
   margin-bottom: 2.5em;
 }
-/* line 97, ../sass/components/_page.scss */
+/* line 96, ../sass/components/_page.scss */
 .slideshow .galleria-container {
   background: #767777;
   max-width: 100%;
 }
-/* line 105, ../sass/components/_page.scss */
+/* line 104, ../sass/components/_page.scss */
 .slideshow .galleria-info {
   left: 10px;
   bottom: 60px;
   top: inherit;
 }
-/* line 109, ../sass/components/_page.scss */
+/* line 108, ../sass/components/_page.scss */
 .slideshow .galleria-info .galleria-info-text {
   display: block;
   opacity: 0.8;
 }
-/* line 113, ../sass/components/_page.scss */
+/* line 112, ../sass/components/_page.scss */
 .slideshow .galleria-info .galleria-info-link {
   display: none;
 }
 
-/* line 122, ../sass/components/_page.scss */
+/* line 121, ../sass/components/_page.scss */
 .welcome-message {
   float: left;
   width: 32%;
@@ -2454,32 +2489,36 @@ h2, h3 {
   border-bottom: 5px solid #266295;
   padding-bottom: 1em;
 }
-/* line 128, ../sass/components/_page.scss */
+/* line 127, ../sass/components/_page.scss */
 .welcome-message h2 {
   margin: 0 0 0.5em;
 }
-/* line 131, ../sass/components/_page.scss */
+/* line 130, ../sass/components/_page.scss */
 .welcome-message p {
   margin: 0;
   line-height: 1.75em;
 }
 
-/* line 139, ../sass/components/_page.scss */
+/* line 138, ../sass/components/_page.scss */
 div.swish {
-  background: url("../images/umkc/swish.png") repeat-y;
-  width: 1147px;
+  background: url("../images/umkc/swish.png") repeat-y center top/100% auto;
+  width: 100%;
   height: 100%;
   position: absolute;
-  top: -15px;
-  left: -78px;
-  opacity: 0.7;
+  top: 15px;
+  opacity: 0.5;
 }
 
-/* line 156, ../sass/components/_page.scss */
+/* line 150, ../sass/components/_page.scss */
+.region-sidebar-first {
+  margin-top: 1.8em;
+}
+
+/* line 157, ../sass/components/_page.scss */
 .not-front #name-and-slogan {
   margin-left: 0.5em;
 }
-/* line 159, ../sass/components/_page.scss */
+/* line 160, ../sass/components/_page.scss */
 .not-front #block-islandora-solr-simple {
   margin-right: 0.5em;
 }
@@ -2566,6 +2605,16 @@ div.swish {
 /* line 70, ../sass/components/_navigation.scss */
 .more-link a:hover, .more-link a:active {
   color: #414042;
+}
+
+/* line 79, ../sass/components/_navigation.scss */
+.region-sidebar-first .block-menu ul {
+  padding: 0;
+}
+/* line 81, ../sass/components/_navigation.scss */
+.region-sidebar-first .block-menu ul li {
+  list-style: none;
+  padding: 2px 0;
 }
 
 /* SMACSS theme rules */

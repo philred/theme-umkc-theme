@@ -68,7 +68,6 @@ h2, h3 {
 				width: 150px;
 				line-height: 14.4em;
 				text-decoration: none;
-				text-indent: 5px;
 				color: #E4E5E5;
 				text-shadow: 1px 1px 5px #000;
 				transition: all 0.2s ease 0s;
@@ -137,18 +136,20 @@ h2, h3 {
 // Pages //
 
 div.swish {
-	background: url("../images/umkc/swish.png") repeat-y;
-	width: 1147px;
+	background: url("../images/umkc/swish.png") repeat-y center top / 100% auto;
+	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: -15px;
-	left: -78px;
-	opacity: 0.7;
+	top: 15px;
+	opacity: 0.5;
 }
 
 
 // Sidebars //
 
+.region-sidebar-first {
+	margin-top: 1.8em;
+}
 
  // Not Front //
 
