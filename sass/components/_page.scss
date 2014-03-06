@@ -71,6 +71,7 @@ h2, h3 {
 				color: #E4E5E5;
 				text-shadow: 1px 1px 5px #000;
 				transition: all 0.2s ease 0s;
+				text-indent: 5px;
 			}
 			a:hover {
 				opacity: 0.8;
@@ -133,6 +134,7 @@ h2, h3 {
 	}
 }
 
+
 // Pages //
 
 div.swish {
@@ -159,5 +161,29 @@ div.swish {
  	}
  	#block-islandora-solr-simple {
  		margin-right: 0.5em;
+ 	}
+ }
+
+
+ // Overrides //
+
+ .page-browse-topics, .page-collections, .page-browse-types {
+ 	.view-topics {
+ 		height: 100%;
+ 		border: 0 none;
+ 		background: rgba(255, 255, 255, 0.5);
+ 		tr {
+ 			display: inline;
+ 			td {
+ 				display: inline-block;
+ 				margin: 10px 2% 0 0;
+ 			}
+ 		}
+ 	}
+ 	.view-collections {
+ 		@extend .view-topics;
+ 		td {
+ 			margin-right: 3% !important;
+ 		}
  	}
  }
