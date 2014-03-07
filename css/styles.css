@@ -2117,18 +2117,16 @@ tr.selected td {
   margin: 1.5em 0 0;
 }
 /* line 46, ../sass/components/_islandora.scss */
-#block-islandora-solr-advanced div {
+#block-islandora-solr-advanced #islandora-solr-advanced-terms {
+  width: 70%;
   display: inline;
 }
 /* line 49, ../sass/components/_islandora.scss */
-#block-islandora-solr-advanced #islandora-solr-advanced-terms {
-  width: 70%;
-}
-/* line 51, ../sass/components/_islandora.scss */
 #block-islandora-solr-advanced #islandora-solr-advanced-terms .form-type-textfield {
-  width: 40%;
+  width: 38%;
+  margin-right: 5px;
 }
-/* line 54, ../sass/components/_islandora.scss */
+/* line 53, ../sass/components/_islandora.scss */
 #block-islandora-solr-advanced #islandora-solr-advanced-terms .form-text {
   width: 100%;
   border-radius: 5px;
@@ -2138,17 +2136,26 @@ tr.selected td {
   opacity: 0.8;
   padding-left: 0.5em;
 }
-/* line 64, ../sass/components/_islandora.scss */
+/* line 62, ../sass/components/_islandora.scss */
+#block-islandora-solr-advanced #islandora-solr-advanced-terms .form-type-select {
+  margin: 0.5em 0 0 0;
+}
+/* line 66, ../sass/components/_islandora.scss */
 #block-islandora-solr-advanced .islandora-solr-advanced-controls {
-  margin-left: 0.7em;
+  margin-top: 10px;
+  margin: 0.5em 0 3em 0;
+}
+/* line 69, ../sass/components/_islandora.scss */
+#block-islandora-solr-advanced .islandora-solr-advanced-controls .form-submit {
+  width: 7em;
 }
 
-/* line 72, ../sass/components/_islandora.scss */
+/* line 78, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result {
   border-bottom: 2px dotted #266295;
   margin-bottom: 2.5em;
 }
-/* line 75, ../sass/components/_islandora.scss */
+/* line 81, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
   height: 0;
   border-bottom: 180px solid white;
@@ -2159,70 +2166,87 @@ tr.selected td {
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
 }
-/* line 82, ../sass/components/_islandora.scss */
+/* line 88, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-thumb {
   margin: 15px;
 }
-/* line 84, ../sass/components/_islandora.scss */
+/* line 90, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-thumb img {
   border: 2px solid #266295;
 }
-/* line 88, ../sass/components/_islandora.scss */
+/* line 94, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields {
   border: 0 none;
   width: 77%;
   margin-top: 10px;
 }
-/* line 92, ../sass/components/_islandora.scss */
+/* line 98, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt {
   float: left;
 }
-/* line 95, ../sass/components/_islandora.scss */
+/* line 101, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt, .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd {
   border: 0 none;
   padding: 3px 0 0;
   font-size: 95%;
 }
-/* line 100, ../sass/components/_islandora.scss */
+/* line 106, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dt.dc-title {
   display: none;
 }
-/* line 103, ../sass/components/_islandora.scss */
+/* line 109, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title {
   font-family: "Libre Baskerville";
   font-size: 115%;
   padding-bottom: 0.5em;
   display: block;
 }
-/* line 108, ../sass/components/_islandora.scss */
+/* line 114, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title a {
   text-decoration: none;
 }
-/* line 112, ../sass/components/_islandora.scss */
+/* line 118, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields .dc-description {
   float: left;
 }
 
-/* line 123, ../sass/components/_islandora.scss */
+/* line 129, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper h3 {
   margin: 0 0 0.5em;
 }
-/* line 126, ../sass/components/_islandora.scss */
+/* line 132, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper ul {
   list-style: none;
   padding: 0;
 }
-/* line 130, ../sass/components/_islandora.scss */
+/* line 136, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .plusminus {
   display: none;
 }
+/* line 140, ../sass/components/_islandora.scss */
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-range-slider .range-slider-fromto, #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-range-slider .date-range-slider-gap {
+  text-align: left;
+}
+/* line 143, ../sass/components/_islandora.scss */
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-range-slider .date-range-slider-canvas-wrapper {
+  width: auto !important;
+}
+/* line 145, ../sass/components/_islandora.scss */
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-range-slider .date-range-slider-canvas-wrapper canvas {
+  width: 100%;
+  height: 100%;
+}
+/* line 151, ../sass/components/_islandora.scss */
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-date-filter, #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .islandora-solr-range-slider {
+  text-align: left;
+}
 
-/* line 138, ../sass/components/_islandora.scss */
+/* line 159, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort, #block-islandora-solr-current-query {
   margin: 0;
   height: 2em;
 }
-/* line 141, ../sass/components/_islandora.scss */
+/* line 162, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort h2, #block-islandora-solr-current-query h2 {
   color: #767777;
   float: left;
@@ -2230,26 +2254,26 @@ tr.selected td {
   line-height: 1.3em;
   margin-right: 0.25em;
 }
-/* line 148, ../sass/components/_islandora.scss */
+/* line 169, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul, #block-islandora-solr-current-query ul {
   list-style: none;
   margin-bottom: 0;
 }
-/* line 152, ../sass/components/_islandora.scss */
+/* line 173, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li, #block-islandora-solr-current-query ul li {
   display: inline;
   padding: 0 0.25em;
 }
-/* line 155, ../sass/components/_islandora.scss */
+/* line 176, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li a, #block-islandora-solr-current-query ul li a {
   text-decoration: none;
 }
-/* line 158, ../sass/components/_islandora.scss */
+/* line 179, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort ul li a.active, #block-islandora-solr-current-query ul li a.active {
   text-decoration: underline;
 }
 
-/* line 167, ../sass/components/_islandora.scss */
+/* line 188, ../sass/components/_islandora.scss */
 #block-islandora-solr-current-query h3 {
   color: #767777;
   float: left;
@@ -2258,47 +2282,44 @@ tr.selected td {
   margin-right: 0.25em;
 }
 
-/* line 176, ../sass/components/_islandora.scss */
+/* line 197, ../sass/components/_islandora.scss */
 #islandora-solr-top {
   float: left;
-  position: relative;
-  top: 25px;
 }
-/* line 180, ../sass/components/_islandora.scss */
+/* line 199, ../sass/components/_islandora.scss */
 #islandora-solr-top #islandora-solr-result-count:after {
   content: "Pages";
   margin-left: 0.5em;
 }
 
-/* line 186, ../sass/components/_islandora.scss */
+/* line 205, ../sass/components/_islandora.scss */
 .islandora-solr-content {
-  float: left;
   clear: left;
 }
-/* line 189, ../sass/components/_islandora.scss */
+/* line 207, ../sass/components/_islandora.scss */
 .islandora-solr-content ul.pager {
   margin: 0;
   padding: 0;
 }
-/* line 193, ../sass/components/_islandora.scss */
+/* line 211, ../sass/components/_islandora.scss */
 .islandora-solr-content .no-results {
   margin: 2em 0;
   font-size: 110%;
 }
 
-/* line 201, ../sass/components/_islandora.scss */
+/* line 219, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch {
   float: right;
   left: -20px;
   position: relative;
   top: -46px;
 }
-/* line 207, ../sass/components/_islandora.scss */
+/* line 225, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li {
   float: left;
   list-style: none;
 }
-/* line 210, ../sass/components/_islandora.scss */
+/* line 228, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a {
   padding: 0 2px;
   display: inline-block;
@@ -2307,49 +2328,49 @@ tr.selected td {
   text-indent: -9999px;
   width: 22px;
 }
-/* line 218, ../sass/components/_islandora.scss */
+/* line 236, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a.display-default {
   background: url("../images/umkc/display-grid-list.png") no-repeat top left;
 }
-/* line 221, ../sass/components/_islandora.scss */
+/* line 239, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a.display-grid {
   background: url("../images/umkc/display-grid.png") no-repeat top left;
 }
 
-/* line 228, ../sass/components/_islandora.scss */
+/* line 246, ../sass/components/_islandora.scss */
 .islandora-solr-grid {
   width: 100%;
 }
-/* line 230, ../sass/components/_islandora.scss */
+/* line 248, ../sass/components/_islandora.scss */
 .islandora-solr-grid dl.solr-grid-field {
   margin: 1.5em 4% 1.5em 0;
 }
-/* line 233, ../sass/components/_islandora.scss */
+/* line 251, ../sass/components/_islandora.scss */
 .islandora-solr-grid dd.solr-grid-caption {
   font-family: "Libre Baskerville";
   margin-top: 5px;
 }
-/* line 236, ../sass/components/_islandora.scss */
+/* line 254, ../sass/components/_islandora.scss */
 .islandora-solr-grid dd.solr-grid-caption a {
   text-decoration: none;
 }
 
-/* line 245, ../sass/components/_islandora.scss */
+/* line 263, ../sass/components/_islandora.scss */
 body.no-sidebars .islandora-basic-image-content, body.no-sidebars .islandora-audio-content, body.no-sidebars .islandora-pdf-content, body.no-sidebars .islandora-video-content {
   float: left;
   width: auto;
 }
-/* line 248, ../sass/components/_islandora.scss */
+/* line 266, ../sass/components/_islandora.scss */
 body.no-sidebars .islandora-basic-image-content img, body.no-sidebars .islandora-audio-content img, body.no-sidebars .islandora-pdf-content img, body.no-sidebars .islandora-video-content img {
   width: 100%;
 }
 
-/* line 257, ../sass/components/_islandora.scss */
+/* line 275, ../sass/components/_islandora.scss */
 #clip, .islandora-pdf-link {
   margin-left: 0.5em;
 }
 
-/* line 267, ../sass/components/_islandora.scss */
+/* line 285, ../sass/components/_islandora.scss */
 body.page-browse ul.pager {
   display: none;
 }
