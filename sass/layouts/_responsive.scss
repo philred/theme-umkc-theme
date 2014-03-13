@@ -75,21 +75,22 @@ $zen-auto-include-item-base: false;
 
 } /* End of @if $zen-reverse-all-floats == true*/
 
-@media all and (min-width: 320px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 481px) {
   .browse-collections {
-    margin-top: 1.5em;
+    margin: 1.5em 0.5em !important;
     border-right: 0 none !important;
-    width: 95%;
+    width: 97%;
     ul li {
-          max-height: 100px;
-          margin-right: 1em !important;
+          max-height: 90px;
+          margin-right: 0.75em !important;
           a {
-            width: 100px !important; 
-            height: 100px !important;
+            width: 90px !important; 
+            height: 90px !important;
             line-height: 13em !important;
             text-shadow: none !important;
             color: $grey_color !important;
-            text-indent: none !important;
+            text-indent: 0 !important;
+            font-size: 115% !important;
           }
     }
     li.collection {
@@ -97,30 +98,39 @@ $zen-auto-include-item-base: false;
     }
   }
   .welcome-message {
-    width: 91% !important;
+    margin: 0 0.5em !important;
+    width: 97% !important;
   }
   #block-islandora-solr-simple {
-  float: left !important;
-  margin: 2.5em 2.3em 1.3em !important;
-  width: 87% !important;
-  }
-  .not-front #block-islandora-solr-simple {
-    margin: 2.5em 0 1.3em !important;  
-    width: 100% !important;
-  }
- #content {
-    padding-left: 0;
-    padding-right: 0;
+    float: left !important;
+    margin: 1.5em 0.5em !important;
+    width: 97% !important;
   }
   .region-sidebar-first {
     clear: both;
   }
   #footer {
-    padding: 1em 1em !important;
+    padding: 1em 0 !important;
     .footer-menu li.last {
-      float: left !important;
-      margin-top: 5px;
+      float: none !important;
+      text-align: center;
+      display: block;
+      margin-top: 0.5em;
     }
+  }
+  .header__name-and-slogan {
+    margin: 1em 0.5em !important;
+    font-size: 90%;
+  }
+  #block-menu-menu-side-menu {
+    display: none;
+  }
+  #block-menu-menu-footer-menu {
+      font-size: 91.5%;
+  }
+
+  #block-islandora-solr-advanced #islandora-solr-advanced-terms .form-type-textfield {
+    width: 73.33% !important;
   }
 }
 

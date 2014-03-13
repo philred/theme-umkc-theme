@@ -19,7 +19,7 @@ h2, h3 {
 
 #header {
 	background: url('../images/umkc/header-top.png') repeat-x top left #fff;
-	padding: 1em;
+	padding: 1em 0.5em;
 }
 
 #page {
@@ -47,7 +47,7 @@ h2, h3 {
 	border-right: 80px solid transparent;
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-    padding-left: 1.5em;
+    margin-left: 1.5em;
     font-family: 'Ropa Sans';
     font-style: italic;
     h2 {
