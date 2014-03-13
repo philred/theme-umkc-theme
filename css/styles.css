@@ -2529,6 +2529,7 @@ div.swish {
   position: absolute;
   top: 15px;
   opacity: 0.5;
+  z-index: -1;
 }
 
 /* line 152, ../sass/components/_page.scss */
