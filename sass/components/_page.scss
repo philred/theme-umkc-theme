@@ -166,7 +166,6 @@ div.swish {
  	}
  }
 
-
  // Overrides //
 
  .page-browse-topics, .page-collections, .page-browse-types {
@@ -178,7 +177,8 @@ div.swish {
  			display: inline;
  			td {
  				display: inline-block;
- 				margin: 10px 2% 0 0;
+ 				text-align: center;
+ 				vertical-align: top;
  			}
  		}
  	}
