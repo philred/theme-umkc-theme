@@ -75,21 +75,29 @@ $zen-auto-include-item-base: false;
 
 } /* End of @if $zen-reverse-all-floats == true*/
 
-@media all and (min-width: 320px) and (max-width: 480px) {
+@media all and (min-width: 320px) and (max-width: 481px) {
+  h1.page__title {
+    font-size: 175% !important;
+  }
   .browse-collections {
-    margin-top: 1.5em;
+    margin: 1.5em 0.5em !important;
     border-right: 0 none !important;
-    width: 95%;
+    border-bottom: 0 none !important;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .5);
+    width: 97%;
+    height: auto !important;
     ul li {
-          max-height: 100px;
-          margin-right: 1em !important;
+          max-height: 85px;
+          margin-right: 0.65em !important;
           a {
-            width: 100px !important; 
-            height: 100px !important;
+            width: 85px !important; 
+            height: 85px !important;
             line-height: 13em !important;
             text-shadow: none !important;
             color: $grey_color !important;
-            text-indent: none !important;
+            text-indent: 0 !important;
+            font-size: 115% !important;
           }
     }
     li.collection {
@@ -97,29 +105,85 @@ $zen-auto-include-item-base: false;
     }
   }
   .welcome-message {
-    width: 91% !important;
+    margin: 0 0.5em !important;
+    width: 97% !important;
   }
   #block-islandora-solr-simple {
-  float: left !important;
-  margin: 2.5em 2.3em 1.3em !important;
-  width: 87% !important;
-  }
-  .not-front #block-islandora-solr-simple {
-    margin: 2.5em 0 1.3em !important;  
-    width: 100% !important;
-  }
- #content {
-    padding-left: 0;
-    padding-right: 0;
+    float: left !important;
+    margin: 1.5em 0.5em !important;
+    width: 97% !important;
   }
   .region-sidebar-first {
     clear: both;
   }
   #footer {
-    padding: 1em 1em !important;
+    padding: 1em 0 !important;
     .footer-menu li.last {
-      float: left !important;
-      margin-top: 5px;
+      float: none !important;
+      text-align: center;
+      display: block;
+      margin-top: 0.5em;
+    }
+  }
+  .header__name-and-slogan {
+    margin: 1em 0.5em !important;
+    font-size: 80%;
+  }
+  #block-menu-menu-side-menu {
+    display: none;
+  }
+  #block-menu-menu-footer-menu {
+      font-size: 91.5%;
+  }
+
+  #block-islandora-solr-advanced #islandora-solr-advanced-terms .form-type-textfield {
+    width: 73.33% !important;
+  }
+
+  #navigation ul {
+    display: block;
+    text-align: center !important;
+    li {
+      float: none !important;
+      line-height: 1.5em !important;
+      padding: 0 1em !important;
+    } 
+    li.first {
+      border-left: 2px solid #98B0CA !important;
+    }
+    li.last {
+      border-right: 2px solid #98B0CA !important;
+    }
+    li:nth-last-child(2) {
+      border-left: 2px solid #98B0CA !important;
+    }
+  }
+
+  /* Browse pages */
+  .view-collections, .view-topics {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, .5);
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+    table {
+      margin-bottom: 0 !important;
+      td {
+        display: inline-block;
+        margin: 1em 0.5em;
+        max-width: 43%;
+        .views-field-field-thumbnail {
+          img {
+            border: 3px solid $light_grey;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    img {
+      max-width: 85%;
     }
   }
 }

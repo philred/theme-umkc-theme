@@ -30,25 +30,25 @@
 		right: 5px;
 	}
 	a.adv_search {
-		display: block;
-		text-align: right;
-		font-size: 80%;
-		text-decoration: none;
+		float: right;
 		position: relative;
 		left: 1em;
+		top: 0.25em;
+		font-size: 80%;
+		text-decoration: none;
 	}
 }
 
 // Advanced Search //
 
 #block-islandora-solr-advanced {
-	margin: 1.5em 0 0;
+	margin: 0;
 	#islandora-solr-advanced-terms {
 		width: 70%;
 		display: inline;
 		.form-type-textfield {
 			width: 38%;
-			margin-right: 5px;
+			margin-right: 0;
 		}
 		.form-text {
 			width: 100%;
