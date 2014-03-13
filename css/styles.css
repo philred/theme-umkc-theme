@@ -715,54 +715,63 @@ table {
 /* End of @if $zen-reverse-all-floats == true*/
 @media all and (min-width: 320px) and (max-width: 481px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000379}}
+  h1.page__title {
+    font-size: 175% !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000382}}
   .browse-collections {
     margin: 1.5em 0.5em !important;
     border-right: 0 none !important;
+    border-bottom: 0 none !important;
+    background: white;
+    background: rgba(255, 255, 255, 0.5);
     width: 97%;
+    height: auto !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000390}}
   .browse-collections ul li {
-    max-height: 90px;
-    margin-right: 0.75em !important;
+    max-height: 85px;
+    margin-right: 0.65em !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000393}}
   .browse-collections ul li a {
-    width: 90px !important;
-    height: 90px !important;
+    width: 85px !important;
+    height: 85px !important;
     line-height: 13em !important;
     text-shadow: none !important;
     color: #414042 !important;
     text-indent: 0 !important;
     font-size: 115% !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003103}}
   .browse-collections li.collection {
     margin-right: 0 !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003107}}
   .welcome-message {
     margin: 0 0.5em !important;
     width: 97% !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003111}}
   #block-islandora-solr-simple {
     float: left !important;
     margin: 1.5em 0.5em !important;
     width: 97% !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003116}}
   .region-sidebar-first {
     clear: both;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003119}}
   #footer {
     padding: 1em 0 !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003121}}
   #footer .footer-menu li.last {
     float: none !important;
     text-align: center;
@@ -770,25 +779,81 @@ table {
     margin-top: 0.5em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003128}}
   .header__name-and-slogan {
     margin: 1em 0.5em !important;
-    font-size: 90%;
+    font-size: 80%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003132}}
   #block-menu-menu-side-menu {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003135}}
   #block-menu-menu-footer-menu {
     font-size: 91.5%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003139}}
   #block-islandora-solr-advanced #islandora-solr-advanced-terms .form-type-textfield {
     width: 73.33% !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003143}}
+  #navigation ul {
+    display: block;
+    text-align: center !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003146}}
+  #navigation ul li {
+    float: none !important;
+    line-height: 1.5em !important;
+    padding: 0 1em !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003151}}
+  #navigation ul li.first {
+    border-left: 2px solid #98B0CA !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003154}}
+  #navigation ul li.last {
+    border-right: 2px solid #98B0CA !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003157}}
+  #navigation ul li:nth-last-child(2) {
+    border-left: 2px solid #98B0CA !important;
+  }
+
+  /* Browse pages */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003163}}
+  .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
+    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003169}}
+  .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
+    margin-bottom: 0 !important;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003171}}
+  .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
+    display: inline-block;
+    margin: 1em 0.5em;
+    max-width: 43%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003176}}
+  .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
+    border: 3px solid #767777;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003181}}
+  .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
+    text-decoration: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003185}}
+  .view-collections img, .view-topics img, .page-browse-topics .view-collections img, .page-collections .view-collections img, .page-browse-types .view-collections img {
+    max-width: 85%;
   }
 }
 /**
@@ -798,19 +863,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003202}}
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003204}}
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003209}}
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -821,19 +886,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003217}}
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003219}}
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003224}}
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -844,27 +909,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003232}}
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003234}}
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003239}}
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003244}}
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -878,7 +943,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003250}}
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -888,7 +953,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003254}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -896,14 +961,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003259}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003263}}
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -912,70 +977,15 @@ table {
   }
 }
 @media all and (min-width: 480px) and (max-width: 800px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003271}}
   .welcome-message {
     width: 95% !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003274}}
   .browse-collections {
     margin-top: 1.5em;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003222}}
-  .browse-collections ul li {
-    max-height: 100px;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003224}}
-  .browse-collections ul li a {
-    width: 100px !important;
-    height: 100px !important;
-    line-height: 13em !important;
-    text-shadow: none !important;
-    color: #414042 !important;
-    text-indent: none !important;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003236}}
-  .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
-    border-right: 0 none !important;
-    font-size: 90%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003239}}
-  .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dt {
-    padding-right: 2px;
-  }
-
-  /* Browse pages */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003246}}
-  .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
-    height: 0;
-    border-bottom: 415px solid white;
-    border-bottom: 415px solid rgba(255, 255, 255, 0.5);
-    border-right: 80px solid transparent;
-    -webkit-background-clip: padding-box;
-    /* for Safari */
-    background-clip: padding-box;
-    /* for IE9+, Firefox 4+, Opera, Chrome */
-    padding-left: 0.5em;
-    font-family: 'Ropa Sans';
-    font-size: 110%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003257}}
-  .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
-    display: inline-block;
-    margin: 10px 3% 0 0;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003261}}
-  .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
-    border: 3px solid #767777;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003266}}
-  .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
-    text-decoration: none;
-  }
-}
-@media all and (min-width: 801px) and (max-width: 934px) {
-  /* Custom */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003276}}
   .browse-collections ul li {
     max-height: 100px;
@@ -990,8 +1000,18 @@ table {
     text-indent: none !important;
   }
 
-  /* Browse pages */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003290}}
+  .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner {
+    border-right: 0 none !important;
+    font-size: 90%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003293}}
+  .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dt {
+    padding-right: 2px;
+  }
+
+  /* Browse pages */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003300}}
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 415px solid white;
@@ -1005,32 +1025,77 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003311}}
+  .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
+    display: inline-block;
+    margin: 10px 3% 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003315}}
+  .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
+    border: 3px solid #767777;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003320}}
+  .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
+    text-decoration: none;
+  }
+}
+@media all and (min-width: 801px) and (max-width: 934px) {
+  /* Custom */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003330}}
+  .browse-collections ul li {
+    max-height: 100px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003332}}
+  .browse-collections ul li a {
+    width: 100px !important;
+    height: 100px !important;
+    line-height: 13em !important;
+    text-shadow: none !important;
+    color: #414042 !important;
+    text-indent: none !important;
+  }
+
+  /* Browse pages */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003344}}
+  .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
+    height: 0;
+    border-bottom: 415px solid white;
+    border-bottom: 415px solid rgba(255, 255, 255, 0.5);
+    border-right: 80px solid transparent;
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding-left: 0.5em;
+    font-family: 'Ropa Sans';
+    font-size: 110%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003355}}
   .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
     display: inline-block;
     margin: 10px 2% 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003359}}
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003310}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003364}}
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
 }
 @media all and (min-width: 935px) and (max-width: 1080px) {
   /* Custom */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003373}}
   .browse-collections {
     border-bottom: 280px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 70px solid transparent !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003376}}
   .browse-collections ul li {
     max-height: 125px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003378}}
   .browse-collections ul li a {
     width: 125px !important;
     height: 125px !important;
@@ -1041,13 +1106,13 @@ table {
   }
 }
 @media all and (min-width: 700px) and (max-width: 959px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003392}}
   .region-sidebar-first {
     width: 23.33% !important;
     margin-right: -3.33% !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003396}}
   .sidebar-first #content {
     width: 76.66% !important;
     margin-left: 23.33% !important;
@@ -1055,7 +1120,7 @@ table {
 }
 @media all and (min-width: 935px) {
   /* Browse pages */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003404}}
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 240px solid white;
@@ -1069,19 +1134,19 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003414}}
   .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003417}}
   .view-collections table td .views-field-field-thumbnail, .view-topics table td .views-field-field-thumbnail, .page-browse-topics .view-collections table td .views-field-field-thumbnail, .page-collections .view-collections table td .views-field-field-thumbnail, .page-browse-types .view-collections table td .views-field-field-thumbnail {
     margin: 10px 5px 0 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003419}}
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003424}}
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
@@ -1093,19 +1158,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003441}}
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003443}}
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003448}}
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1116,19 +1181,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003402}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003456}}
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003404}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003458}}
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003463}}
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1139,27 +1204,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003471}}
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003419}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003473}}
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003424}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003478}}
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003429}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/layouts\/_responsive\.scss}line{font-family:\00003483}}
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1361,12 +1426,13 @@ table {
 .comment__title {
   /* Comment title. */
   margin: 0;
+  font-style: italic;
 }
 
 /**
  * Messages.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003204}}
 .messages, .messages--status, .messages--warning, .messages--error {
   margin: 1.5em 0;
   padding: 10px 10px 10px 50px;
@@ -1376,50 +1442,50 @@ table {
   border: 1px solid #be7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003219}}
 .messages--warning {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuElEQVRIiWP4//8/Ay0xSYqntTpnT252zqeJBf0Njhsykrz/pyd6/e9vcNpGVQv6q2wlm0qc/r0+IPD/3UG+/61l9v9mdrjIUc2C7hqHUzc3S///eZwBjO9tF/vfWe1wjioWTKixVm8otPn38wQT3IKfxxn/t5Va/utpsNSg2ILWcttrNzdJgQ3+dpQRjEHs+9tE/zeXWt+gyILOamuTqlxrsOtPLub+7+emBsSq/88v5wL7oqHQ9H9nmbkF2RbUF1rev7lJEuziuU3i/90ddcB4UZsoJC62ifyvK7R4QJYFrcUGrmUZ5v9hYb9hosh/bzcDMN42VRgeF9W5hv8bi/XdSbagKtfs2c1NEvCIPbaQ/7+/pwkYn17Ki0hR24T/l2eZPCfJgsZ83dCiNOP/yCnn7iau/8G+5mD8aBsHSoqqyNL9X5erHUm0BcVpRm9ubhZHMoTh/4eDzP/DA23+RwTZ/P96hAlF7t5Wof8FyfpvibKgNk8noyDZ4D9quofg1Bjr/1kJlhjiIF+Upmn/r83RzCJoQXaC3qcbm8SwGMLwvybP/H8jMGlik7u7VeB/Zqz2J7wWVGdr1uTG62J1PQgfWST1/+hiCaxyIF8UJqv9r8hQrcVpQVqkzrcbG0WwGvB2H/P/lnx5MAaxsam5vYn3f2KY+jesFpSlqfZnxWjidP2OGWL/g/0swBjExu4Lhv958Ur/i5KU+lEsCA1lYI4JUv95bZ0gTo2Pt3P+z0myBmMQG5e6mxu4/kf4Kf8EmQm3oCRNebKrvSawIGPBqRG9sMOp5hjjfwdrlf/58bKT4RaUpWvtcLZV/39iscD/H0AFP46jYwYiMeP/44u4/9tbKQODSXUH3II9G7v18hI0n8YGKv+IDVT6joxj/BVx4mgcOCde/SnITPRUJAHEGlTCEkQV19TAAN8FC67hZdFXAAAAAElFTkSuQmCC');
   border-color: #ed5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003228}}
 .messages--error {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACpElEQVR42rWWTUgbQRiGQ0Tx4MWDeFM8eBA9iKAoggiCoCiiIiL4L3oQV1CJB0UEf6iRYFpK7UniTw9VSqL2kvQsVDBpSZrtRo35czVNW3oprRf17exSl4yzu1ikAy9h59vvedhkMrMGAGoxknAk2w8MJ/WosXThiZkZt9jdLeglPjn5ATc3mhJNuNjbK0QbG3ExMICL/n6IfX0gcxB7ekDAELu6IHZ2IlJbi1hLS1BLogmPtbUhMTv7oMSamzUlqnByMxLT0/8STQkDj9TV4ZLj5OysrODl8jIu5Gs68dFR7JG6dWkJ0fFx+TpSX89IDMnwcHU1yKec12Yz3rlc4HkeLwjkXJpPip3U3+7vIx6P4ymph4eG5PlwTQ0lMdytlmBxMWKtrXLeT0zA5XTibvj9fjxfXETkb/3N/Dz2dneVuiTZtliU/rPSUsQ5ziuxZYG03IIlJdKKUPJjdRUAKMmzuTnskB/VYbdTtd9HR4g2NCi9Z2VliDY1BSnBaUEBzsrLqXyzWCiQ9HU5HA4afniIUFWV0hOqqMBpURErOM7NxWlhIZOvCwvA7S3Uxq+DA5AnZ3pO8vJYQSArC8c5Oeqx2Rj4udeLQH6+6v2B7GxW8DkjA0JmJpONwUHY7XZGIAgCzCYTeJUewmIFfqMRfEoKlQ2yJbza2oLWcLvdeDI2hk/3+iQWKzAYkJzNjg5srq9TwJ9OJ76YTNScx+ORJT66X1/grKyEbW2NgfPp6XKd/JMZySrHaQsSU1Oe+0/w3WpVgyu5HBlR6lc+H8gioevDwz6JrWwV5+3txyoSFk5DcOX1MnCyJ4Vwfb1zt1UY9SR8aioDpuppaVpwZbPTl+hHF04dOKzk8XBF8DgJC3/woU/W/EciOtELOWi8DDwp//215Q+p7kiKh2lQSAAAAABJRU5ErkJggg==');
   border-color: #ed541d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003237}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003238}}
 .messages__list {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003241}}
 .messages__item {
   list-style-image: none;
 }
 
 /* Core/module installation error messages. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003246}}
 .messages--error p.error {
   color: #333;
 }
 
 /* System status report. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003252}}
 .ok,
 .messages--status {
   background-color: #f8fff0;
   color: #234600;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003257}}
 .warning,
 .messages--warning {
   background-color: #fffce5;
   color: #840;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003262}}
 .error,
 .messages--error {
   background-color: #fef5f1;
@@ -1430,7 +1496,7 @@ table {
  * Tabs.
  */
 /* Basic positioning styles shared by primary and secondary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003272}}
 .tabs-primary, .tabs-secondary {
   overflow: hidden;
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(100%, #bbbbbb), color-stop(100%, transparent));
@@ -1446,14 +1512,14 @@ table {
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003282}}
 .tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: left;
   margin: 0 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003286}}
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   border: 1px solid #e9e9e9;
   border-right: 0;
@@ -1464,7 +1530,7 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
 }
 
 /* Primary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003299}}
 .tabs-primary__tab, .tabs-primary__tab.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1479,12 +1545,12 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active, a.tabs-secondary__
   border-bottom: 0 \0/ie;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003308}}
 .is-active.tabs-primary__tab {
   border-bottom-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003314}}
 a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
@@ -1503,13 +1569,13 @@ a.tabs-primary__tab-link, a.tabs-primary__tab-link.is-active {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003324}}
 a.tabs-primary__tab-link:hover, a.tabs-primary__tab-link:focus {
   background-color: #e9e9e9;
   border-color: #f2f2f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003328}}
 a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
   background-color: transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
@@ -1522,20 +1588,20 @@ a.tabs-primary__tab-link:active, a.tabs-primary__tab-link.is-active {
 }
 
 /* Secondary tabs. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003352}}
 .tabs-secondary {
   font-size: .9em;
   /* Collapse bottom margin of ul.primary. */
   margin-top: -1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003359}}
 .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   margin: 0.75em 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003365}}
 a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   -webkit-border-radius: 0.75em;
   -moz-border-radius: 0.75em;
@@ -1552,14 +1618,14 @@ a.tabs-secondary__tab-link, a.tabs-secondary__tab-link.is-active {
   padding: 0 .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003374}}
 a.tabs-secondary__tab-link:hover, a.tabs-secondary__tab-link:focus {
   background-color: #dedede;
   border-color: #999;
   color: #333;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003379}}
 a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
   text-shadow: 1px 1px 0 #333333;
   background-color: #666;
@@ -1571,12 +1637,12 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
  * Inline styles.
  */
 /* List of links generated by theme_links(). */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003407}}
 .inline {
   display: inline;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003410}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003411}}
 .inline li {
   display: inline;
   list-style-type: none;
@@ -1584,7 +1650,7 @@ a.tabs-secondary__tab-link:active, a.tabs-secondary__tab-link.is-active {
 }
 
 /* The inline field label used by the Fences module. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003418}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003419}}
 span.field-label {
   padding: 0 1em 0 0;
 }
@@ -1592,17 +1658,17 @@ span.field-label {
 /**
  * "More" links.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003425}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003426}}
 .more-link {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003428}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003429}}
 .more-help-link {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003432}}
 .more-help-link a {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA7UlEQVR42qWTPQqDQBCFcwSPkCNITpAj5AjeIm1uYpkyR7Cy2Mot7OwsBAsRwUKwmOwLGRle3EIy8PyBfZ/z3J2TiPylz8VWWZZpUB40BonRKyizaxkA88MYYiqCEgv4MTvnZJom0VqWRbz3FlJZgLYtqmEY1Lg9r+sKsIXcLSC3AC019H0vqLquLeC5AfiHYSGkcdAJimKIBQiJ4+CO92OAtm0FNc8zOjkMwE5Q63FAtbeg6zpAYvG8BWR7i5qmQYwY4MIHqYhE2DOPQWcGJBQF2XU72ZzyUeZ5GCNt5/hybJgYdAXsq5sOEE/jG6dC5IOqCXTmAAAAAElFTkSuQmCC');
   background-position: 0 50%;
@@ -1614,14 +1680,14 @@ span.field-label {
  * Pager.
  */
 /* A list of page numbers when more than 1 page of content is available. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003446}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003447}}
 .pager {
   clear: both;
   padding: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003452}}
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1634,7 +1700,7 @@ span.field-label {
   background-image: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003464}}
 .pager-item,
 .pager-first,
 .pager-previous,
@@ -1645,7 +1711,7 @@ span.field-label {
 }
 
 /* The current page's list item. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003468}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003469}}
 .pager-current {
   font-weight: bold;
 }
@@ -1654,7 +1720,7 @@ span.field-label {
  * Blocks.
  */
 /* Block wrapper. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003478}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003479}}
 .block {
   margin-bottom: 1.5em;
 }
@@ -1662,26 +1728,26 @@ span.field-label {
 /**
  * Menus.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003485}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003486}}
 .menu__item.is-leaf {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHBAMAAAA2fErgAAAAD1BMVEX///+/v7+Li4sAAADAwMBFvsw8AAAAAXRSTlMAQObYZgAAAB1JREFUCFtjYAADYwMGBmYVZSDhKAwkFJWhYiAAAB2+Aa/9ugeaAAAAAElFTkSuQmCC');
   list-style-type: square;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003492}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003493}}
 .menu__item.is-expanded {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   list-style-type: circle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003499}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003500}}
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   list-style-type: disc;
 }
 
 /* The active item in a Drupal menu. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003508}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003509}}
 .menu a.active {
   color: #000;
 }
@@ -1690,7 +1756,7 @@ span.field-label {
  * Marker.
  */
 /* The "new" or "updated" marker. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003519}}
 .new,
 .update {
   color: #c00;
@@ -1702,7 +1768,7 @@ span.field-label {
  * Unpublished note.
  */
 /* The word "Unpublished" displayed underneath the content. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003530}}
 .unpublished {
   height: 0;
   overflow: visible;
@@ -1723,31 +1789,31 @@ span.field-label {
  * Comments.
  */
 /* Wrapper for the list of comments and its title. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003558}}
 .comments {
   margin: 1.5em 0;
 }
 
 /* Preview of the comment before submitting new or updated comment. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003562}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003563}}
 .comment-preview {
   /* Drupal core will use a #ffffea background. See #1110842. */
   background-color: #ffffea;
 }
 
 /* Wrapper for a single comment. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003568}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003569}}
 .comment {
   /* Comment's permalink wrapper. */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003572}}
 .comment .permalink {
   text-transform: uppercase;
   font-size: 75%;
 }
 
 /* Nested comments are indented. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003578}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003579}}
 .indented {
   /* Drupal core uses a 25px left margin. */
   margin-left: 30px;
@@ -1757,7 +1823,7 @@ span.field-label {
  * Forms.
  */
 /* Wrapper for a form element (or group of form elements) and its label. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003589}}
 .form-item {
   margin: 1.5em 0;
   /* Pack groups of checkboxes and radio buttons closer together. */
@@ -1765,47 +1831,47 @@ span.field-label {
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003593}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003594}}
 .form-checkboxes .form-item, .form-radios .form-item {
   /* Drupal core uses "0.4em 0". */
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003600}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003601}}
 tr.odd .form-item, tr.even .form-item {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003607}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003608}}
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
   border: 1px solid #c00;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003612}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003613}}
 .form-item .description {
   font-size: 0.85em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003619}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003620}}
 .form-type-radio .description,
 .form-type-checkbox .description {
   margin-left: 2.4em;
 }
 
 /* The part of the label that indicates a required field. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003625}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003626}}
 .form-required {
   color: #c00;
 }
 
 /* Labels for radios and checkboxes. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003630}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003631}}
 label.option {
   display: inline;
   font-weight: normal;
 }
 
 /* Buttons used by contrib modules like Media. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003636}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003637}}
 a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -1813,14 +1879,14 @@ a.button {
 }
 
 /* Password confirmation. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003642}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003643}}
 .password-parent,
 .confirm-parent {
   margin: 0;
 }
 
 /* Drupal's default login form block. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003647}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003648}}
 #user-login-form {
   text-align: left;
 }
@@ -1832,27 +1898,27 @@ a.button {
  * styling of list items.
  */
 /* OpenID creates a new ul above the login form's links. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003659}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003660}}
 .openid-links {
   /* Position OpenID's ul next to the rest of the links. */
   margin-bottom: 0;
 }
 
 /* The "Log in using OpenID" and "Cancel OpenID login" links. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003666}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003667}}
 .openid-link,
 .user-link {
   margin-top: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003670}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003671}}
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
   margin-left: -20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003674}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003675}}
 #user-login ul {
   margin: 1.5em 0;
 }
@@ -1860,22 +1926,22 @@ html.js #user-login-form li.openid-link,
 /**
  * Drupal admin tables.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003682}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003683}}
 form th {
   text-align: left;
   padding-right: 1em;
   border-bottom: 3px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003688}}
 form tbody {
   border-top: 1px solid #ccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003690}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003691}}
 form table ul {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003695}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003696}}
 tr.even,
 tr.odd {
   background-color: #eee;
@@ -1883,26 +1949,26 @@ tr.odd {
   padding: 0.1em 0.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003700}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003701}}
 tr.even {
   background-color: #fff;
 }
 
 /* Markup generated by theme_tablesort_indicator(). */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003715}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003716}}
 td.active {
   background-color: #ddd;
 }
 
 /* Center checkboxes inside table cell. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003721}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003722}}
 td.checkbox,
 th.checkbox {
   text-align: center;
 }
 
 /* Drupal core wrongly puts this in system.menus.css. Since we override that, add it back. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003726}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003727}}
 td.menu-disabled {
   background: #ccc;
 }
@@ -1913,7 +1979,7 @@ td.menu-disabled {
  * @see autocomplete.js
  */
 /* Suggestion list. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003737}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003738}}
 #autocomplete .selected {
   background: #0072b9;
   color: #fff;
@@ -1924,19 +1990,19 @@ td.menu-disabled {
  *
  * @see collapse.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003748}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003749}}
 html.js .collapsible .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABJJREFUeJxj+MdQw2DBIMAABgAUsAHD3c3BpwAAAABJRU5ErkJggg==');
   background-position: 5px 65%;
   background-repeat: no-repeat;
   padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003757}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003758}}
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABFJREFUCB1jVmCGQClmEWYOAAZ8AMy3HPLXAAAAAElFTkSuQmCC');
   background-position: 5px 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003764}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003765}}
 .fieldset-legend .summary {
   color: #999;
   font-size: 0.9em;
@@ -1948,17 +2014,17 @@ html.js .collapsed .fieldset-legend {
  *
  * @see tabledrag.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003776}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003777}}
 tr.drag {
   background-color: #fffff0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003779}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003780}}
 tr.drag-previous {
   background-color: #ffd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003782}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003783}}
 .tabledrag-toggle-weight {
   font-size: 0.9em;
 }
@@ -1968,7 +2034,7 @@ tr.drag-previous {
  *
  * @see tableselect.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003791}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003792}}
 tr.selected td {
   background: #ffc;
 }
@@ -1978,11 +2044,11 @@ tr.selected td {
  *
  * @see progress.js
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003800}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003801}}
 .progress {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003803}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003804}}
 .progress .bar {
   background: #ccc;
   border-color: #666;
@@ -1993,7 +2059,7 @@ tr.selected td {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003809}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_misc\.scss}line{font-family:\00003810}}
 .progress .filled {
   background-color: #0072b9;
   background-image: url('../images/progress.gif?1394120262');
@@ -2415,21 +2481,22 @@ h2, h3 {
 #page {
   position: relative;
   z-index: 5;
+  padding-bottom: 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000331}}
 #content {
   margin: 1em auto 0;
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000336}}
 #footer {
   position: relative;
   z-index: 10;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000343}}
 .browse-collections {
   float: left;
   height: 0;
@@ -2444,22 +2511,22 @@ h2, h3 {
   font-family: 'Ropa Sans';
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000354}}
 .browse-collections h2 {
   margin-bottom: 0.7em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000357}}
 .browse-collections ul {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000360}}
 .browse-collections ul li {
   float: left;
   list-style: none;
   margin-right: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000364}}
 .browse-collections ul li a {
   font-size: 140%;
   border: 3px solid #767777;
@@ -2473,50 +2540,50 @@ h2, h3 {
   transition: all 0.2s ease 0s;
   text-indent: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000377}}
 .browse-collections ul li a:hover {
   opacity: 0.8;
   border-color: #266295;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000382}}
 .browse-collections ul li.topic a {
   background: url("../images/umkc/topic.jpg") no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000385}}
 .browse-collections ul li.type a {
   background: url("../images/umkc/type.jpg") no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000388}}
 .browse-collections ul li.collection a {
   background: url("../images/umkc/collection.jpg") no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000396}}
 .slideshow {
   margin-bottom: 2.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\0000398}}
 .slideshow .galleria-container {
   background: #767777;
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003106}}
 .slideshow .galleria-info {
   left: 10px;
   bottom: 60px;
   top: inherit;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003109}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003110}}
 .slideshow .galleria-info .galleria-info-text {
   display: block;
   opacity: 0.8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003114}}
 .slideshow .galleria-info .galleria-info-link {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003123}}
 .welcome-message {
   float: left;
   width: 32%;
@@ -2524,17 +2591,17 @@ h2, h3 {
   border-bottom: 5px solid #266295;
   padding-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003129}}
 .welcome-message h2 {
   margin: 0 0 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003132}}
 .welcome-message p {
   margin: 0;
   line-height: 1.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003141}}
 div.swish {
   background: url("../images/umkc/swish.png") repeat-y center top/100% auto;
   width: 100%;
@@ -2545,36 +2612,36 @@ div.swish {
   z-index: -1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003154}}
 .region-sidebar-first {
   margin-top: 1.8em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003161}}
 .not-front #name-and-slogan {
   margin-left: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003164}}
 .not-front #block-islandora-solr-simple {
   margin-right: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003173}}
 .page-browse-topics .view-topics, .page-browse-topics .view-collections, .page-collections .view-topics, .page-collections .view-collections, .page-browse-types .view-topics, .page-browse-types .view-collections {
   height: 100%;
   border: 0 none;
   background: rgba(255, 255, 255, 0.5);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003176}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003177}}
 .page-browse-topics .view-topics tr, .page-browse-topics .view-collections tr, .page-collections .view-topics tr, .page-collections .view-collections tr, .page-browse-types .view-topics tr, .page-browse-types .view-collections tr {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003179}}
 .page-browse-topics .view-topics tr td, .page-browse-topics .view-collections tr td, .page-collections .view-topics tr td, .page-collections .view-collections tr td, .page-browse-types .view-topics tr td, .page-browse-types .view-collections tr td {
   display: inline-block;
   margin: 10px 2% 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_page\.scss}line{font-family:\00003187}}
 .page-browse-topics .view-collections td, .page-collections .view-collections td, .page-browse-types .view-collections td {
   margin-right: 3% !important;
 }
@@ -2648,8 +2715,8 @@ div.swish {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/drupal7\/sites\/all\/themes\/umkc-theme\/sass\/components\/_navigation\.scss}line{font-family:\0000361}}
 .more-link {
-  text-align: left;
-  margin-top: 1.5em;
+  margin-right: 1em;
+  padding-bottom: 0.75em;
   font-family: 'Ropa Sans';
   font-style: italic;
 }
