@@ -188,6 +188,36 @@ $zen-auto-include-item-base: false;
       max-width: 85%;
     }
   }
+
+  .islandora-solr-search-results .islandora-solr-search-result {
+      background: rgb(255, 255, 255) !important;
+      background: rgba(255, 255, 255, .5) !important;
+    .islandora-solr-search-result-inner {
+      border: 0 none !important;
+    }
+  }
+
+  // Search Pages
+
+  .islandora-solr-search-results {
+    dl.solr-thumb {
+      width: 90%;
+    }
+    dl.solr-fields {
+      float: left;
+      margin-left: 1.25em;
+    }
+    dt.solr-label {
+      float: none !important;
+    }
+    .islandora-inline-metadata dd {
+      width: 100%;
+    }
+  }
+  
+  .islandora-solr-range-slider {
+    display: none;
+  }  
 }
 
 
