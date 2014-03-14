@@ -155,7 +155,6 @@
 }
 
 
-
 #block-islandora-solr-sort {
 	margin: 0;
 	height: 2em;
@@ -218,7 +217,6 @@
 
 #block-islandora-solr-display-switch {
   float: right;
-  left: -20px;
   position: relative;
   top: -46px;
   ul {
@@ -228,16 +226,17 @@
   		a {
   			padding: 0 2px;
 			display: inline-block;
-			height: 22px;
+			height: 20px;
 			outline: medium none;
 			text-indent: -9999px;
-			width: 22px;
+			width: 20px;
   		}
   		a.display-default {
   			background: url("../images/umkc/display-grid-list.png") no-repeat top left;
   		}
   		a.display-grid {
   			background: url("../images/umkc/display-grid.png") no-repeat top left;
+  			padding: 0 !important;
   		}
   	}	
   }
@@ -257,12 +256,20 @@
 	}
 }
 
+.view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
+  padding: 1em 0.5em;
+  width: 15%;
+  text-align: center;
+  vertical-align: top;
+}
+
 // Object Pages //
 
 body.no-sidebars {
 	.islandora-basic-image-content {
 	  float: left;
 	  width: auto;
+	  max-width: 100%;
 	  img {
 	  	width: 100%;
 	  }
@@ -270,12 +277,17 @@ body.no-sidebars {
 	.islandora-audio-content, .islandora-pdf-content, .islandora-video-content {
 		@extend .islandora-basic-image-content;	
 	}
+	#mediaplayer_wrapper {
+		max-width: 100%;
+	}
+}
+#mediaplayer {
+	max-width: 100% !important;
 }
 
 #clip, .islandora-pdf-link {
 	margin-left: 0.5em;
 }
-
 
 // Browse Views and Pages //
 
