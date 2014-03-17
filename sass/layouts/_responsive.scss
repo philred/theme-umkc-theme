@@ -261,6 +261,19 @@ $zen-auto-include-item-base: false;
     display: block;
     margin: 1em 0 !important;
   } 
+
+  .date-range-filter-wrapper {
+    .form-type-textfield {
+      display: inline-block;
+      label {
+        margin-right: 0.25em;
+        width: auto !important;
+      }
+    }
+    .form-item-date-filter-date-filter-from {
+      margin-right: 0.5em;
+    }
+  }
 }
 
 
