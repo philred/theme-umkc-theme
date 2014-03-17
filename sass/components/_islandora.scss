@@ -214,6 +214,18 @@
 	}
 }
 
+.date-range-filter-wrapper {
+	.form-type-textfield {
+		display: inline-block;
+		label {
+			margin-right: 0.25em;
+		}
+	}
+	.form-item-date-filter-date-filter-from {
+		margin-right: 0.5em;
+	}
+}
+
 // Mobile Facets
 
 #block-umkcdora-umkcdora-mobile-facets {
