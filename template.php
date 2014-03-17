@@ -139,3 +139,14 @@ function umkc_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_
   );
   $form['simple']['advanced_link'] = $link;
 }
+
+/**
+ *
+ */
+function umkc_theme_islandora_solr_facet_wrapper($variables) {
+  $output = '<div class="islandora-solr-facet-wrapper">';
+  $output .= '<h3 class="' . strtolower($variables['title']) . '">' . $variables['title'] . '</h3>';
+  $output .= $variables['content'];
+  $output .= '</div>';
+  return $output;
+}

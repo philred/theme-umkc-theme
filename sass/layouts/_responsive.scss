@@ -195,7 +195,6 @@ $zen-auto-include-item-base: false;
   }
 
   // Search Pages
-
   .islandora-solr-search-results {
     dl.solr-thumb {
       width: 90%;
@@ -215,6 +214,53 @@ $zen-auto-include-item-base: false;
   .islandora-solr-range-slider {
     display: none;
   }  
+
+  // Mobile Facets
+  #block-islandora-solr-basic-facets {
+    display: none;
+  }
+
+  #block-umkcdora-umkcdora-mobile-facets {
+    display: block !important;
+    width: 100%;
+    float: left;
+    clear: right;
+    margin-top: -50px;
+    fieldset.collapsible {
+      width: 90%;
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid #ccc;
+      a.fieldset-title {
+        text-decoration: none;
+        font-family: 'Ropa Sans';
+      }
+    }
+    fieldset.collapsed {
+      background: none; 
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+    } 
+    h3 {
+      font-size: 115%;
+      margin-bottom: 0.5em;
+    }
+    ul.islandora-solr-facet {
+      margin-top: 0.5em;
+    }
+    span.plusminus, h3.date {
+      display: none;
+    }
+    .islandora-solr-date-filter {
+      text-align: left;
+      margin: 2em 0 0.75em;
+    }
+  }
+  
+  ul.pager {
+    display: block;
+    margin: 1em 0 !important;
+  } 
 }
 
 
