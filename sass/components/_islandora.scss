@@ -195,6 +195,7 @@
 
 #islandora-solr-top {
   float: left;
+  clear: left;
   #islandora-solr-result-count:after {
   	content: "Pages";
   	margin-left: 0.5em;
@@ -213,7 +214,13 @@
 	}
 }
 
-// Islandora Displays //
+// Mobile Facets
+
+#block-umkcdora-umkcdora-mobile-facets {
+	display: none;
+}
+
+// Islandora Displays
 
 #block-islandora-solr-display-switch {
   float: right;
