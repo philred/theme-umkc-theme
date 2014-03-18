@@ -3,7 +3,6 @@
 ////////////////////////
 
 // Simple Search //
-
 #block-islandora-solr-simple {
 	float: right;
 	width: 35%;
@@ -40,7 +39,6 @@
 }
 
 // Advanced Search //
-
 #block-islandora-solr-advanced {
 	margin: 0;
 	#islandora-solr-advanced-terms {
@@ -73,7 +71,6 @@
 }
 
 // Search Results and Facets //
-
 .islandora-solr-search-results {
 	.islandora-solr-search-result {	
 		border-bottom: 2px dotted $blue_color;
@@ -135,21 +132,6 @@
 		}
 		.plusminus {
 			display: none;
-		}
-		.islandora-solr-range-slider {
-			.range-slider-fromto, .date-range-slider-gap {
-				text-align: left;
-			}
-			.date-range-slider-canvas-wrapper {
-				width: auto !important;
-				canvas {
-					width: 100%;
-					height: 100%;
-				}
-			}
-		}
-		.islandora-solr-date-filter, .islandora-solr-range-slider {
-			text-align: left;
 		}
 	}
 }
