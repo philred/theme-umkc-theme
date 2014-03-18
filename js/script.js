@@ -28,4 +28,9 @@ Drupal.behaviors.my_custom_behavior = {
 	  }
 	};
 
+	// Hides Refine Search if empty
+	$(document).ready(function()  {
+		$("#block-umkcdora-umkcdora-mobile-facets .fieldset-wrapper:empty").parent().remove();	
+	});
+
 })(jQuery, Drupal, this, this.document);
