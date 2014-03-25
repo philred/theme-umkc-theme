@@ -59,7 +59,7 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 480px) {
   #main {
     /* Move all the children of #main down to make room. */
-    padding: $nav-height 1em 6em;
+    padding: $nav-height 1em 0;
     position: relative;
   }
   #navigation {
@@ -115,13 +115,13 @@ $zen-auto-include-item-base: false;
   }
   .region-sidebar-first {
     clear: both;
+    display: none;
   }
   #footer {
-    padding: 1em 0 !important;
+    text-align: center;
     .footer-menu li.last {
       float: none !important;
-      text-align: center;
-      display: block;
+      display: inline-block;
       margin-top: 0.5em;
     }
   }
@@ -149,12 +149,6 @@ $zen-auto-include-item-base: false;
       padding: 0 1em !important;
     } 
     li.first {
-      border-left: 2px solid #98B0CA !important;
-    }
-    li.last {
-      border-right: 2px solid #98B0CA !important;
-    }
-    li:nth-last-child(2) {
       border-left: 2px solid #98B0CA !important;
     }
   }
@@ -209,17 +203,12 @@ $zen-auto-include-item-base: false;
     .islandora-inline-metadata dd {
       width: 100%;
     }
-  }
-  
+  } 
   .islandora-solr-range-slider {
     display: none;
   }  
 
   // Mobile Facets
-  #block-islandora-solr-basic-facets {
-    display: none;
-  }
-
   #block-umkcdora-umkcdora-mobile-facets {
     display: block !important;
     width: 100%;
@@ -227,7 +216,6 @@ $zen-auto-include-item-base: false;
     clear: right;
     margin-top: -50px;
     fieldset.collapsible {
-      width: 90%;
       background: rgba(255, 255, 255, 0.5);
       border: 1px solid #ccc;
       a.fieldset-title {
@@ -242,13 +230,13 @@ $zen-auto-include-item-base: false;
       border-bottom: none;
     } 
     h3 {
-      font-size: 115%;
-      margin-bottom: 0.5em;
+      font-size: 120%;
+      margin-bottom: 0.75em;
     }
     ul.islandora-solr-facet {
-      margin-top: 0.5em;
+      margin-top: 0.75em;
     }
-    span.plusminus, h3.date {
+    h3.date {
       display: none;
     }
     .islandora-solr-date-filter {
@@ -282,7 +270,7 @@ $zen-auto-include-item-base: false;
  */
 @media all and (min-width: 482px) and (max-width: 959px) {
 
-  $zen-column-count: 3;
+  $zen-column-count: 5;
 
   /**
    * The layout when there is only one sidebar, the left one.
@@ -290,7 +278,7 @@ $zen-auto-include-item-base: false;
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     #content {
-      @include zen-grid-item(2, 2);
+      @include zen-grid-item(4, 2);
     }
 
     /* Span 1 column, starting in 1st column from left. */
@@ -410,6 +398,63 @@ $zen-auto-include-item-base: false;
         }
       }
   }
+  .region-sidebar-first {
+    clear: both;
+    display: none;
+  }
+  .sidebar-first #content {
+    width: 100% !important;
+    margin: 1em auto 0 !important;
+  }
+
+  // Mobile Facets
+  #block-umkcdora-umkcdora-mobile-facets {
+    display: block !important;
+    width: 100%;
+    float: left;
+    clear: right;
+    margin-top: -50px;
+    fieldset.collapsible {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid #ccc;
+      a.fieldset-title {
+        text-decoration: none;
+        font-family: 'Ropa Sans';
+      }
+    }
+    fieldset.collapsed {
+      background: none; 
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+    } 
+    h3 {
+      font-size: 125%;
+      margin-bottom: 0.75em;
+    }
+    ul.islandora-solr-facet {
+      margin-top: 0.75em;
+    }
+    h3.date {
+      display: none;
+    }
+    .islandora-solr-range-slider {
+      display: none;
+    }
+    .islandora-solr-date-filter {
+      text-align: left;
+      margin: 2em 0 0.75em;
+    }
+  }
+
+  #footer {
+    text-align: center;
+    .footer-menu ul li.last {
+      display: inline-block;
+      float: none !important;
+      margin-top: 0.5em;
+    }
+  }
 }
 
 @media all and (min-width: 801px) and (max-width: 934px) {
@@ -474,17 +519,6 @@ $zen-auto-include-item-base: false;
     }
   }
 
-}
-
-@media all and (min-width: 700px) and (max-width: 959px) {
-  .region-sidebar-first {
-    width: 23.33% !important;
-    margin-right: -3.33% !important;
-  }
-  .sidebar-first #content {
-    width: 76.66% !important;
-    margin-left: 23.33% !important;
-  }
 }
 
 @media all and (min-width: 935px) {

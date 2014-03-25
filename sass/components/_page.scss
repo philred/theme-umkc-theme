@@ -99,10 +99,6 @@ h2, h3 {
 		background: $light_grey;
 		max-width: 100%;
 	}
-	.galleria-thumbnails-container {
-		
-	}
-
 	.galleria-info {
 		left: 10px;
 		bottom: 60px;
@@ -113,6 +109,10 @@ h2, h3 {
 		}
 		.galleria-info-link {
 			display: none;
+			top: -20px;
+		}
+		.galleria-info-close {
+			display: block;
 		}
 	}
 }
