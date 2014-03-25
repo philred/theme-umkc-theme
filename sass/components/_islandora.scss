@@ -75,15 +75,16 @@
 	.islandora-solr-search-result {	
 		border-bottom: 2px dotted $blue_color;
 		margin-bottom: 2.5em;
+		display: block;
 		.islandora-solr-search-result-inner {
 			height: 0; 
-			border-bottom: 180px solid rgb(255, 255, 255);
-			border-bottom: 180px solid rgba(255, 255, 255, .6);
+			border-bottom: 190px solid rgb(255, 255, 255);
+			border-bottom: 190px solid rgba(255, 255, 255, .6);
 			border-right: 80px solid transparent;
 		    -webkit-background-clip: padding-box; /* for Safari */
 		    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 		    dl.solr-thumb {
-		    	margin: 15px;
+		    	margin: 10px;
 		    	img {
 		    		border: 2px solid $blue_color;
 		    	}
@@ -131,7 +132,17 @@
 			padding: 0;
 		}
 		.plusminus {
-			display: none;
+			margin-right: 0.5em;
+		}
+		a.soft-limit {
+			display: block; 
+			margin-bottom: 1em; 
+			font-family: 'Ropa Sans'; 
+			font-style: italic;
+			text-decoration: none;
+		}
+		a.soft-limit:after {
+			content: '»';
 		}
 	}
 }
@@ -186,6 +197,7 @@
 
 .islandora-solr-content {
 	clear: left;
+	margin-top: 0.5em;
 	ul.pager {
 		margin: 0;
 		padding: 0;
@@ -251,6 +263,9 @@
 .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
   padding: 1em 0.5em;
   width: 15%;
+  vertical-align: top;
+  word-wrap: normal;
+  text-align: center;
 }
 
 // Object Pages //
@@ -277,6 +292,12 @@ body.no-sidebars {
 
 #clip, .islandora-pdf-link {
 	margin-left: 0.5em;
+}
+
+.block-islandora-bookmark {
+	h2.block-title {
+		display: none;
+	}
 }
 
 // Browse Views and Pages //
