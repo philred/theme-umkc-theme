@@ -1114,33 +1114,37 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 387, ../sass/layouts/_responsive.scss */
+  /* line 386, ../sass/layouts/_responsive.scss */
+  .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
+    margin-bottom: 0.5em;
+  }
+  /* line 388, ../sass/layouts/_responsive.scss */
   .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
     display: inline-block;
     width: 28% !important;
   }
-  /* line 391, ../sass/layouts/_responsive.scss */
+  /* line 392, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 396, ../sass/layouts/_responsive.scss */
+  /* line 397, ../sass/layouts/_responsive.scss */
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
 
-  /* line 401, ../sass/layouts/_responsive.scss */
+  /* line 402, ../sass/layouts/_responsive.scss */
   .region-sidebar-first {
     clear: both;
     display: none;
   }
 
-  /* line 405, ../sass/layouts/_responsive.scss */
+  /* line 406, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     width: 100% !important;
     margin: 1em auto 0 !important;
   }
 
-  /* line 411, ../sass/layouts/_responsive.scss */
+  /* line 412, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets {
     display: block !important;
     width: 100%;
@@ -1148,51 +1152,51 @@ table {
     clear: right;
     margin-top: -50px;
   }
-  /* line 417, ../sass/layouts/_responsive.scss */
+  /* line 418, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets fieldset.collapsible {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #ccc;
   }
-  /* line 420, ../sass/layouts/_responsive.scss */
+  /* line 421, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets fieldset.collapsible a.fieldset-title {
     text-decoration: none;
     font-family: 'Ropa Sans';
   }
-  /* line 425, ../sass/layouts/_responsive.scss */
+  /* line 426, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets fieldset.collapsed {
     background: none;
     border-left: none;
     border-right: none;
     border-bottom: none;
   }
-  /* line 431, ../sass/layouts/_responsive.scss */
+  /* line 432, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets h3 {
     font-size: 125%;
     margin-bottom: 0.75em;
   }
-  /* line 435, ../sass/layouts/_responsive.scss */
+  /* line 436, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets ul.islandora-solr-facet {
     margin-top: 0.75em;
   }
-  /* line 438, ../sass/layouts/_responsive.scss */
+  /* line 439, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets h3.date {
     display: none;
   }
-  /* line 441, ../sass/layouts/_responsive.scss */
+  /* line 442, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets .islandora-solr-range-slider {
     display: none;
   }
-  /* line 444, ../sass/layouts/_responsive.scss */
+  /* line 445, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets .islandora-solr-date-filter {
     text-align: left;
     margin: 2em 0 0.75em;
   }
 
-  /* line 450, ../sass/layouts/_responsive.scss */
+  /* line 451, ../sass/layouts/_responsive.scss */
   #footer {
     text-align: center;
   }
-  /* line 452, ../sass/layouts/_responsive.scss */
+  /* line 453, ../sass/layouts/_responsive.scss */
   #footer .footer-menu ul li.last {
     display: inline-block;
     float: none !important;
@@ -1201,11 +1205,11 @@ table {
 }
 @media all and (min-width: 801px) and (max-width: 934px) {
   /* Custom */
-  /* line 463, ../sass/layouts/_responsive.scss */
+  /* line 464, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 100px;
   }
-  /* line 465, ../sass/layouts/_responsive.scss */
+  /* line 466, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 100px !important;
     height: 100px !important;
@@ -1216,7 +1220,7 @@ table {
   }
 
   /* Browse pages */
-  /* line 477, ../sass/layouts/_responsive.scss */
+  /* line 478, ../sass/layouts/_responsive.scss */
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 415px solid white;
@@ -1231,31 +1235,35 @@ table {
     font-size: 110%;
   }
   /* line 488, ../sass/layouts/_responsive.scss */
+  .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
+    margin-bottom: 0.5em;
+  }
+  /* line 490, ../sass/layouts/_responsive.scss */
   .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
     display: inline-block;
     width: 22% !important;
   }
-  /* line 492, ../sass/layouts/_responsive.scss */
+  /* line 494, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 497, ../sass/layouts/_responsive.scss */
+  /* line 499, ../sass/layouts/_responsive.scss */
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
 }
 @media all and (min-width: 935px) and (max-width: 1080px) {
   /* Custom */
-  /* line 506, ../sass/layouts/_responsive.scss */
+  /* line 508, ../sass/layouts/_responsive.scss */
   .browse-collections {
     border-bottom: 280px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 70px solid transparent !important;
   }
-  /* line 509, ../sass/layouts/_responsive.scss */
+  /* line 511, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 125px;
   }
-  /* line 511, ../sass/layouts/_responsive.scss */
+  /* line 513, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 125px !important;
     height: 125px !important;
@@ -1267,7 +1275,7 @@ table {
 }
 @media all and (min-width: 935px) {
   /* Browse pages */
-  /* line 526, ../sass/layouts/_responsive.scss */
+  /* line 528, ../sass/layouts/_responsive.scss */
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 240px solid white;
@@ -1281,19 +1289,20 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 536, ../sass/layouts/_responsive.scss */
+  /* line 538, ../sass/layouts/_responsive.scss */
   .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
     width: 100%;
+    margin-bottom: 0.5em;
   }
-  /* line 539, ../sass/layouts/_responsive.scss */
+  /* line 542, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail, .view-topics table td .views-field-field-thumbnail, .page-browse-topics .view-collections table td .views-field-field-thumbnail, .page-collections .view-collections table td .views-field-field-thumbnail, .page-browse-types .view-collections table td .views-field-field-thumbnail {
     margin: 10px 5px 0 0;
   }
-  /* line 541, ../sass/layouts/_responsive.scss */
+  /* line 544, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 546, ../sass/layouts/_responsive.scss */
+  /* line 549, ../sass/layouts/_responsive.scss */
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
@@ -1305,19 +1314,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 563, ../sass/layouts/_responsive.scss */
+  /* line 566, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 565, ../sass/layouts/_responsive.scss */
+  /* line 568, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 570, ../sass/layouts/_responsive.scss */
+  /* line 573, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1328,19 +1337,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 578, ../sass/layouts/_responsive.scss */
+  /* line 581, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 580, ../sass/layouts/_responsive.scss */
+  /* line 583, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 585, ../sass/layouts/_responsive.scss */
+  /* line 588, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1351,27 +1360,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 593, ../sass/layouts/_responsive.scss */
+  /* line 596, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 595, ../sass/layouts/_responsive.scss */
+  /* line 598, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 600, ../sass/layouts/_responsive.scss */
+  /* line 603, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 605, ../sass/layouts/_responsive.scss */
+  /* line 608, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
@@ -2825,6 +2834,78 @@ div.swish {
 /* line 187, ../sass/components/_page.scss */
 .page-browse-topics .view-collections td, .page-collections .view-collections td, .page-browse-types .view-collections td {
   margin-right: 3% !important;
+}
+
+/* line 195, ../sass/components/_page.scss */
+#book-viewer {
+  position: relative;
+  z-index: 500;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 199, ../sass/components/_page.scss */
+#book-viewer #BRtoolbar {
+  background: #FFF;
+}
+/* line 202, ../sass/components/_page.scss */
+#book-viewer #BRpageview, #book-viewer #BRcontainer {
+  background: #CCC;
+}
+/* line 205, ../sass/components/_page.scss */
+#book-viewer #BRnav {
+  background: #FFF;
+}
+/* line 207, ../sass/components/_page.scss */
+#book-viewer #BRnav #BRnavCntlBtm {
+  background-color: #FFF;
+}
+
+/* line 213, ../sass/components/_page.scss */
+#colorbox {
+  top: 350px !important;
+}
+
+/* line 217, ../sass/components/_page.scss */
+#colorbox, #cboxOverlay, #cboxWrapper {
+  max-width: 100%;
+  height: 100% !important;
+}
+
+/* line 222, ../sass/components/_page.scss */
+#cboxWrapper {
+  max-width: 100%;
+  height: 100% !important;
+}
+/* line 225, ../sass/components/_page.scss */
+#cboxWrapper #cboxContent {
+  max-width: 92%;
+  border-color: #266295;
+  padding: 0.5em;
+}
+/* line 226, ../sass/components/_page.scss */
+#cboxWrapper #cboxContent #cboxLoadedContent {
+  max-width: 100%;
+}
+/* line 234, ../sass/components/_page.scss */
+#cboxWrapper .BRfloatHead {
+  background: #266295;
+  padding: 20px 10px;
+}
+/* line 238, ../sass/components/_page.scss */
+#cboxWrapper .BRfloat {
+  min-width: 385px;
+}
+/* line 241, ../sass/components/_page.scss */
+#cboxWrapper .floatShut {
+  margin: 18px 10px;
+}
+/* line 244, ../sass/components/_page.scss */
+#cboxWrapper .BRfloatMeta {
+  height: auto !important;
+  height: auto !important;
+}
+/* line 248, ../sass/components/_page.scss */
+#cboxWrapper table {
+  margin: 0.5em;
 }
 
 /* line 5, ../sass/components/_navigation.scss */
