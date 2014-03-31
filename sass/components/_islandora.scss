@@ -270,17 +270,15 @@
 // Object Pages //
 
 body.no-sidebars {
-	.islandora-basic-image-content {
-	  float: left;
-	  width: auto;
-	  max-width: 100%;
-	  img {
-	  	width: 100%;
-	  }
+	.islandora-basic-image-content, .islandora-audio-content, .islandora-pdf-content, .islandora-video-content {
+		float: left;
+		width: auto;
+		max-width: 100%;
 	}
-	.islandora-audio-content, .islandora-pdf-content, .islandora-video-content {
-		@extend .islandora-basic-image-content;	
+	.islandora-basic-image-content img {
+		width: 100%;
 	}
+
 	#mediaplayer_wrapper {
 		max-width: 100%;
 	}
