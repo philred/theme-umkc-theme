@@ -2248,14 +2248,13 @@ tr.selected td {
   /* line 25, ../sass/_print.scss */
   #content {
     /* Add visible URL after links. */
+    /* a[href]:after {
+       content: " (" attr(href) ")";
+       font-weight: normal;
+       font-size: $base-font-size;
+     }*/
     /* Only display useful links. */
     /* Add visible title after abbreviations. */
-  }
-  /* line 27, ../sass/_print.scss */
-  #content a[href]:after {
-    content: " (" attr(href) ")";
-    font-weight: normal;
-    font-size: 16px;
   }
   /* line 35, ../sass/_print.scss */
   #content a[href^="javascript:"]:after,
