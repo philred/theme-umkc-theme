@@ -160,8 +160,7 @@ html {
   line-height: 1.5em;
 }
 
-/* Remove default margin. */
-/* line 156, ../sass/_normalize.scss */
+/* line 155, ../sass/_normalize.scss */
 body {
   margin: 0;
   padding: 0;
@@ -175,12 +174,12 @@ body {
 }
 
 @-webkit-keyframes fontfix {
-  /* line 170, ../sass/_normalize.scss */
+  /* line 169, ../sass/_normalize.scss */
   from {
     opacity: 1;
   }
 
-  /* line 171, ../sass/_normalize.scss */
+  /* line 170, ../sass/_normalize.scss */
   to {
     opacity: 1;
   }
@@ -192,30 +191,30 @@ body {
  * The order of link states are based on Eric Meyer's article:
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
-/* line 180, ../sass/_normalize.scss */
+/* line 179, ../sass/_normalize.scss */
 a:link, a:visited {
   color: #414042;
 }
 
-/* line 184, ../sass/_normalize.scss */
+/* line 183, ../sass/_normalize.scss */
 a:hover,
 a:focus {
   color: #266295;
 }
 
-/* line 187, ../sass/_normalize.scss */
+/* line 186, ../sass/_normalize.scss */
 a:active {
   color: #266295;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
-/* line 192, ../sass/_normalize.scss */
+/* line 191, ../sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
 /* Improve readability when focused and also mouse hovered in all browsers. */
-/* line 198, ../sass/_normalize.scss */
+/* line 197, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -231,13 +230,13 @@ a:hover {
  * For more information, see http://24ways.org/2006/compose-to-a-vertical-rhythm
  */
 /* Set 1 unit of vertical rhythm on the top and bottom margin. */
-/* line 214, ../sass/_normalize.scss */
+/* line 213, ../sass/_normalize.scss */
 p,
 pre {
   margin: 1.5em 0;
 }
 
-/* line 217, ../sass/_normalize.scss */
+/* line 216, ../sass/_normalize.scss */
 blockquote {
   /* Also indent the quote on both sides. */
   margin: 1.5em 30px;
@@ -247,7 +246,7 @@ blockquote {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 226, ../sass/_normalize.scss */
+/* line 225, ../sass/_normalize.scss */
 h1 {
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   font-size: 3em;
@@ -257,7 +256,7 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-/* line 234, ../sass/_normalize.scss */
+/* line 233, ../sass/_normalize.scss */
 h2 {
   font-size: 1.75em;
   line-height: 1.71429em;
@@ -265,7 +264,7 @@ h2 {
   margin-bottom: 0.85714em;
 }
 
-/* line 239, ../sass/_normalize.scss */
+/* line 238, ../sass/_normalize.scss */
 h3 {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -273,7 +272,7 @@ h3 {
   margin-bottom: 1.2em;
 }
 
-/* line 244, ../sass/_normalize.scss */
+/* line 243, ../sass/_normalize.scss */
 h4 {
   font-size: 1em;
   line-height: 1.5em;
@@ -281,7 +280,7 @@ h4 {
   margin-bottom: 1.5em;
 }
 
-/* line 249, ../sass/_normalize.scss */
+/* line 248, ../sass/_normalize.scss */
 h5 {
   font-size: 0.83em;
   line-height: 1.80723em;
@@ -289,7 +288,7 @@ h5 {
   margin-bottom: 1.80723em;
 }
 
-/* line 254, ../sass/_normalize.scss */
+/* line 253, ../sass/_normalize.scss */
 h6 {
   font-size: 0.67em;
   line-height: 2.23881em;
@@ -298,26 +297,26 @@ h6 {
 }
 
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
-/* line 261, ../sass/_normalize.scss */
+/* line 260, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-/* line 267, ../sass/_normalize.scss */
+/* line 266, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
 /* Address styling not present in Safari 5 and Chrome. */
-/* line 272, ../sass/_normalize.scss */
+/* line 271, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
 /* Address differences between Firefox and other browsers. */
-/* line 277, ../sass/_normalize.scss */
+/* line 276, ../sass/_normalize.scss */
 hr {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -329,14 +328,14 @@ hr {
 }
 
 /* Address styling not present in IE 8/9. */
-/* line 286, ../sass/_normalize.scss */
+/* line 285, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
 /* Correct font family set oddly in Safari 5 and Chrome. */
-/* line 297, ../sass/_normalize.scss */
+/* line 296, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -349,25 +348,25 @@ var {
 }
 
 /* Improve readability of pre-formatted text in all browsers. */
-/* line 306, ../sass/_normalize.scss */
+/* line 305, ../sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
 
 /* Set consistent quote types. */
-/* line 318, ../sass/_normalize.scss */
+/* line 317, ../sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /* Address inconsistent and variable font size in all browsers. */
-/* line 323, ../sass/_normalize.scss */
+/* line 322, ../sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
 /* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-/* line 329, ../sass/_normalize.scss */
+/* line 328, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -376,12 +375,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 335, ../sass/_normalize.scss */
+/* line 334, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 338, ../sass/_normalize.scss */
+/* line 337, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -389,7 +388,7 @@ sub {
 /**
  * Lists
  */
-/* line 348, ../sass/_normalize.scss */
+/* line 347, ../sass/_normalize.scss */
 dl,
 menu,
 ol,
@@ -398,7 +397,7 @@ ul {
   margin: 1.5em 0;
 }
 
-/* line 355, ../sass/_normalize.scss */
+/* line 354, ../sass/_normalize.scss */
 ol ol,
 ol ul,
 ul ol,
@@ -407,13 +406,13 @@ ul ul {
   margin: 0;
 }
 
-/* line 360, ../sass/_normalize.scss */
+/* line 359, ../sass/_normalize.scss */
 dd {
   margin: 0 0 0 30px;
 }
 
 /* Address paddings set differently in IE 6/7. */
-/* line 367, ../sass/_normalize.scss */
+/* line 366, ../sass/_normalize.scss */
 menu,
 ol,
 ul {
@@ -425,7 +424,7 @@ ul {
  *
  * @todo Look into adding responsive embedded video.
  */
-/* line 385, ../sass/_normalize.scss */
+/* line 384, ../sass/_normalize.scss */
 img {
   /* Remove border when inside `a` element in IE 8/9. */
   border: 0;
@@ -439,13 +438,13 @@ img {
 }
 
 /* Correct overflow displayed oddly in IE 9. */
-/* line 406, ../sass/_normalize.scss */
+/* line 405, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /* Address margin not present in IE 8/9 and Safari 5. */
-/* line 411, ../sass/_normalize.scss */
+/* line 410, ../sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -454,7 +453,7 @@ figure {
  * Forms
  */
 /* Define consistent border, margin, and padding. */
-/* line 427, ../sass/_normalize.scss */
+/* line 426, ../sass/_normalize.scss */
 fieldset {
   margin: 0 2px;
   /* Apply borders and padding that keep the vertical rhythm. */
@@ -478,7 +477,7 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
-/* line 442, ../sass/_normalize.scss */
+/* line 441, ../sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -493,7 +492,7 @@ legend {
  * 4. Improve appearance and consistency with IE 6/7.
  * 5. Keep form elements constrained in their containers.
  */
-/* line 460, ../sass/_normalize.scss */
+/* line 459, ../sass/_normalize.scss */
 button,
 input,
 select,
@@ -516,7 +515,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 477, ../sass/_normalize.scss */
+/* line 476, ../sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -528,7 +527,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 488, ../sass/_normalize.scss */
+/* line 487, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -543,7 +542,7 @@ select {
  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-/* line 504, ../sass/_normalize.scss */
+/* line 503, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -557,7 +556,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 516, ../sass/_normalize.scss */
+/* line 515, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -569,7 +568,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-/* line 527, ../sass/_normalize.scss */
+/* line 526, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -585,7 +584,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 541, ../sass/_normalize.scss */
+/* line 540, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -599,14 +598,14 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 551, ../sass/_normalize.scss */
+/* line 550, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /* Remove inner padding and border in Firefox 4+. */
-/* line 557, ../sass/_normalize.scss */
+/* line 556, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -617,7 +616,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 566, ../sass/_normalize.scss */
+/* line 565, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -626,7 +625,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-/* line 572, ../sass/_normalize.scss */
+/* line 571, ../sass/_normalize.scss */
 label {
   display: block;
   font-weight: bold;
@@ -635,7 +634,7 @@ label {
 /**
  * Tables
  */
-/* line 580, ../sass/_normalize.scss */
+/* line 579, ../sass/_normalize.scss */
 table {
   /* Remove most spacing between table cells. */
   border-collapse: collapse;
@@ -647,7 +646,7 @@ table {
   margin-bottom: 1.5em;
 }
 
-/* line 591, ../sass/_normalize.scss */
+/* line 590, ../sass/_normalize.scss */
 [tabindex="-1"] {
   outline: 0;
 }
@@ -1151,69 +1150,21 @@ table {
 
   /* line 402, ../sass/layouts/_responsive.scss */
   .region-sidebar-first {
-    clear: both;
-    display: none;
+    width: 25% !important;
+    margin-right: -25% !important;
   }
 
   /* line 406, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
-    width: 100% !important;
-    margin: 1em auto 0 !important;
+    width: 75% !important;
+    margin-left: 25% !important;
   }
 
-  /* line 412, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets {
-    display: block !important;
-    width: 100%;
-    float: left;
-    clear: right;
-    margin-top: -50px;
-  }
-  /* line 418, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets fieldset.collapsible {
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #ccc;
-  }
-  /* line 421, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets fieldset.collapsible a.fieldset-title {
-    text-decoration: none;
-    font-family: 'Ropa Sans';
-  }
-  /* line 426, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets fieldset.collapsed {
-    background: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-  }
-  /* line 432, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets h3 {
-    font-size: 125%;
-    margin-bottom: 0.75em;
-  }
-  /* line 436, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets ul.islandora-solr-facet {
-    margin-top: 0.75em;
-  }
-  /* line 439, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets h3.date {
-    display: none;
-  }
-  /* line 442, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets .islandora-solr-range-slider {
-    display: none;
-  }
-  /* line 445, ../sass/layouts/_responsive.scss */
-  #block-umkcdora-umkcdora-mobile-facets .islandora-solr-date-filter {
-    text-align: left;
-    margin: 2em 0 0.75em;
-  }
-
-  /* line 451, ../sass/layouts/_responsive.scss */
+  /* line 411, ../sass/layouts/_responsive.scss */
   #footer {
     text-align: center;
   }
-  /* line 453, ../sass/layouts/_responsive.scss */
+  /* line 413, ../sass/layouts/_responsive.scss */
   #footer .footer-menu ul li.last {
     display: inline-block;
     float: none !important;
@@ -1222,11 +1173,11 @@ table {
 }
 @media all and (min-width: 801px) and (max-width: 934px) {
   /* Custom */
-  /* line 464, ../sass/layouts/_responsive.scss */
+  /* line 424, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 100px;
   }
-  /* line 466, ../sass/layouts/_responsive.scss */
+  /* line 426, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 100px !important;
     height: 100px !important;
@@ -1237,7 +1188,7 @@ table {
   }
 
   /* Browse pages */
-  /* line 478, ../sass/layouts/_responsive.scss */
+  /* line 438, ../sass/layouts/_responsive.scss */
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 415px solid white;
@@ -1251,36 +1202,36 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 488, ../sass/layouts/_responsive.scss */
+  /* line 448, ../sass/layouts/_responsive.scss */
   .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
     margin-bottom: 0.5em;
   }
-  /* line 490, ../sass/layouts/_responsive.scss */
+  /* line 450, ../sass/layouts/_responsive.scss */
   .view-collections table td, .view-topics table td, .page-browse-topics .view-collections table td, .page-collections .view-collections table td, .page-browse-types .view-collections table td {
     display: inline-block;
     width: 22% !important;
   }
-  /* line 494, ../sass/layouts/_responsive.scss */
+  /* line 454, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 499, ../sass/layouts/_responsive.scss */
+  /* line 459, ../sass/layouts/_responsive.scss */
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
 }
 @media all and (min-width: 935px) and (max-width: 1080px) {
   /* Custom */
-  /* line 508, ../sass/layouts/_responsive.scss */
+  /* line 468, ../sass/layouts/_responsive.scss */
   .browse-collections {
     border-bottom: 280px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 70px solid transparent !important;
   }
-  /* line 511, ../sass/layouts/_responsive.scss */
+  /* line 471, ../sass/layouts/_responsive.scss */
   .browse-collections ul li {
     max-height: 125px;
   }
-  /* line 513, ../sass/layouts/_responsive.scss */
+  /* line 473, ../sass/layouts/_responsive.scss */
   .browse-collections ul li a {
     width: 125px !important;
     height: 125px !important;
@@ -1292,7 +1243,7 @@ table {
 }
 @media all and (min-width: 935px) {
   /* Browse pages */
-  /* line 528, ../sass/layouts/_responsive.scss */
+  /* line 488, ../sass/layouts/_responsive.scss */
   .view-collections, .view-topics, .page-browse-topics .view-collections, .page-collections .view-collections, .page-browse-types .view-collections {
     height: 0;
     border-bottom: 240px solid white;
@@ -1306,20 +1257,20 @@ table {
     font-family: 'Ropa Sans';
     font-size: 110%;
   }
-  /* line 538, ../sass/layouts/_responsive.scss */
+  /* line 498, ../sass/layouts/_responsive.scss */
   .view-collections table, .view-topics table, .page-browse-topics .view-collections table, .page-collections .view-collections table, .page-browse-types .view-collections table {
     width: 100%;
     margin-bottom: 0.5em;
   }
-  /* line 542, ../sass/layouts/_responsive.scss */
+  /* line 502, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail, .view-topics table td .views-field-field-thumbnail, .page-browse-topics .view-collections table td .views-field-field-thumbnail, .page-collections .view-collections table td .views-field-field-thumbnail, .page-browse-types .view-collections table td .views-field-field-thumbnail {
     margin: 10px 5px 0 0;
   }
-  /* line 544, ../sass/layouts/_responsive.scss */
+  /* line 504, ../sass/layouts/_responsive.scss */
   .view-collections table td .views-field-field-thumbnail img, .view-topics table td .views-field-field-thumbnail img, .page-browse-topics .view-collections table td .views-field-field-thumbnail img, .page-collections .view-collections table td .views-field-field-thumbnail img, .page-browse-types .view-collections table td .views-field-field-thumbnail img {
     border: 3px solid #767777;
   }
-  /* line 549, ../sass/layouts/_responsive.scss */
+  /* line 509, ../sass/layouts/_responsive.scss */
   .view-collections table a, .view-topics table a, .page-browse-topics .view-collections table a, .page-collections .view-collections table a, .page-browse-types .view-collections table a {
     text-decoration: none;
   }
@@ -1331,19 +1282,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 566, ../sass/layouts/_responsive.scss */
+  /* line 526, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 568, ../sass/layouts/_responsive.scss */
+  /* line 528, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 80%;
     margin-left: 20%;
     margin-right: -100%;
   }
-  /* line 573, ../sass/layouts/_responsive.scss */
+  /* line 533, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 20%;
@@ -1354,19 +1305,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 581, ../sass/layouts/_responsive.scss */
+  /* line 541, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 583, ../sass/layouts/_responsive.scss */
+  /* line 543, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 80%;
     margin-left: 0%;
     margin-right: -80%;
   }
-  /* line 588, ../sass/layouts/_responsive.scss */
+  /* line 548, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 20%;
@@ -1377,27 +1328,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 596, ../sass/layouts/_responsive.scss */
+  /* line 556, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 598, ../sass/layouts/_responsive.scss */
+  /* line 558, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 60%;
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 603, ../sass/layouts/_responsive.scss */
+  /* line 563, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 20%;
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 608, ../sass/layouts/_responsive.scss */
+  /* line 568, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 20%;
