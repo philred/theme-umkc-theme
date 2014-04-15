@@ -2215,12 +2215,13 @@ tr.selected td {
   }
 
   /* Hide sidebars and nav elements. */
-  /* line 77, ../sass/_print.scss */
+  /* line 78, ../sass/_print.scss */
   #skip-link,
   #toolbar,
   #navigation,
   .region-sidebar-first,
   .region-sidebar-second,
+  .region-highlighted,
   #footer,
   .breadcrumb,
   .tabs,
@@ -2231,7 +2232,7 @@ tr.selected td {
   .pager,
   .feed-icons {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
 }
 /* Custom theme and Islandora rules */
