@@ -28,7 +28,7 @@
  * HTML5 display definitions
  */
 /* Correct `block` display not defined in IE 8/9. */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600|Ropa+Sans:400,400italic|Libre+Baskerville:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600|Ropa+Sans:400,400italic|Libre+Baskerville:400,700);
 /* line 33, ../sass/_normalize.scss */
 article,
 aside,
