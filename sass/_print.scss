@@ -66,6 +66,7 @@
   #navigation,
   .region-sidebar-first,
   .region-sidebar-second,
+  .region-highlighted,
   #footer,
   .breadcrumb,
   .tabs,
@@ -76,6 +77,6 @@
   .pager,
   .feed-icons {
     visibility: hidden;
-    display: none;
+    display: none !important;
   }
 }
