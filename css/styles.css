@@ -193,7 +193,7 @@ a:hover {
 /* line 181, ../sass/_normalize.scss */
 p,
 pre {
-  margin: 1.5em 0;
+  margin: 0 0 .5em 0;
 }
 
 /* line 184, ../sass/_normalize.scss */
