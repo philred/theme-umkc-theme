@@ -2383,10 +2383,24 @@ tr.selected td {
   list-style: none;
   padding: 0;
   margin-top: -1.5em;
+	display: table;
+	width: 100%;
+}
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper li {
+  display: table-row;
 }
 /* line 133, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .plusminus {
-  margin-right: 0.5em;
+  display: table-cell;
+	width: 20px;
+	height: 100%;
+	vertical-align: top;
+}
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .count {
+  display: table-cell;
+	padding: 1px 3px 0 2px;
+	vertical-align: top;
+	text-align: right;
 }
 /* line 136, ../sass/components/_islandora.scss */
 #block-islandora-solr-basic-facets .islandora-solr-facet-wrapper a.soft-limit {
