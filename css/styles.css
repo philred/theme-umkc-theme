@@ -2417,6 +2417,10 @@ tr.selected td {
   content: '»';
 }
 
+#block-islandora-solr-basic-facets .islandora-solr-facet-wrapper .hidden {
+    display: none;
+}
+
 /* line 150, ../sass/components/_islandora.scss */
 #block-islandora-solr-sort, #block-islandora-solr-current-query {
   margin: 0;
