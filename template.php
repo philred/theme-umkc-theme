@@ -150,3 +150,20 @@ function umkc_theme_islandora_solr_facet_wrapper($variables) {
   $output .= '</div>';
   return $output;
 }
+
+/**
+ *
+ */
+function umkc_theme_preprocess_html(&$variables, $hook) {
+  if (request_path() == 'acknowledgments') {
+    $keywords = array(
+      '#tag' => 'meta',
+      '#attributes' => array(
+        'name' => 'keywords',
+        'content' => 'National Endowment for the Humanities, NEH',
+      ),
+    );
+
+    drupal_add_html_head($keywords, 'keywords');
+  }
+}
