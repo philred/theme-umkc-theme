@@ -150,3 +150,41 @@ function umkc_theme_islandora_solr_facet_wrapper($variables) {
   $output .= '</div>';
   return $output;
 }
+
+/**
+ * Override the islandora_objects template to change the display labels.
+ *
+ * @param array $variables
+ *   The template variables array.
+ *
+ * @return string
+ *   The HTML output.
+ */
+function umkc_theme_islandora_objects(array &$variables) {
+  // Reprocess the objects list so we can jam in our own labels.
+  module_load_include('inc', 'islandora', 'theme/theme');
+  module_load_include('inc', 'umkcdora', 'includes/utilities');
+  $display = (empty($_GET['display'])) ? 'grid' : $_GET['display'];
+  $grid_display = $display == 'grid';
+  $objects = array_map('umkcdora_objects_object_mapper', $variables['objects']);
+  $theme = $grid_display ? 'islandora_objects_grid' : 'islandora_objects_list';
+  $variables['content'] = theme($theme, array('objects' => $objects));
+  $links = theme('links', array(
+    'links' => $variables['display_links'],
+    'attributes' => array('class' => array('links', 'inline')),
+  ));
+
+  // The actual output.
+  $output = <<<HTML
+<div class="islandora-objects clearfix">
+  <span class="islandora-objects-display-switch">
+    $links
+  </span>
+  {$variables['pager']}
+  {$variables['content']}
+  {$variables['pager']}
+</div>
+HTML;
+
+  return $output;
+}
