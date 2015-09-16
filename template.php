@@ -7,133 +7,9 @@
  * @see https://drupal.org/node/1728096
  */
 
-
 /**
- * Override or insert variables into the maintenance page template.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("maintenance_page" in this case.)
+ * Simple Search Advanced Link //
  */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_maintenance_page(&$variables, $hook) {
-  // When a variable is manipulated or added in preprocess_html or
-  // preprocess_page, that same work is probably needed for the maintenance page
-  // as well, so we can just re-use those functions to do that work here.
-  umkc_theme_preprocess_html($variables, $hook);
-  umkc_theme_preprocess_page($variables, $hook);
-}
-// */
-
-/**
- * Override or insert variables into the html templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("html" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
-}
-// */
-
-/**
- * Override or insert variables into the page templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("page" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-}
-// */
-
-/**
- * Override or insert variables into the node templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("node" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // umkc_theme_preprocess_node_page() or umkc_theme_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
-  }
-}
-// */
-
-/**
- * Override or insert variables into the comment templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("comment" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_comment(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-}
-// */
-
-/**
- * Override or insert variables into the region templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("region" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_region(&$variables, $hook) {
-  // Don't use Zen's region--sidebar.tpl.php template for sidebars.
-  //if (strpos($variables['region'], 'sidebar_') === 0) {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
-  //}
-}
-// */
-
-/**
- * Override or insert variables into the block templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("block" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function umkc_theme_preprocess_block(&$variables, $hook) {
-  // Add a count to all the blocks in the region.
-  // $variables['classes_array'][] = 'count-' . $variables['block_id'];
-
-  // By default, Zen will use the block--no-wrapper.tpl.php for the main
-  // content. This optional bit of code undoes that:
-  //if ($variables['block_html_id'] == 'block-system-main') {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
-  //}
-}
-// */
-
-
-// Simple Search Advanced Link //
-
 function umkc_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $link = array(
     '#markup' => l(t("Advanced Search"), "islandora-search", array('attributes' => array('class' => array('adv_search')))),
@@ -153,7 +29,7 @@ function umkc_theme_islandora_solr_facet_wrapper($variables) {
 }
 
 /**
- *
+ * Add attribute to acknowledgements
  */
 function umkc_theme_preprocess_html(&$variables, $hook) {
   if (request_path() == 'acknowledgments') {
@@ -166,5 +42,40 @@ function umkc_theme_preprocess_html(&$variables, $hook) {
     );
 
     drupal_add_html_head($keywords, 'keywords');
+  }
+}
+
+/**
+ * Override page theme for specific objects
+ */
+function umkc_theme_preprocess_page($variables) {
+
+// Only if an islandora object
+  if ($object = menu_get_object('islandora_object', 2)) {
+
+    $object_model = 'islandora:collectionCModel';
+    $object_content_models = $object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
+  
+//    dsm($object_content_models, 'models');
+  
+// Only if a collection model
+    if ($object_content_models['0']['object']['value'] == $object_model) {
+//      dsm($object, 'object');
+
+      dsm($object['DC']->content, 'metadata');
+  
+//      $objects_dc_array = array(); 
+  
+      if (isset($object['DC']))
+      {
+        try {
+          $dc = $object['DC']->content;
+          $object_dc = simplexml_load_string($dc);
+ //         $objects_dc_array[$pid]['dc_array'] = isset($object_dc) ? DC::as_formatted_array($object_dc) : array();
+        } catch (Exception $e) {
+          drupal_set_message(t('Error retrieving object %s %t', array('%s' => $islandora_object->id, '%t' => $e->getMessage())), 'error', FALSE);
+        }
+      }
+    }
   }
 }
