@@ -89,11 +89,13 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?> UMKC Coll Title</h1>
-
-      <?php print render($description); ?>
+        <h1 class="page__title title" id="page-title"><?php print $title; ?> Collection Test Title</h1>
+<h3>test after</h3>
 
       <?php endif; ?>
+
+      <?php print render($test1); ?>
+
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <div class="tabs">
