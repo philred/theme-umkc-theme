@@ -75,7 +75,6 @@
             <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
           </h1>
         <?php endif; ?>
-
         <?php if ($site_slogan): ?>
           <div class="header__site-slogan" id="site-slogan"><?php print $site_slogan; ?></div>
         <?php endif; ?>
@@ -84,17 +83,24 @@
 
     <?php print render($page['highlighted']); ?>
 
+    <div id="umkc-collection-header">
+      <?php if ($title): ?>
+        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      
+      <div class="umkc-collection-header-description">
+        <?php print html_entity_decode($islandora_object['description']['1']); ?>
+      </div>
+      <div class="umkc-collection-header-thumbnail>
+        <?php print render($islandora_object['thumbnail']); ?>
+      </div>
+    </div>
+
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
+
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="page__title title" id="page-title"><?php print $title; ?> Collection Test Title</h1>
-<h3>test after</h3>
-
-      <?php endif; ?>
-
-      <?php print render($test1); ?>
 
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
