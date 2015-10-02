@@ -82,12 +82,19 @@
     <?php endif; ?>
 
     <?php print render($page['highlighted']); ?>
-<?php if ($title): ?>
-<h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
-<?php endif; ?>
 
-<?php print render($islandora_object['description']['1']); ?><br>
-<?php print render($islandora_object['thumbnail']); ?>
+    <div id="umkc-collection-header">
+      <?php if ($title): ?>
+        <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      
+      <div class="umkc-collection-header-description">
+        <?php print render($islandora_object['description']['1']); ?>
+      </div>
+      <div class="umkc-collection-header-thumbnail>
+        <?php print render($islandora_object['thumbnail']); ?>
+      </div>
+    </div>
 
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
