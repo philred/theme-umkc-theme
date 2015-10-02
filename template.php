@@ -51,61 +51,41 @@ function umkc_theme_preprocess_html(&$variables, $hook) {
 function umkc_theme_preprocess_page(&$variables) {
 
 // Only if an islandora object
-  if ($fc_object = menu_get_object('islandora_object', 2)) {
-    $pid = 'umkc:kmbc';
+  if ($islandora_object = menu_get_object('islandora_object', 2)) {
+
+// Variables
+    $temp_array = array(); 
+//    $pid = 'umkc:kmbc';
+    $pid = $islandora_object->id;
+    $object_url = '/islandora/object/' . $pid;
+    $thumbnail_img = '<img src="' . $GLOBALS['base_url'] . $object_url . '/datastream/TN/view"' . '/>';
     $object_model = 'islandora:collectionCModel';
-    $object_content_models = $fc_object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
-    $associated_objects_mods_array = array(); 
+
+    $object_content_models = $islandora_object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
+
+	  foreach ($object_content_models as $model) {
+	    $variables['theme_hook_suggestions'][] = 'page__islandora__object__' . str_replace(':', '_', $model['object']['value']);
+	  }
 
 // Only if a collection model
     if ($object_content_models['0']['object']['value'] == $object_model) {
-      $associated_objects_mods_array[$pid]['object'] = $fc_object;
 
-//      dsm($fc_object, 'object');
+      $metadata = $islandora_object['DC']->content;
+      preg_match("/<dc:description>(.*)<\/dc:description>/", $metadata, $description);
 
-      if (isset($fc_object['DC']))
-      {
-        try {
-          $mods = $fc_object['DC']->content;
-          preg_match('<dc\:description>()</dc:description>\1', $mods, $mods_d);
-//          $mods_object = simplexml_load_string($mods);
-          $variables['test1'] = $mods_d;
+      $temp_array['pid'] = $pid;
+      $temp_array['description'] = $description;
+      $temp_array['path'] = $object_url;
+      $temp_array['thumbnail'] = $thumbnail_img;
+      $temp_array['thumb_link'] = l($thumbnail_img, $object_url);
 
-      dsm($mods, 'metadata');
+      $variables['islandora_object'] = $temp_array;
 
-	        $associated_objects_mods_array[$pid]['mods_array'] = isset($mods_object) ? ($mods_object) : array();
-        } catch (Exception $e) {
-          drupal_set_message(t('Error retrieving object %s %t', array('%s' => $islandora_object->id, '%t' => $e->getMessage())), 'error', FALSE);
-        }
-      }
-
-      $object_url = 'islandora/object/' . $pid;
-	    $thumbnail_img = '<img src="' . $GLOBALS['base_url'] . $object_url . '/datastream/TN/view"' . '/>';
-	    $title = $fc_object[0]['title']['value'];
-
-      if (isset($fc_object['DESC-TEXT'])) {
-        $description_text = $fc_object['DESC-TEXT']->content;
-      }
-
-      $associated_objects_mods_array[$pid]['pid'] = $pid;
-      $associated_objects_mods_array[$pid]['path'] = $object_url;
-      $associated_objects_mods_array[$pid]['title'] = $title;
-      $associated_objects_mods_array[$pid]['class'] = drupal_strtolower(preg_replace('/[^A-Za-z0-9]/', '-', $pid));
-
-      if (isset($fc_object['TN'])) {
-        $thumbnail_img = '<img src="' . $GLOBALS['base_path'] . $object_url . '/datastream/TN/view"' . '/>';
-      }
-
-      $associated_objects_mods_array[$pid]['thumbnail'] = $thumbnail_img;
-      $associated_objects_mods_array[$pid]['title_link'] = l($title, $object_url, array('html' => TRUE, 'attributes' => array('title' => $title)));
-      $associated_objects_mods_array[$pid]['thumb_link'] = l($thumbnail_img, $object_url, array('html' => TRUE, 'attributes' => array('title' => $title)));
-       $associated_objects_mods_array[$pid]['collection_description'] = $description_text;    
-
-      dsm($associated_objects_mods_array, 'object');
-      dsm($variables, 'vars');
-
+//      dsm($islandora_object, 'islandora object');
+//      dsm($metadata, 'metadata object');
+//      dsm($temp_array, 'custom array');
+//      dsm($variables, 'variables array');
     }
   }
 
-  $variables['associated_objects_mods_array'] = $associated_objects_mods_array;
 }
