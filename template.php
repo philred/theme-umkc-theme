@@ -72,7 +72,7 @@ function umkc_theme_preprocess_page(&$variables) {
       preg_match("/<dc:description>([^<>]*)<\/dc:description>/", $metadata, $description);
 
       $temp_array['pid'] = $pid;
-      $temp_array['description'] = ($description);
+      $temp_array['description'] = $description;
       $temp_array['path'] = $object_url;
       $temp_array['thumbnail'] = $thumbnail_img;
       $temp_array['thumb_link'] = l($thumbnail_img, $object_url);
