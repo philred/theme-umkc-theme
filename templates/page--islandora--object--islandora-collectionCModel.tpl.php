@@ -91,7 +91,7 @@
       <div class="umkc-collection-header-description">
         <?php print html_entity_decode($islandora_object['description']['1']); ?>
       </div>
-      <div class="umkc-collection-header-thumbnail>
+      <div class="umkc-collection-header-thumbnail">
         <?php print render($islandora_object['thumbnail']); ?>
       </div>
     </div>
