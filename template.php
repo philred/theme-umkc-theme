@@ -29,7 +29,7 @@ function umkc_theme_islandora_solr_facet_wrapper($variables) {
 }
 
 /**
- * Add attribute to acknowledgements
+ * Override global preprocess html
  */
 function umkc_theme_preprocess_html(&$variables, $hook) {
   if (request_path() == 'acknowledgments') {
@@ -46,7 +46,7 @@ function umkc_theme_preprocess_html(&$variables, $hook) {
 }
 
 /**
- * Override page theme for specific objects
+ * Override global page preprocess function
  */
 function umkc_theme_preprocess_page(&$variables) {
 
@@ -85,5 +85,47 @@ function umkc_theme_preprocess_page(&$variables) {
 //      dsm($variables, 'variables array');
     }
   }
+}
 
+/**
+ * Override Islandora Solr Metadata Display preprocess function
+ */
+function umkc_theme_preprocess_islandora_solr_metadata_display(array &$variables) {
+  module_load_include('inc', 'islandora_solr_metadata', 'includes/db');
+  module_load_include('inc', 'islandora', 'includes/utilities');
+  drupal_add_js('misc/form.js');
+  drupal_add_js('misc/collapse.js');
+
+  $object = $variables['islandora_object'];
+  $object_content_models = $object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
+  $object_model = 'islandora:collectionCModel';
+
+  $db_fields = array();
+  $solr_fields =& $variables['solr_fields'];
+  $associations = $variables['associations'];
+
+  if ($object_content_models['0']['object']['value'] != $object_model) {
+    $variables['model'] = $object_content_models['0']['object']['value'];
+
+    foreach ($object_content_models as $model) {
+      $variables['theme_hook_suggestions'][] = 'islandora_solr_metadata_display_' . str_replace(':', '_', $model['object']['value']);
+    }
+  
+    foreach ($associations as $configuration_id) {
+      $field = islandora_solr_metadata_get_fields($configuration_id['configuration_id']);
+      $db_fields = array_merge($db_fields, $field);
+    }
+    foreach ($db_fields as $solr_field => $value) {
+      if (isset($solr_fields[$solr_field])) {
+        continue;
+      }
+      // Make an array for use later on.
+      $solr_fields[$solr_field] = $value + array(
+        'value' => array(),
+      );
+    }
+    $variables['parent_collections'] = islandora_get_parents_from_rels_ext($object);
+	} else {
+		$variables['model'] = $object_model;
+	}
 }
