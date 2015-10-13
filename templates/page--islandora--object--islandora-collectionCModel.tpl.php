@@ -88,11 +88,11 @@
         <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       
-      <div class="umkc-collection-header-description">
-        <?php print html_entity_decode($islandora_object['description']['1']); ?>
-      </div>
       <div class="umkc-collection-header-thumbnail">
         <?php print render($islandora_object['thumbnail']); ?>
+      </div>
+      <div class="umkc-collection-header-description">
+        <?php print html_entity_decode($islandora_object['description']['1']); ?>
       </div>
     </div>
 
