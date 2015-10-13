@@ -3060,6 +3060,30 @@ div.swish {
   padding: 2px 0;
 }
 
+/* CSS for custom UMKC descriptive block for collection pages */
+
+#umkc-collection-header {
+	background-color: #e5e9ec;
+	border-bottom: 2px solid #ffffff;
+	padding: 10px;
+	min-height: 128px;
+}
+
+#umkc-collection-header h1 {
+	padding-left: 138px;
+}
+
+.umkc-collection-header-description {
+	padding-left: 138px;
+	font-weight: bold;
+}
+
+.umkc-collection-header-thumbnail {
+	position: absolute;
+	top: 10px;
+}
+
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
