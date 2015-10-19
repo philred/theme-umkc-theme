@@ -69,6 +69,7 @@ function umkc_theme_preprocess_page(&$variables) {
     if ($object_content_models['0']['object']['value'] == $object_model) {
 
       $metadata = $islandora_object['DC']->content;
+			$tabs = $variables['tabs'];
       preg_match("/<dc:description>([^<>]*)<\/dc:description>/", $metadata, $description);
 
       $temp_array['pid'] = $pid;
@@ -77,12 +78,20 @@ function umkc_theme_preprocess_page(&$variables) {
       $temp_array['thumbnail'] = $thumbnail_img;
       $temp_array['thumb_link'] = l($thumbnail_img, $object_url);
 
+			foreach($tabs['#primary'] as $key => $value) {
+				if($tabs['#primary'][$key]['#link']['title'] == 'View' || $tabs['#primary'][$key]['#link']['title'] == 'Print Object') {
+          unset($tabs['#primary'][$key]);
+				}
+			}
+
       $variables['islandora_object'] = $temp_array;
+      $variables['tabs'] = $tabs;
 
 //      dsm($islandora_object, 'islandora object');
 //      dsm($metadata, 'metadata object');
 //      dsm($temp_array, 'custom array');
 //      dsm($variables, 'variables array');
+//      dsm($tabs, 'tabs array');
     }
   }
 }
