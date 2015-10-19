@@ -3293,6 +3293,9 @@ table.ui-datepicker tbody td.ui-datepicker-today a
   border-radius: 10px 10px 10px 10px;
 }
 
+/* Size pdf icon */
+#pdf-icon-image {width:25px;}
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */

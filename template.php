@@ -61,6 +61,11 @@ function umkc_theme_preprocess_page(&$variables) {
 
     $object_content_models = $islandora_object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
 
+    if (isset($islandora_object['PDF'])) {
+      $pdf_link = '<li id="pdf-btn"><a id="pdf-icon-link" target="_blank" href="' . $GLOBALS['base_url'] . $object_url. '/datastream/PDF/view"><img id="pdf-icon-image" src="/sites/all/themes/umkc-theme/images/icon_PDF.png"></a></li>';
+      $variables['pdf_datastream'] = $pdf_link;
+    }
+
 	  foreach ($object_content_models as $model) {
 	    $variables['theme_hook_suggestions'][] = 'page__islandora__object__' . str_replace(':', '_', $model['object']['value']);
 	  }
