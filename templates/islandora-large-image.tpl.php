@@ -25,7 +25,9 @@
   <div class="islandora-large-image-content-wrapper clearfix">
     <?php if ($islandora_content): ?>
       <?php if (isset($image_clip)): ?>
-        <?php print $image_clip; ?>
+        <?php print $content['download_link']; ?>
+        <?php print $content['print_link']; ?>
+        <?php print $content['persistent_url']; ?>
       <?php endif; ?>
       <div class="islandora-large-image-content">
         <?php print $islandora_content; ?>

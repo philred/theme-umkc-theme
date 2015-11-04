@@ -10,38 +10,42 @@
  * aggregated with other stylesheets, for improved front-end performance.
  */
 @media print {
-
   /* Underline all links. */
+  /* line 16, ../sass/_print.scss */
   a:link,
   a:visited {
     text-decoration: underline !important;
+    /* Don't underline header. */
   }
-
-  /* Don't underline header. */
+  /* line 20, ../sass/_print.scss */
   a:link.header__site-link,
   a:visited.header__site-link {
     text-decoration: none !important;
   }
 
-  /* Add visible URL after links. */
-  #content a[href]:after {
-    content: " (" attr(href) ")";
-    font-weight: normal;
-    font-size: 16px;
+  /* line 25, ../sass/_print.scss */
+  #content {
+    /* Add visible URL after links. */
+    /* a[href]:after {
+       content: " (" attr(href) ")";
+       font-weight: normal;
+       font-size: $base-font-size;
+     }*/
+    /* Only display useful links. */
+    /* Add visible title after abbreviations. */
   }
-
-  /* Only display useful links. */
+  /* line 35, ../sass/_print.scss */
   #content a[href^="javascript:"]:after,
   #content a[href^="#"]:after {
     content: "";
   }
-
-  /* Add visible title after abbreviations. */
+  /* line 40, ../sass/_print.scss */
   #content abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
   /* Un-float the content. */
+  /* line 46, ../sass/_print.scss */
   #content {
     float: none !important;
     width: 100% !important;
@@ -50,6 +54,7 @@
   }
 
   /* Turn off any background colors or images. */
+  /* line 57, ../sass/_print.scss */
   body,
   #page,
   #main,
@@ -60,11 +65,13 @@
   }
 
   /* Hide sidebars and nav elements. */
+  /* line 78, ../sass/_print.scss */
   #skip-link,
   #toolbar,
   #navigation,
   .region-sidebar-first,
   .region-sidebar-second,
+  .region-highlighted,
   #footer,
   .breadcrumb,
   .tabs,
@@ -75,6 +82,30 @@
   .pager,
   .feed-icons {
     visibility: hidden;
+    display: none !important;
+  }
+
+/* Hide header and metadata */
+  #header,
+  .islandora-metadata,
+  #download_link,
+  #print_link {
     display: none;
   }
+  button,
+  .navigator {
+    display: none;
+    visibility: hidden;
+  }
+  .islandora-large-image-content {
+    padding: 0px;
+		border: 0px;
+  }
+  #clip {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #clip img {
+    height: 100% !important;
+  {
 }
