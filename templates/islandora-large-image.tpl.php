@@ -28,6 +28,7 @@
         <?php print $content['download_link']; ?>
         <?php print $content['print_link']; ?>
         <?php print $content['persistent_url']; ?>
+        <?php print $content['persistent_url_popout']; ?>
       <?php endif; ?>
       <div class="islandora-large-image-content">
         <?php print $islandora_content; ?>

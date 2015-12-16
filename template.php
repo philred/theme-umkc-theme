@@ -226,18 +226,6 @@ function umkc_theme_preprocess_islandora_large_image(&$variables) {
     if (strpos($viewer, 'islandora-openseadragon') !== FALSE) {
       if (isset($islandora_object['JP2']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $islandora_object['JP2'])) {
         $url = url("islandora/object/{$islandora_object->id}", array('absolute' => TRUE));
-// Persistent Link
-        $variables['content']['persistent_url'] = l(
-					'<img id="persistent_url_icon" src="/sites/all/themes/umkc-theme/images/link-icon-SpecialCollections.svg">' . "{$url}",
-					"{$url}",
-          array(
-						'html' => true,
-            'attributes' => array(
-              'title' => t('Persistent URL'),
-              'id' => 'persistent_url',
-            ),
-          )
-        );
 // Download Link
         $variables['content']['download_link'] = l(
 					'<img id="download_link_icon" src="/sites/all/themes/umkc-theme/images/download-icon-SpecialCollections.svg">',
@@ -263,6 +251,20 @@ function umkc_theme_preprocess_islandora_large_image(&$variables) {
             ),
           )
         );
+// Persistent Link
+        $variables['content']['persistent_url'] = l(
+					'<img id="persistent_url_icon" src="/sites/all/themes/umkc-theme/images/link-icon-SpecialCollections.svg">',"javascript:toggle('toggleText');",
+          array(
+						'html' => true,
+            'external' => true,
+            'attributes' => array(
+              'title' => t('Persistent URL'),
+              'id' => 'persistent_url',
+            ),
+          )
+        );
+// Persistent Link popout
+        $variables['content']['persistent_url_popout'] = '<div id="toggleText" style="display:none";><input value="' . $url . '" onclick="this.focus();this.select()" size="50"></div>';
       }
     }
     $variables['islandora_content'] = $viewer;
