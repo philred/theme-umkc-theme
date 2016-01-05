@@ -80,7 +80,10 @@ function umkc_theme_preprocess_page(&$variables) {
     foreach ($object_content_models as $k => $v) {
       if ($object_content_models[$k]['object']['value'] == 'islandora:bookCModel') {
         foreach ($variables['tabs']['#primary'] as $k2 => $v2) {
-          if ($variables['tabs']['#primary'][$k2]['#link']['title'] == 'Print Object') {
+          if ($variables['tabs']['#primary'][$k2]['#link']['title'] == 'View') {
+            unset($variables['tabs']['#primary'][$k2]);
+          }
+          elseif ($variables['tabs']['#primary'][$k2]['#link']['title'] == 'Pages') {
             unset($variables['tabs']['#primary'][$k2]);
           }
         }
@@ -100,7 +103,7 @@ function umkc_theme_preprocess_page(&$variables) {
       $temp_array['thumb_link'] = l($thumbnail_img, $object_url);
 
       foreach ($tabs['#primary'] as $key => $value) {
-        if ($tabs['#primary'][$key]['#link']['title'] == 'View' || $tabs['#primary'][$key]['#link']['title'] == 'Print Object') {
+        if ($tabs['#primary'][$key]['#link']['title'] == 'View') {
           unset($tabs['#primary'][$key]);
         }
       }
