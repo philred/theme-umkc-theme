@@ -258,7 +258,7 @@ function umkc_theme_preprocess_islandora_large_image(&$variables) {
 						'html' => true,
             'external' => true,
             'attributes' => array(
-              'title' => t('Persistent URL'),
+              'title' => t('Share Link'),
               'id' => 'persistent_url',
             ),
           )
