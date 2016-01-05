@@ -97,7 +97,6 @@
       <?php print $messages; ?>
       <div class="tabs">
         <?php print render($tabs); ?>
-        <?php print render($pdf_datastream); ?>
       </div>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>

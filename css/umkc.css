@@ -1,9 +1,0 @@
-/* for some reason the tab menu floats left, so adding extra icons requires them to float as well.*/
-
-#pdf-btn {
-	float:left; 
-	list-style-type: none;
-	 }
-
-#pdf-icon-image {margin:0px 5px 0px 5px;}
-.islandora-print {float:left;}
