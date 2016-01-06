@@ -3353,7 +3353,7 @@ table.ui-datepicker tbody td.ui-datepicker-today a
 /* Size icons */
 #download_link_icon {width:25px;float:left;}
 #print_link_icon {width:25px;float:left;}
-#persistent_url_icon {width:25px;display:block;white-space:nowrap;padding-bottom:5px;}
+#persistent_url_icon {width:25px;display:inline-block;white-space:nowrap;padding-bottom:5px;}
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
