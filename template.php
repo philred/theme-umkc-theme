@@ -243,7 +243,7 @@ function umkc_theme_preprocess_islandora_large_image(&$variables) {
           array(
 						'html' => true,
             'attributes' => array(
-              'title' => t('Print link'),
+              'title' => t('Print'),
               'id' => 'print_link',
               'target' => '_blank',
             ),
