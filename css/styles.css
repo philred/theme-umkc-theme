@@ -3351,9 +3351,16 @@ table.ui-datepicker tbody td.ui-datepicker-today a
 }
 
 /* Size icons */
-#download_link_icon {width:25px;float:left;}
-#print_link_icon {width:25px;float:left;}
-#persistent_url_icon {width:25px;display:inline-block;white-space:nowrap;padding-bottom:5px;}
+#download_link_icon {width:25px;float:left;margin-right:10px;}
+#print_link_icon {width:25px;float:left;margin-right:10px;}
+#persistent_url_icon {width:25px;display:inline-block;white-space:nowrap;padding-bottom:5px;margin-right:10px;}
+
+/* Book viewer icons */
+#pages_view, #book_view {float:left;margin-right:10px;text-decoration:none;background-color:#266295;color:#ffffff;font-weight:bold;font-size:12px;text-transform:capitalize;border-radius:12px;padding:2px 8px;}
+
+/* Feedback message */
+#feedback {background-color:#ffff00;display:table;margin-top:10px;padding:2px 5px;font-weight:bold;}
+
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
