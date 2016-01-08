@@ -5,11 +5,11 @@
  * Render a bunch of objects in a list or grid view.
  */
 ?>
+<?php print $link_content['book_view']; ?>
 <?php print $link_content['download_link']; ?>
 <?php print $link_content['print_link']; ?>
 <?php print $link_content['persistent_url']; ?>
 <?php print $link_content['persistent_url_popout']; ?>
-<?php print $link_content['book_view']; ?>
 <div class="islandora-objects clearfix">
   <span class="islandora-objects-display-switch">
     <?php 
