@@ -45,16 +45,17 @@ function umkc_theme_preprocess_html(&$variables, $hook) {
   }
   if ($islandora_object = menu_get_object('islandora_object', 2)) {
     $object_content_models = $islandora_object->relationships->get('info:fedora/fedora-system:def/model#', 'hasModel');
-// If Large Image content model
+// print.css and print dialogue
     foreach ($object_content_models as $k => $v) {
       if ($object_content_models[$k]['object']['value'] == 'islandora:sp_large_image_cmodel') {
 				$variables['print_css'] = '<style>@import url("http://dldev.lib.umsystem.edu/umkc/sites/all/themes/umkc-theme/css/print.css")</style>';
+
+      	$pos = strpos($variables['menu_item']['page_callback'], 'islandora_print_object');
+        if ($pos !== false) {
+          $variables['attributes_array']['onload'] = 'window.print()';
+        }
       }
     }
-	}
-  $pos = strpos($variables['menu_item']['page_callback'], 'islandora_print_object');
-  if ($pos !== false) {
-    $variables['attributes_array']['onload'] = 'window.print()';
   }
 }
 
@@ -78,7 +79,7 @@ function umkc_theme_preprocess_page(&$variables) {
 		}
 
     foreach ($object_content_models as $k => $v) {
-      if ($object_content_models[$k]['object']['value'] == 'islandora:bookCModel') {
+      if ($object_content_models[$k]['object']['value'] == 'islandora:bookCModel' && $variables['tabs']['#primary']) {
         foreach ($variables['tabs']['#primary'] as $k2 => $v2) {
           if ($variables['tabs']['#primary'][$k2]['#link']['title'] == 'View') {
             unset($variables['tabs']['#primary'][$k2]);
@@ -223,6 +224,7 @@ function umkc_theme_preprocess_islandora_large_image(&$variables) {
   if ($viewer) {
     if (strpos($viewer, 'islandora-openseadragon') !== FALSE) {
       if (isset($islandora_object['JP2']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $islandora_object['JP2'])) {
+// Custom icons
         $url = url("islandora/object/{$islandora_object->id}", array('absolute' => TRUE));
 // Download Link
         $variables['content']['download_link'] = l(
@@ -314,8 +316,179 @@ function umkc_theme_process_islandora_object_print(array &$variables) {
     }
   }
 }
-//      dsm($islandora_object, 'islandora object');
-//      dsm($metadata, 'metadata object');
-//      dsm($temp_array, 'custom array');
-//      dsm($variables, 'variables array');
-//      dsm($tabs, 'tabs array');
+
+/**
+ * Implements hook_preprocess().
+ */
+function umkc_theme_preprocess_islandora_book_book(array &$variables) {
+  module_load_include('inc', 'islandora_paged_content', 'includes/utilities');
+  module_load_include('inc', 'islandora', 'includes/solution_packs');
+  module_load_include('inc', 'islandora', 'includes/metadata');
+  module_load_include('inc', 'islandora', 'includes/datastream');
+  drupal_add_js('misc/form.js');
+  drupal_add_js('misc/collapse.js');
+  $object = $variables['object'];
+  $variables['viewer_id'] = islandora_get_viewer_id('islandora_book_viewers');
+  $variables['viewer_params'] = array(
+    'object' => $object,
+    'pages' => islandora_paged_content_get_pages($object),
+    'page_progression' => islandora_paged_content_get_page_progression($object),
+  );
+  $variables['display_metadata'] = variable_get('islandora_book_metadata_display', FALSE);
+  $variables['parent_collections'] = islandora_get_parents_from_rels_ext($object);
+  $variables['metadata'] = islandora_retrieve_metadata_markup($object);
+  $variables['description'] = islandora_retrieve_description_markup($object);
+// Custom icons
+  $url = url("islandora/object/{$object->id}", array('absolute' => TRUE));
+// Download Link
+  $variables['content']['download_link'] = l(
+    '<img id="download_link_icon" src="/sites/all/themes/umkc-theme/images/download-icon-SpecialCollections.svg">',
+    "islandora/object/{$object->id}/datastream/PDF/download",
+    array(
+      'html' => true,
+      'attributes' => array(
+        'title' => t('Download'),
+        'id' => 'download_link',
+      ),
+    )
+  );
+// Print Link
+  $variables['content']['print_link'] = l(
+    '<img id="print_link_icon" src="/sites/all/themes/umkc-theme/images/printer-icon-SpecialCollections.svg">',
+    "islandora/object/{$object->id}/datastream/PDF",
+    array(
+      'html' => true,
+      'attributes' => array(
+        'title' => t('Print'),
+        'id' => 'print_link',
+        'target' => '_blank',
+      ),
+    )
+  );
+// Persistent Link
+  $variables['content']['persistent_url'] = l(
+    '<img id="persistent_url_icon" src="/sites/all/themes/umkc-theme/images/link-icon-SpecialCollections.svg">',"javascript:toggle('toggleText');",
+    array(
+      'html' => true,
+      'external' => true,
+      'attributes' => array(
+        'title' => t('Share Link'),
+        'id' => 'persistent_url',
+      ),
+    )
+  );
+// Persistent Link popout
+  $variables['content']['persistent_url_popout'] = '<div id="toggleText" style="display:none";><input value="' . $url . '" onclick="this.focus();this.select()" size="50"></div>';
+// Pages View
+  $variables['content']['pages_view'] = l(
+    'Pages View', "islandora/object/{$object->id}/pages",
+    array(
+      'attributes' => array(
+        'title' => t('Pages View'),
+        'id' => 'pages_view',
+      ),
+    )
+  );
+}
+
+/**
+ * Implements hook_preprocess_theme().
+ */
+function umkc_theme_preprocess_islandora_objects(array &$variables) {
+  $display = (empty($_GET['display'])) ? 'grid' : $_GET['display'];
+  $grid_display = $display == 'grid';
+  $list_display = !$grid_display;
+  $query_params = drupal_get_query_parameters($_GET);
+  $variables['display_links'] = array(
+    array(
+      'title' => t('Grid view'),
+      'href' => current_path(),
+      'attributes' => array(
+        'class' => array(
+          $grid_display ? 'active' : '',
+        ),
+      ),
+      'query' => array('display' => 'grid') + $query_params,
+    ),
+    array(
+      'title' => t('List view'),
+      'href' => current_path(),
+      'attributes' => array(
+        'class' => array(
+          $list_display ? 'active' : '',
+        ),
+      ),
+      'query' => array('display' => 'list') + $query_params,
+    ),
+  );
+  // Pager.
+  $objects = $variables['objects'];
+  $limit = $variables['limit'];
+  $page = pager_default_initialize(count($objects), $limit);
+  $objects = array_slice($objects, $page * $limit, $limit);
+  $variables['pager'] = theme('pager', array('quantity' => 10));
+  $objects = array_map('islandora_objects_object_mapper', $objects);
+  $theme = $grid_display ? 'islandora_objects_grid' : 'islandora_objects_list';
+  $variables['content'] = theme($theme, array('objects' => $objects));
+  $module_path = drupal_get_path('module', 'islandora');
+  drupal_add_css("$module_path/css/islandora.objects.css");
+// Custom icons
+  $islandora_object = menu_get_object('islandora_object', 2);
+  $variables['link_content']['object'] = $islandora_object;
+  $variables['link_content']['pid'] = $islandora_object->id;
+  $url = url("islandora/object/{$islandora_object->id}", array('absolute' => TRUE));
+// Download Link
+  $variables['link_content']['download_link'] = l(
+    '<img id="download_link_icon" src="/sites/all/themes/umkc-theme/images/download-icon-SpecialCollections.svg">',
+    "islandora/object/{$islandora_object->id}/datastream/PDF/download",
+    array(
+      'html' => true,
+      'attributes' => array(
+        'title' => t('Download'),
+        'id' => 'download_link',
+      ),
+    )
+  );
+// Print Link
+  $variables['link_content']['print_link'] = l(
+    '<img id="print_link_icon" src="/sites/all/themes/umkc-theme/images/printer-icon-SpecialCollections.svg">',
+    "islandora/object/{$islandora_object->id}/datastream/PDF",
+    array(
+      'html' => true,                                                                                                                                                                               'attributes' => array(
+        'title' => t('Print'),
+        'id' => 'print_link',
+        'target' => '_blank',                                                                                                                                                                       ),
+    )
+  );
+// Persistent Link
+  $variables['link_content']['persistent_url'] = l(
+    '<img id="persistent_url_icon" src="/sites/all/themes/umkc-theme/images/link-icon-SpecialCollections.svg">',"javascript:toggle('toggleText');",
+    array(
+      'html' => true,
+      'external' => true,
+      'attributes' => array(
+        'title' => t('Share Link'),
+        'id' => 'persistent_url',                                                                                                                                                                   ),
+    )
+  );
+// Persistent Link popout
+  $variables['link_content']['persistent_url_popout'] = '<div id="toggleText" style="display:none";><input value="' . $url . '" onclick="this.focus();this.select()" size="50"></div>';
+// Pages View
+  $variables['link_content']['book_view'] = l(
+    'Book View', "islandora/object/{$islandora_object->id}#page/1/mode/2up",
+    array(
+      'html' => true,
+      'external' => true,
+      'attributes' => array(
+        'title' => t('Book View'),
+        'id' => 'book_view',
+      ),
+    )
+  );
+}
+
+//dsm($islandora_object, 'islandora object');
+//dsm($metadata, 'metadata object');
+//dsm($temp_array, 'custom array');
+//dsm($variables, 'variables array');
+//dsm($tabs, 'tabs array');
