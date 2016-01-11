@@ -489,6 +489,88 @@ function umkc_theme_preprocess_islandora_objects(array &$variables) {
   );
 }
 
+/**
+ * Implements hook_preprocess_theme().
+ */
+function umkc_theme_preprocess_islandora_book_page(array &$variables) {
+  module_load_include('inc', 'islandora', 'includes/solution_packs');
+  $object = $variables['object'];
+  $results = $object->relationships->get(FEDORA_RELS_EXT_URI, 'isMemberOf');
+  $result = reset($results);
+  $variables['book_object_id'] = $result ? $result['object']['value'] : FALSE;
+
+  $params = array();
+  if (isset($object['JP2']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $object['JP2'])) {
+    // Get token to allow access to XACML protected datastreams.
+    // Always use token authentication in case there is a global policy.
+    module_load_include('inc', 'islandora', 'includes/authtokens');
+    $token = islandora_get_object_token($object->id, 'JP2', 2);
+    $jp2_url = url("islandora/object/{$object->id}/datastream/JP2/view", array(
+      'absolute' => TRUE,
+      'query' => array('token' => $token),                                                                                                                                                        ));
+    $params['jp2_url'] = $jp2_url;
+  }
+
+  $variables['viewer_id'] = islandora_get_viewer_id('islandora_book_page_viewers');
+  $variables['viewer_params'] = $params;
+
+  // @todo: Remove after 7.x-1.5 release.
+  $variables['viewer'] = new IslandoraBookDeprecateString($variables, 'viewer', 'template_process_islandora_book_page');
+// Custom icons
+  $url = url("islandora/object/{$object->id}", array('absolute' => TRUE));
+  if ($object->relationships->get('http://islandora.ca/ontology/relsext#', 'isPageOf')) {
+    $ispageof_array = $object->relationships->get('http://islandora.ca/ontology/relsext#', 'isPageOf');
+    $ispageof = $ispageof_array['0']['object']['value'];
+  }
+// Download Link
+  $variables['link_content']['download_link'] = l(
+    '<img id="download_link_icon" src="/sites/all/themes/umkc-theme/images/download-icon-SpecialCollections.svg">',
+    "islandora/object/{$object->id}/datastream/PDF/download",
+    array(
+      'html' => true,
+      'attributes' => array(
+        'title' => t('Download'),
+        'id' => 'download_link',
+      ),
+    )
+  );
+// Print Link
+  $variables['link_content']['print_link'] = l(
+    '<img id="print_link_icon" src="/sites/all/themes/umkc-theme/images/printer-icon-SpecialCollections.svg">',
+    "islandora/object/{$object->id}/datastream/PDF",
+    array(
+      'html' => true,                                                                                                                                                                               'attributes' => array(
+        'title' => t('Print'),
+        'id' => 'print_link',
+        'target' => '_blank',                                                                                                                                                                       ),
+    )
+  );
+// Persistent Link
+  $variables['link_content']['persistent_url'] = l(
+    '<img id="persistent_url_icon" src="/sites/all/themes/umkc-theme/images/link-icon-SpecialCollections.svg">',"javascript:toggle('toggleText');",
+    array(
+      'html' => true,
+      'external' => true,
+      'attributes' => array(
+        'title' => t('Share Link'),
+        'id' => 'persistent_url',                                                                                                                                                                   ),
+    )
+  );
+// Persistent Link popout
+  $variables['link_content']['persistent_url_popout'] = '<div id="toggleText" style="display:none";><input value="' . $url . '" onclick="this.focus();this.select()" size="50"></div>';
+// Pages View
+  $variables['link_content']['pages_view'] = l(
+    'Pages View', "islandora/object/{$ispageof}/pages",
+    array(
+      'attributes' => array(
+        'title' => t('Pages View'),
+        'id' => 'pages_view',
+      ),
+    )
+  );
+}
+
+
 //dsm($islandora_object, 'islandora object');
 //dsm($metadata, 'metadata object');
 //dsm($temp_array, 'custom array');
