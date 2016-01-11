@@ -103,9 +103,11 @@ function umkc_theme_preprocess_page(&$variables) {
       $temp_array['thumbnail'] = $thumbnail_img;
       $temp_array['thumb_link'] = l($thumbnail_img, $object_url);
 
-      foreach ($tabs['#primary'] as $key => $value) {
-        if ($tabs['#primary'][$key]['#link']['title'] == 'View') {
-          unset($tabs['#primary'][$key]);
+      if ($tabs['#primary']) {
+        foreach ($tabs['#primary'] as $key => $value) {
+          if ($tabs['#primary'][$key]['#link']['title'] == 'View') {
+            unset($tabs['#primary'][$key]);
+          }
         }
       }
       $variables['islandora_object'] = $temp_array;
