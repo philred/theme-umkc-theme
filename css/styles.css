@@ -3361,6 +3361,10 @@ table.ui-datepicker tbody td.ui-datepicker-today a
 /* Feedback message */
 #feedback {background-color:#ffff00;display:table;margin-top:10px;padding:2px 5px;font-weight:bold;}
 
+/* Override CSS for UMKC's large image viewer - to expand width to 100% and remove background border and color */
+.islandora-large-image-content {width:100% !important;border-style:none !important; background-color:transparent !important;padding:0 !important;}
+.islandora-openseadragon {background-color:#000000 !important;}
+
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
