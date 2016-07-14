@@ -599,6 +599,11 @@ function umkc_theme_islandora_objects(array &$variables) {
   <span class="islandora-objects-display-switch">
     $links
   </span>
+  {$variables['link_content']['book_view']}
+  {$variables['link_content']['download_link']}
+  {$variables['link_content']['print_link']}
+  {$variables['link_content']['persistent_url']}
+  {$variables['link_content']['persistent_url_popout']}
   {$variables['pager']}
   {$variables['content']}
   {$variables['pager']}
@@ -607,3 +612,8 @@ HTML;
 
   return $output;
 }
+//dsm($islandora_object, 'islandora object');
+//dsm($metadata, 'metadata object');
+//dsm($temp_array, 'custom array');
+//dsm($variables, 'variables array');
+//dsm($tabs, 'tabs array');
