@@ -27,7 +27,7 @@ function umkc_theme_field_widget_form_alter(&$element, &$form_state, $context) {
 }
 
 /**
- * Simple Search Advanced Link //
+ * Simple Search Advanced Link
  */
 function umkc_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $link = array(
@@ -629,6 +629,16 @@ HTML;
 
   return $output;
 }
+
+/**
+ * Alter islandora_collection_search_form
+ */
+function umkc_theme_form_islandora_collection_search_form_alter(&$form, &$form_state, $form_id) {
+  $form['simple']['advanced_search_link'] = array(
+   '#markup' => l(t('Advanced Search'),'islandora-search', array('attributes' => array('class' => array('adv_search')))),
+  );
+}
+
 //dsm($islandora_object, 'islandora object');
 //dsm($metadata, 'metadata object');
 //dsm($temp_array, 'custom array');

@@ -3365,6 +3365,41 @@ table.ui-datepicker tbody td.ui-datepicker-today a
 .islandora-large-image-content {width:100% !important;border-style:none !important; background-color:transparent !important;padding:0 !important;}
 .islandora-openseadragon {background-color:#000000 !important;}
 
+/* CSS for collection search box module */ 
+
+#islandora-collection-search-form {
+    text-align: center;
+}
+
+#edit-collection-select {
+    border: 1px solid #767777;
+    border-radius: 7px;
+    color: #767777;
+    height: 2.5em;
+    padding-left: 0.5em;
+    font-size: 90%;
+}
+
+#edit-islandora-simple-search-query {
+    border: 1px solid #767777;
+    border-radius: 7px;
+    color: #767777;
+    height: 2.5em;
+    padding-left: 0.5em;
+    font-size: 90%;
+    width: 40%;
+}
+
+#edit-submit {
+    background: url("../images/umkc/search-icon.png") no-repeat;
+    border: 0 none;
+    text-indent: -9999px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    right: 33px;
+}
+
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
