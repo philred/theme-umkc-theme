@@ -3365,40 +3365,69 @@ table.ui-datepicker tbody td.ui-datepicker-today a
 .islandora-large-image-content {width:100% !important;border-style:none !important; background-color:transparent !important;padding:0 !important;}
 .islandora-openseadragon {background-color:#000000 !important;}
 
-/* CSS for collection search box module */ 
-
-#islandora-collection-search-form {
-    text-align: center;
+/* UMKC Collection Search Box */
+.umkc-collection-search {
+  text-align: center;
+  margin-left: 24px;
+  margin-bottom: 26px;
 }
-
-#edit-collection-select {
-    border: 1px solid #767777;
-    border-radius: 7px;
-    color: #767777;
-    height: 2.5em;
-    padding-left: 0.5em;
-    font-size: 90%;
+.umkc-collection-search .form-select {
+  width: 25%;
+  min-width: 200px;
+  border: 1px solid #767777;
+  border-radius: 7px;
+  color: #767777;
+  height: 2.5em;
+  font-size: 90%;
 }
-
-#edit-islandora-simple-search-query {
-    border: 1px solid #767777;
-    border-radius: 7px;
-    color: #767777;
-    height: 2.5em;
-    padding-left: 0.5em;
-    font-size: 90%;
-    width: 40%;
+.umkc-collection-search .form-text {
+  width: 43%;
+  min-width: 200px;
+  border: 1px solid #767777;
+  border-radius: 7px;
+  color: #767777;
+  height: 2.5em;
+  font-size: 90%;
+  padding-left: 0.5em;
 }
-
-#edit-submit {
-    background: url("../images/umkc/search-icon.png") no-repeat;
-    border: 0 none;
-    text-indent: -9999px;
-    height: 24px;
-    width: 24px;
-    position: relative;
-    right: 33px;
+  
+.umkc-collection-search .form-submit {
+  background: url("../images/umkc/search-icon.png") no-repeat;
+  border: 0 none;
+  text-indent: -9999px;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  left: -33px;
 }
+.umkc-collection-search a.adv_search {
+  font-size: 80%;
+  text-decoration: none;
+  color: #e4e5e5;
+  border: 1px sold;
+  position: absolute;
+  margin-left: -124px;
+  margin-top: 33px;
+  white-space: nowrap;
+}
+.umkc-collection-search a.adv_search:hover {
+  color: #f1d000;
+}
+@media all and (max-width: 480px) {
+  .umkc-collection-search {
+    margin-left: 0px;
+  }
+  .umkc-collection-search .form-select {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+  }
+  .umkc-collection-search .form-text {
+    margin-left: 28px;
+    width: 65%;
+  }
+}
+/* end UMKC Collection Search Box */
 
 
 /* SMACSS theme rules */
