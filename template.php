@@ -5,7 +5,26 @@
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728096
+
  */
+
+/**
+ * Set #islandora_plupload_do_not_alter on image fields contained in content types with islandora in their name. 
+ */
+
+function umkc_theme_field_widget_form_alter(&$element, &$form_state, $context) {
+
+	if(isset($context['field']['type']) && $context['field']['type'] == 'image')
+	{
+		foreach ($element as $key => $value) 
+		{ 
+			if( (strpos($value['#entity']->type, 'islandora') !== FALSE) ) 
+			{ 
+				$element[$key]['#islandora_plupload_do_not_alter'] = 1;
+			}
+		}
+	}
+}
 
 /**
  * Simple Search Advanced Link //
