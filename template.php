@@ -533,8 +533,6 @@ function umkc_theme_preprocess_islandora_book_page(array &$variables) {
   $variables['viewer_id'] = islandora_get_viewer_id('islandora_book_page_viewers');
   $variables['viewer_params'] = $params;
 
-  // @todo: Remove after 7.x-1.5 release.
-  $variables['viewer'] = new IslandoraBookDeprecateString($variables, 'viewer', 'template_process_islandora_book_page');
 // Custom icons
   $url = url("islandora/object/{$object->id}", array('absolute' => TRUE));
   if ($object->relationships->get('http://islandora.ca/ontology/relsext#', 'isPageOf')) {
