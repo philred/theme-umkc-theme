@@ -92,7 +92,9 @@
         <?php print render($islandora_object['thumbnail']); ?>
       </div>
       <div class="umkc-collection-header-description">
-        <?php print html_entity_decode($islandora_object['description']['1']); ?>
+	<?php if (isset($islandora_object['description']['1']) && $islandora_object['description']['1']): ?>
+          <?php print html_entity_decode($islandora_object['description']['1']); ?>
+	<?php endif; ?>
       </div>
     </div>
 
