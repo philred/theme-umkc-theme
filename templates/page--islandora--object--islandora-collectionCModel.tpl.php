@@ -83,6 +83,7 @@
 
     <?php print render($page['highlighted']); ?>
 
+    <?php if (!($islandora_object['pid'] === "umkc:root")): ?>
     <div id="umkc-collection-header">
       <?php if ($title): ?>
         <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
@@ -97,6 +98,7 @@
 	<?php endif; ?>
       </div>
     </div>
+   <?php endif; ?>
 
     <div id="content" class="column" role="main">
       <?php print $breadcrumb; ?>
