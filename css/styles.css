@@ -2012,6 +2012,9 @@ span.field-label {
   /* Form items in a table. */
   /* Highlight the form elements that caused a form submission error. */
   /* The descriptive help text (separate from the label). */
+
+  /* 9/11/2017 - max-width added to control collection search box width on advanced search page; can prevent it from showing on that page in the configurations for collection search box module */
+  max-width: 100%;
 }
 /* line 594, ../sass/components/_misc.scss */
 .form-checkboxes .form-item, .form-radios .form-item {
