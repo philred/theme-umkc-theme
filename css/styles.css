@@ -2642,6 +2642,7 @@ tr.selected td {
   float: right;
   position: relative;
   top: -46px;
+  font-size: 12.24px;
 }
 /* line 224, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li {
@@ -2650,23 +2651,11 @@ tr.selected td {
 }
 /* line 227, ../sass/components/_islandora.scss */
 #block-islandora-solr-display-switch ul li a {
-  padding: 0 2px;
-  display: inline-block;
+  padding: 0 8px;
   height: 20px;
   outline: medium none;
-  text-indent: -9999px;
   width: 20px;
 }
-/* line 235, ../sass/components/_islandora.scss */
-#block-islandora-solr-display-switch ul li a.display-default {
-  background: url("../images/umkc/display-grid-list.png") no-repeat top left;
-}
-/* line 238, ../sass/components/_islandora.scss */
-#block-islandora-solr-display-switch ul li a.display-grid {
-  background: url("../images/umkc/display-grid.png") no-repeat top left;
-  padding: 0 !important;
-}
-
 /* line 246, ../sass/components/_islandora.scss */
 .islandora-solr-grid {
   width: 100%;
