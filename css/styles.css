@@ -152,8 +152,12 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 /* line 147, ../sass/_normalize.scss */
-a:link, a:visited {
+a:link {
   color: #414042;
+}
+
+a:visited {
+  color: #266295;
 }
 
 /* line 151, ../sass/_normalize.scss */
@@ -773,7 +777,7 @@ table {
 
   /* line 135, ../sass/layouts/_responsive.scss */
   #block-menu-menu-footer-menu {
-    font-size: 91.5%;
+    /* font-size: 91.5%; */
   }
 
   /* line 139, ../sass/layouts/_responsive.scss */
@@ -805,7 +809,6 @@ table {
     background: rgba(255, 255, 255, 0.5);
     padding-left: 0.5em;
     /* font-family: 'Ropa Sans'; */
-	font-family: arial, sans-serif;
     /* font-size: 110%; */
   }
   /* line 163, ../sass/layouts/_responsive.scss */
@@ -893,7 +896,7 @@ table {
   }
   /* line 221, ../sass/layouts/_responsive.scss */
   #block-umkcdora-umkcdora-mobile-facets fieldset.collapsible a.fieldset-title {
-    text-decoration: none;
+    /* text-decoration: none; */
     /* font-family: 'Ropa Sans'; */
   }
   /* line 226, ../sass/layouts/_responsive.scss */
@@ -1172,7 +1175,6 @@ table {
     /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 0.5em;
     /* font-family: 'Ropa Sans'; */
-	font-family: arial, sans-serif;
     /* font-size: 110%; */
   }
   /* line 386, ../sass/layouts/_responsive.scss */
@@ -1249,7 +1251,6 @@ table {
     /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 0.5em;
     /* font-family: 'Ropa Sans'; */
-	font-family: arial, sans-serif;
     /* font-size: 110%; */
   }
   /* line 448, ../sass/layouts/_responsive.scss */
@@ -1305,7 +1306,6 @@ table {
     /* for IE9+, Firefox 4+, Opera, Chrome */
     padding-left: 0.5em;
 	/* font-family: 'Ropa Sans'; */
-	font-family: arial, sans-serif;
     /* font-size: 110%; */
   }
   /* line 498, ../sass/layouts/_responsive.scss */
@@ -1489,12 +1489,22 @@ table {
   float: left;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Logo image. */
 /* line 88, ../sass/components/_misc.scss */
 .header__logo-image {
   vertical-align: bottom;
+  max-width: none;
+}
+
+@media all and (max-width: 480px) {
+
+	.header__logo-image {
+		width: 733px;
+	}
 }
 
 /* Wrapper for website name and slogan. */
@@ -2479,15 +2489,16 @@ tr.selected td {
 /* line 106, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title {
   /* font-family: "Libre Baskerville"; */
-  font-size: 115%;
+  font-size: 100%;
   padding-bottom: 0.5em;
   display: block;
   width: 100%;
   padding-left: 0 !important;
+  font-weight: bold;
 }
 /* line 111, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields dd.dc-title a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 /* line 115, ../sass/components/_islandora.scss */
 .islandora-solr-search-results .islandora-solr-search-result .islandora-solr-search-result-inner dl.solr-fields .dc-description {
@@ -2722,7 +2733,6 @@ body.page-browse ul.pager {
 /* line 5, ../sass/components/_page.scss */
 h1 {
   /* font-family: 'Ropa Sans'; */
-  font-family: arial, sans-serif;
   font-weight: normal;
   /* font-size: 220%; */
   font-size: 150%;
@@ -2732,7 +2742,6 @@ h1 {
 /* line 12, ../sass/components/_page.scss */
 h2, h3 {
   /* font-family: 'Ropa Sans'; */
-  font-family: arial, sans-serif;
   /* font-style: italic; */
   font-weight: normal;
   /* font-size: 175%; */
@@ -2767,7 +2776,7 @@ h2, h3 {
 /* line 36, ../sass/components/_page.scss */
 #footer {
   position: relative;
-  z-index: 4;
+  z-index: 5;
   max-width:1100px;
   margin: 0 auto;
   border: 2px solid #ffffff;
@@ -2786,7 +2795,7 @@ h2, h3 {
   background-clip: padding-box;
   /* for IE9+, Firefox 4+, Opera, Chrome */
   margin-left: 1.5em;
-  font-family: 'Ropa Sans';
+  /* font-family: 'Ropa Sans'; */
   /* font-style: italic; */
 }
 /* line 54, ../sass/components/_page.scss */
@@ -3006,7 +3015,6 @@ div.swish {
 /* line 5, ../sass/components/_navigation.scss */
 #main-menu, .footer-menu {
   /* font-family: 'Ropa Sans'; */
-  font-family: 'Libre Baskerville';
   font-size: 80%;
 }
 /* line 7, ../sass/components/_navigation.scss */
@@ -3085,7 +3093,6 @@ div.swish {
   /* margin-right: 1em; */
   margin-right: 10px;
   /* font-family: 'Ropa Sans'; */
-  font-family: arial, sans-serif;
   /* font-style: italic; */
   margin-top: 0.5em;
 }
