@@ -530,7 +530,12 @@ function umkc_theme_preprocess_islandora_book_page(array &$variables) {
     $token = islandora_get_object_token($object->id, 'JP2', 2);
     $jp2_url = url("islandora/object/{$object->id}/datastream/JP2/view", array(
       'absolute' => TRUE,
-      'query' => array('token' => $token),                                                                                                                                                        ));
+      'query' => array('token' => $token),
+    ));
+    $params['token'] = $token;
+    $params['pid'] = $object->id;
+    $params['dsid'] = 'JP2';
+    // Can be removed after 7.x-1.11 is out the door islandora_deprecated.
     $params['jp2_url'] = $jp2_url;
   }
 
