@@ -49,6 +49,6 @@
 <?php endif; ?>
 <?php if ($variables['model'] != 'islandora:collectionCModel'):?>
   <?php print "<span id='feedback'>If you have more information about this item than what is given here, we want to know! " ?>
-  <?php print l(t('Contact us.'), 'mailto:rodriguezsan@umkc.edu?subject=UMKC Digital Special Collections Additional Details&body=' . url(current_path()), array('absolute' => TRUE)); ?>
+  <?php print l(t('Contact us.'), 'mailto:tardyg@umkc.edu?subject=UMKC Digital Special Collections Additional Details&body=' . url(current_path()), array('absolute' => TRUE)); ?>
   <?php print "</span>" ?>
 <?php endif; ?>
